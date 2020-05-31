@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pso2builds.com/sitemap.xml

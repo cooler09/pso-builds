@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <a class="navbar-brand" href="/">Crucible Skills</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a
+          rel="noopener"
+          rel="noreferrer"
+          class="nav-link"
+          href="https://github.com/cooler09/pso-builds/issues"
+          target="_blank"
+          >See an Issue?</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          rel="noopener"
+          rel="noreferrer"
+          class="nav-link"
+          href="https://www.patreon.com/zacharylockhart"
+          target="_blank"
+          >Help Support Me</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+<div
+  *ngIf="!supporter"
+  class="container bg-dark-grey d-flex justify-content-center"
+>
+  <iframe
+    class="d-none d-sm-block"
+    src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=48&l=ur1&category=primemain&banner=1FM3MKXZNJ0PPEBRV2R2&f=ifr&linkID=d20359f3bb71b9e7e5ca9556bf52e7d8&t=cooler090b-20&tracking_id=cooler090b-20"
+    title="advertisement"
+    width="728"
+    height="90"
+    scrolling="no"
+    border="0"
+    marginwidth="0"
+    style="border: none;"
+    frameborder="0"
+  ></iframe>
+  <iframe
+    class="d-sm-none"
+    src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=13&l=ur1&category=primemain&banner=0NVA2PKRAY588CJNAYG2&f=ifr&linkID=411da7f335f97ddb528eb51caa4a57f9&t=cooler090b-20&tracking_id=cooler090b-20"
+    width="468"
+    height="60"
+    scrolling="no"
+    border="0"
+    marginwidth="0"
+    style="border: none;"
+    frameborder="0"
+  ></iframe>
+</div>
+<router-outlet></router-outlet>
