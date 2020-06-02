@@ -1,11 +1,11 @@
 <div class="row">
   <div
-    *ngFor="let skill of skills"
+    *ngFor="let skillId of skills"
     class="col-12 col-sm-2 p-2 bg-gradient-blue"
   >
     <app-skill
-      *ngIf="skill"
-      [skill]="skill"
+      *ngIf="skillId"
+      [skill]="skillTree[skillId]"
       (skillClicked)="skillClickedEvent($event)"
     ></app-skill>
   </div>

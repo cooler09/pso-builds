@@ -1,9 +1,10 @@
 <div class="container bg-blue text-white">
   <div class="text-center">
-    {{ availableSkills }}
+    {{ skillTree.availableSkills }}
   </div>
   <app-skill-row
-    *ngFor="let skillRow of skillTree"
+    *ngFor="let skillRow of skillTree.skillTreeRows"
+    [skillTree]="skillTree"
     [skills]="skillRow"
     (skillClicked)="skillClicked($event)"
   ></app-skill-row>
