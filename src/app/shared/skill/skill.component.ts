@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Skill } from "../models/skill";
+import { SkillAction } from "../models/skill-action";
+import { SkillType } from "../models/skill-type";
 
 @Component({
   selector: "app-skill",
@@ -8,15 +10,25 @@ import { Skill } from "../models/skill";
 })
 export class SkillComponent implements OnInit {
   @Input() skill: Skill;
+  @Output() skillClicked = new EventEmitter();
+
+  get skillType() {
+    return SkillType;
+  }
   constructor() {}
 
   ngOnInit(): void {}
 
   prev() {
-    if (this.skill.currentLevel > 0) this.skill.currentLevel -= 1;
+    this.skillClicked.emit({
+      action: SkillAction.Remove,
+      id: this.skill.id,
+    });
   }
   next() {
-    if (this.skill.currentLevel < this.skill.maxLevel)
-      this.skill.currentLevel += 1;
+    this.skillClicked.emit({
+      action: SkillAction.Add,
+      id: this.skill.id,
+    });
   }
 }

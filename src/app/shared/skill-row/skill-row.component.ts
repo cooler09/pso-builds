@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Skill } from "../models/skill";
 
 @Component({
@@ -9,9 +9,12 @@ import { Skill } from "../models/skill";
 export class SkillRowComponent implements OnInit {
   @Input() skills: Skill[];
 
-  // @Output() skillSelected = new EventEmitter();
+  @Output() skillClicked = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
+  skillClickedEvent(data: any) {
+    this.skillClicked.emit(data);
+  }
 }

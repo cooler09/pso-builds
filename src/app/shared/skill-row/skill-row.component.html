@@ -3,6 +3,10 @@
     *ngFor="let skill of skills"
     class="col-12 col-sm-2 p-2 bg-gradient-blue"
   >
-    <app-skill *ngIf="skill" [skill]="skill"></app-skill>
+    <app-skill
+      *ngIf="skill"
+      [skill]="skill"
+      (skillClicked)="skillClickedEvent($event)"
+    ></app-skill>
   </div>
 </div>

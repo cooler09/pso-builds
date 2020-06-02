@@ -1,8 +1,11 @@
+import { SkillType } from "./skill-type";
+
 export class Skill {
   id: string;
   name: string;
   desc: string;
   imagePath: string;
+  skillType: SkillType;
   parentId: string;
   parentLevelReq: number;
   currentLevel: number;
@@ -13,8 +16,17 @@ export class Skill {
     this.imagePath = imagePath;
     this.currentLevel = 0;
     this.maxLevel = 1;
+    this.skillType = SkillType.Normal;
   }
 
+  setSkillType(type: SkillType) {
+    this.skillType = type;
+    if (type === SkillType.Passive) {
+      this.maxLevel = 1;
+      this.currentLevel = 1;
+    }
+    return this;
+  }
   setMaxLevel(maxLevel: number) {
     this.maxLevel = maxLevel;
     return this;
