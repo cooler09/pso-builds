@@ -8,3 +8,25 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.vl {
+  border-left: 6px solid yellow;
+  height: 600px;
+  position: absolute;
+
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.bg-blue {
+  background-color: #0a3f53;
+}
+.bg-lt-blue {
+  background-color: #409fd6;
+}
+.bg-gradient-blue {
+  background-image: linear-gradient(to right, #37576e, #193241);
+}
+.border-lt-blue {
+  border: 1px solid #409fd6;
+}

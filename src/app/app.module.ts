@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillComponent } from './shared/skill/skill.component';
+import { SkillRowComponent } from './shared/skill-row/skill-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SkillComponent,
+    SkillRowComponent
   ],
   imports: [
     BrowserModule,
