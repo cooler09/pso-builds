@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   rowFour: Skill[];
   constructor() {
     this.rowOne = [
-      new Skill("1", "HP Up 1", "/assets/icons/hp_up_1.png"),
+      new Skill("1", "HP Up 1", "/assets/icons/hp_up_1.png").setMaxLevel(10),
       new Skill("2", "HP Up 1", "/assets/icons/hp_up_1.png"),
       new Skill("3", "HP Up 1", "/assets/icons/hp_up_1.png"),
       new Skill("4", "HP Up 1", "/assets/icons/hp_up_1.png"),

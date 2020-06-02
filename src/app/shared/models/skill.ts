@@ -15,6 +15,10 @@ export class Skill {
     this.maxLevel = 1;
   }
 
+  setMaxLevel(maxLevel: number) {
+    this.maxLevel = maxLevel;
+    return this;
+  }
   setDesc(desc: string): Skill {
     this.desc = desc;
     return this;

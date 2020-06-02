@@ -1,4 +1,11 @@
-<div class="bg-blue border-lt-blue">
+<div
+  class="rounded-border"
+  [class]="
+    skill.currentLevel >= skill.maxLevel
+      ? 'bg-dark-green border-lt-green'
+      : 'bg-blue border-lt-blue'
+  "
+>
   <div class="d-flex">
     <img class="p-1" [src]="skill.imagePath" />
     <p class="p-1">{{ skill.name }}</p>

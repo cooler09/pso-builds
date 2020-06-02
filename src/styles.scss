@@ -17,7 +17,12 @@ body {
   margin-top: 30px;
   margin-left: 50px;
 }
-
+.bg-dark-green {
+  background-color: #0d4b29;
+}
+.border-lt-green {
+  border: 1px solid #52cd9c;
+}
 .bg-blue {
   background-color: #0a3f53;
 }
@@ -29,4 +34,7 @@ body {
 }
 .border-lt-blue {
   border: 1px solid #409fd6;
+}
+.rounded-border {
+  border-radius: 10px;
 }
