@@ -1,11 +1,15 @@
 <div
   class="rounded-border"
-  [class]="
-    skill.currentLevel >= skill.maxLevel ||
-    skill.skillType === skillType.Passive
-      ? 'bg-dark-green border-lt-green'
-      : 'bg-blue border-lt-blue'
+  [class.skill]="
+    !skill.locked &&
+    skill.skillType === skillType.Normal &&
+    skill.currentLevel < skill.maxLevel
   "
+  [class.skill-max]="
+    (!skill.locked && skill.skillType === skillType.Passive) ||
+    skill.currentLevel >= skill.maxLevel
+  "
+  [class.skill-locked]="skill.locked"
 >
   <div class="d-flex">
     <img class="p-1" [src]="skill.imagePath" />
@@ -13,7 +17,7 @@
   </div>
   <div class="p-2 d-flex justify-content-between align-items-center">
     <div
-      *ngIf="skill.skillType !== skillType.Passive"
+      *ngIf="!skill.locked && skill.skillType !== skillType.Passive"
       class="hand"
       role="button"
       (click)="prev()"
@@ -23,7 +27,7 @@
     </div>
     <span>{{ skill.currentLevel }}/{{ skill.maxLevel }}</span>
     <div
-      *ngIf="skill.skillType !== skillType.Passive"
+      *ngIf="!skill.locked && skill.skillType !== skillType.Passive"
       class="hand"
       role="button"
       (click)="next()"
