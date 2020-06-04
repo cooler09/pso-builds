@@ -13,9 +13,18 @@ export class HomeComponent implements OnInit {
   availableSkills: number;
   skillTree: SkillTree;
   displayedSkill: Skill;
+  classes: any[];
+  selectedPrimaryClass: string = "hunter";
+  selectedSecondaryClass: string = "ranger";
+  selectedLevel: number;
+  levels: number[] = [];
 
   constructor() {
     this.skillTree = MockData.buildSkillTree();
+    this.classes = MockData.buildClasses();
+    for (let index = 1; index <= 70; index++) {
+      this.levels.push(index);
+    }
     this.availableSkills = 10;
     this.displayedSkill = this.skillTree["1"];
   }

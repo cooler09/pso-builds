@@ -1,3 +1,111 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@angular/material/theming";
+@include mat-core();
+
+$pso-bg-light: (
+  50: #e7eef3,
+  100: #c4d4e2,
+  200: #9db8cf,
+  300: #759bbb,
+  400: #5885ad,
+  500: #3a709e,
+  600: #346896,
+  700: #2c5d8c,
+  800: #255382,
+  900: #184170,
+  A100: #aaceff,
+  A200: #77b1ff,
+  A400: #4494ff,
+  A700: #2a86ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+  ),
+);
+
+$pso-bg-md: (
+  50: #e7ecf0,
+  100: #c3ceda,
+  200: #9baec2,
+  300: #738ea9,
+  400: #557596,
+  500: #375d84,
+  600: #31557c,
+  700: #2a4b71,
+  800: #234167,
+  900: #163054,
+  A100: #90bbff,
+  A200: #5d9bff,
+  A400: #2a7cff,
+  A700: #106cff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+$pso-blue: (
+  50: #e8f3fa,
+  100: #c6e2f3,
+  200: #a0cfeb,
+  300: #79bce2,
+  400: #5daddc,
+  500: #409fd6,
+  600: #3a97d1,
+  700: #328dcc,
+  800: #2a83c6,
+  900: #1c72bc,
+  A100: #f2f9ff,
+  A200: #bfe0ff,
+  A400: #8cc7ff,
+  A700: #73baff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+$primary: mat-palette($pso-blue);
+$accent: mat-palette($pso-bg-md);
+
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
 @import "~bootstrap/dist/css/bootstrap.css";
 
 html,
@@ -39,7 +147,7 @@ body {
   background-color: #15191c;
 }
 .bg-lt-blue {
-  background-color: #409fd6;
+  background-color: #375d84;
 }
 .bg-gradient-blue {
   background-image: linear-gradient(to right, #37576e, #193241);

@@ -1,9 +1,40 @@
-<div class="container bg-blue text-white">
-  <div class="row">
-    <div class="col-sm-6"></div>
+<div class="container bg-dark-blue text-white">
+  <div class="row pb-3">
+    <div class="col-sm-6 bg-dark-blue p-0 bg-light">
+      <div class="bg-lt-blue text-white p-2">Character Information</div>
+      <div class="p-2">
+        <mat-form-field>
+          <mat-label>Primary Class</mat-label>
+          <mat-select [(value)]="selectedPrimaryClass">
+            <mat-option *ngFor="let class of classes" [value]="class.value">
+              {{ class.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Secondary Class</mat-label>
+          <mat-select [(value)]="selectedSecondaryClass">
+            <mat-option *ngFor="let class of classes" [value]="class.value">
+              {{ class.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Level</mat-label>
+          <mat-select [(value)]="selectedLevel">
+            <mat-option *ngFor="let lvl of levels" [value]="lvl">
+              {{ lvl }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div class="text-center text-dark">
+          Available Skills: {{ availableSkills }}
+        </div>
+      </div>
+    </div>
     <div class="col-sm-6 p-0 bg-dark-blue">
       <div *ngIf="displayedSkill" style="height: 140px;">
-        <div class="p-1 bg-lt-blue">
+        <div class="p-2 bg-lt-blue">
           {{ displayedSkill.name }}
         </div>
         <div class="p-1 border-b-white">
@@ -32,20 +63,17 @@
     </div>
   </div>
 </div>
-<div
-  class="container bg-blue text-white"
-  style="overflow-y: scroll; height: 70vh;"
->
-  <div class="text-center">
-    {{ availableSkills }}
-  </div>
-  <div>
-    <app-skill-row
-      *ngFor="let skillRow of skillTree.skillTreeRows"
-      [skillTree]="skillTree"
-      [skills]="skillRow"
-      (displaySkill)="displaySkill($event)"
-      (skillClicked)="skillClicked($event)"
-    ></app-skill-row>
-  </div>
+<div class="container p-0 bg-dark-blue text-white">
+  <mat-tab-group class="p-0" backgroundColor="accent">
+    <mat-tab *ngFor="let class of classes" [label]="class.viewValue">
+      <div class="px-3" style="overflow-y: scroll; height: 70vh;">
+        <app-skill-row
+          *ngFor="let skillRow of skillTree.skillTreeRows"
+          [skillTree]="skillTree"
+          [skills]="skillRow"
+          (displaySkill)="displaySkill($event)"
+          (skillClicked)="skillClicked($event)"
+        ></app-skill-row></div
+    ></mat-tab>
+  </mat-tab-group>
 </div>

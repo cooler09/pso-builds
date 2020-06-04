@@ -4,6 +4,46 @@ import { SkillDependency } from "./skill-dependency";
 import { SkillType } from "./skill-type";
 
 export default class MockData {
+  static buildClasses(): any[] {
+    return [
+      {
+        value: "hunter",
+        viewValue: "Hunter",
+      },
+      {
+        value: "fighter",
+        viewValue: "Fighter",
+      },
+      {
+        value: "ranger",
+        viewValue: "Ranger",
+      },
+      {
+        value: "gunner",
+        viewValue: "Gunner",
+      },
+      {
+        value: "force",
+        viewValue: "Force",
+      },
+      {
+        value: "techter",
+        viewValue: "Techter",
+      },
+      {
+        value: "braver",
+        viewValue: "Braver",
+      },
+      {
+        value: "bouncer",
+        viewValue: "Bouncer",
+      },
+      {
+        value: "summoner",
+        viewValue: "Summoner",
+      },
+    ];
+  }
   static buildSkillTree(): SkillTree {
     let skillTree = new SkillTree(4);
     console.log(skillTree);
