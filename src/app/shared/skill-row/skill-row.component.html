@@ -8,6 +8,7 @@
       [skillTree]="skillTree"
       [skill]="skillTree[skillId]"
       (skillClicked)="skillClickedEvent($event)"
+      (mouseenter)="mouseEnter(skillTree[skillId])"
     ></app-skill>
   </div>
 </div>

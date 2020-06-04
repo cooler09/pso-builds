@@ -11,6 +11,7 @@ export class SkillRowComponent implements OnInit {
   @Input() skills: string[];
   @Input() skillTree: SkillTree;
 
+  @Output() displaySkill = new EventEmitter();
   @Output() skillClicked = new EventEmitter();
 
   constructor() {}
@@ -18,5 +19,8 @@ export class SkillRowComponent implements OnInit {
   ngOnInit(): void {}
   skillClickedEvent(data: any) {
     this.skillClicked.emit(data);
+  }
+  mouseEnter(skill: Skill) {
+    this.displaySkill.emit(skill);
   }
 }

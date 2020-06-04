@@ -15,6 +15,8 @@ export class Skill {
   constructor(id: string, name: string, imagePath: string) {
     this.id = id;
     this.name = name;
+    this.desc =
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
     this.imagePath = imagePath;
     this.currentLevel = 0;
     this.maxLevel = 1;

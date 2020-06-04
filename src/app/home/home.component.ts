@@ -1,8 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Skill } from "../shared/models/skill";
 import { SkillAction } from "../shared/models/skill-action";
-import { SkillType } from "../shared/models/skill-type";
-import { ChildDependency } from "../shared/models/child-dependency";
 import { SkillTree } from "../shared/models/skill-tree";
 import MockData from "../shared/models/mock-data";
 
@@ -13,10 +11,11 @@ import MockData from "../shared/models/mock-data";
 })
 export class HomeComponent implements OnInit {
   skillTree: SkillTree;
+  displayedSkill: Skill;
 
   constructor() {
     this.skillTree = MockData.buildSkillTree();
-    console.log(this.skillTree);
+    this.displayedSkill = this.skillTree["1"];
   }
 
   ngOnInit(): void {}
@@ -43,6 +42,9 @@ export class HomeComponent implements OnInit {
           break;
       }
     }
+  }
+  displaySkill(skill: Skill) {
+    this.displayedSkill = skill;
   }
   private validateChildDependecies(skill: Skill) {
     if (skill.children && skill.children.length > 0) {

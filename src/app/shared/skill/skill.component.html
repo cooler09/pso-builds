@@ -14,11 +14,19 @@
 >
   <div class="d-flex" style="flex: 100%;">
     <div class="d-flex justify-content-center align-items-center">
-      <img class="p-1" style="flex: 30%;" [src]="skill.imagePath" />
+      <img
+        class="p-1"
+        style="flex: 30%; width: 50px; height: 50px;"
+        [src]="skill.imagePath"
+      />
     </div>
-    <div style="flex: 70%;">
-      <div class="p-1">{{ skill.name }}</div>
-      <div *ngIf="parent" class="p-1 d-flex justify-content-between">
+    <div class="p-1" style="flex: 70%;">
+      <div class="mb-1">{{ skill.name }}</div>
+      <div
+        *ngIf="parent"
+        class="d-flex justify-content-between"
+        [class.text-danger]="parent.currentLevel < skill.parent.prerequisite"
+      >
         <span>{{ parent.name }}</span>
         <span>{{ parent.currentLevel }}/{{ skill.parent.prerequisite }}</span>
       </div>
