@@ -1,12 +1,12 @@
 <div class="container bg-blue text-white">
   <div class="row">
     <div class="col-sm-6"></div>
-    <div class="col-sm-6 bg-dark-blue">
-      <div *ngIf="displayedSkill">
+    <div class="col-sm-6 p-0 bg-dark-blue">
+      <div *ngIf="displayedSkill" style="height: 140px;">
         <div class="p-1 bg-lt-blue">
           {{ displayedSkill.name }}
         </div>
-        <div>
+        <div class="p-1 border-b-white">
           Level:
           <span *ngIf="displayedSkill.currentLevel < displayedSkill.maxLevel"
             >{{ displayedSkill.currentLevel }}/{{
@@ -18,15 +18,14 @@
           >
         </div>
         <div
-          class="d-flex justify-content-between"
-          style="border-bottom: 1px solid white;"
+          class="p-1 d-flex justify-content-between border-b-white"
           *ngIf="displayedSkill.parent"
         >
           <span>Prerequisite</span>
           <span>/{{ skillTree[displayedSkill.parent.id].name }}</span>
           <span>Lv. {{ displayedSkill.parent.prerequisite }}</span>
         </div>
-        <div style="border-bottom: 1px solid white;">
+        <div class="p-1">
           {{ displayedSkill.desc }}
         </div>
       </div>
