@@ -21,9 +21,23 @@
         </mat-form-field>
         <mat-form-field>
           <mat-label>Level</mat-label>
-          <mat-select [(value)]="selectedLevel">
+          <mat-select
+            [(value)]="selectedLevel"
+            (selectionChange)="updateAvailableSP()"
+          >
             <mat-option *ngFor="let lvl of levels" [value]="lvl">
               {{ lvl }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>CO Skill Points</mat-label>
+          <mat-select
+            [(value)]="selectedCoSP"
+            (selectionChange)="updateAvailableSP()"
+          >
+            <mat-option *ngFor="let coSP of coSkillPoints" [value]="coSP">
+              {{ coSP }}
             </mat-option>
           </mat-select>
         </mat-form-field>
