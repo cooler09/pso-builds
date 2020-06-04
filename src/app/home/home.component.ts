@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   classes: any[];
   selectedPrimaryClass: string = "hunter";
   selectedSecondaryClass: string = "ranger";
-  selectedLevel: number;
+  selectedLevel: number = 1;
   levels: number[] = [];
 
   constructor() {
