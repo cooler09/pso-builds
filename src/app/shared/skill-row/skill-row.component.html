@@ -5,6 +5,7 @@
   >
     <app-skill
       *ngIf="skillId"
+      [skillTree]="skillTree"
       [skill]="skillTree[skillId]"
       (skillClicked)="skillClickedEvent($event)"
     ></app-skill>

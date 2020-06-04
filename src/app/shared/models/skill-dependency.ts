@@ -1,4 +1,4 @@
-export class ChildDependency {
+export class SkillDependency {
   id: string;
   prerequisite: number;
   constructor(id: string, prerequisite: number) {

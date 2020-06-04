@@ -1,6 +1,6 @@
 import { SkillTree } from "./skill-tree";
 import { Skill } from "./skill";
-import { ChildDependency } from "./child-dependency";
+import { SkillDependency } from "./skill-dependency";
 import { SkillType } from "./skill-type";
 
 export default class MockData {
@@ -14,7 +14,7 @@ export default class MockData {
         0,
         new Skill("1", "HP Up 1", "/assets/icons/hp_up_1.png")
           .setMaxLevel(10)
-          .setChildren([new ChildDependency("13", 3)])
+          .setChildren([new SkillDependency("13", 3)])
       )
       .setSkill(0, 1, new Skill("2", "HP Up 1", "/assets/icons/hp_up_1.png"))
       .setSkill(0, 2, new Skill("3", "HP Up 1", "/assets/icons/hp_up_1.png"))
@@ -65,6 +65,7 @@ export default class MockData {
         new Skill("13", "HP Up 2", "/assets/icons/hp_up_1.png")
           .setMaxLevel(10)
           .setLocked(true)
+          .setParent(new SkillDependency("1", 3))
       )
       .setSkill(
         3,

@@ -1,5 +1,5 @@
 import { SkillType } from "./skill-type";
-import { ChildDependency } from "./child-dependency";
+import { SkillDependency } from "./skill-dependency";
 
 export class Skill {
   id: string;
@@ -7,10 +7,11 @@ export class Skill {
   desc: string;
   imagePath: string;
   locked: boolean;
+  parent: SkillDependency;
   skillType: SkillType;
   currentLevel: number;
   maxLevel: number;
-  children: ChildDependency[];
+  children: SkillDependency[];
   constructor(id: string, name: string, imagePath: string) {
     this.id = id;
     this.name = name;
@@ -22,6 +23,10 @@ export class Skill {
     this.children = [];
   }
 
+  setParent(dependency: SkillDependency) {
+    this.parent = dependency;
+    return this;
+  }
   setSkillType(type: SkillType) {
     this.skillType = type;
     if (type === SkillType.Passive) {
@@ -42,7 +47,7 @@ export class Skill {
     this.locked = locked;
     return this;
   }
-  setChildren(children: ChildDependency[]) {
+  setChildren(children: SkillDependency[]) {
     this.children = children;
     return this;
   }
