@@ -8,7 +8,6 @@ export default class MockData {
     let skillTree = new SkillTree(4);
     console.log(skillTree);
     skillTree = skillTree
-      .setAvailableSkills(10)
       .setSkill(
         0,
         0,

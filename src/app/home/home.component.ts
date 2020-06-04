@@ -10,11 +10,13 @@ import MockData from "../shared/models/mock-data";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
+  availableSkills: number;
   skillTree: SkillTree;
   displayedSkill: Skill;
 
   constructor() {
     this.skillTree = MockData.buildSkillTree();
+    this.availableSkills = 10;
     this.displayedSkill = this.skillTree["1"];
   }
 
@@ -23,11 +25,11 @@ export class HomeComponent implements OnInit {
     if (data) {
       switch (data.action) {
         case SkillAction.Add:
-          if (this.skillTree.availableSkills > 0) {
+          if (this.availableSkills > 0) {
             let skill = this.skillTree[data.id];
             if (skill && skill.currentLevel < skill.maxLevel) {
               skill.currentLevel += 1;
-              this.skillTree.availableSkills -= 1;
+              this.availableSkills -= 1;
               this.validateChildDependecies(skill);
             }
           }
@@ -35,7 +37,7 @@ export class HomeComponent implements OnInit {
         case SkillAction.Remove:
           let skill = this.skillTree[data.id];
           if (skill && skill.currentLevel > 0) {
-            this.skillTree.availableSkills += 1;
+            this.availableSkills += 1;
             skill.currentLevel -= 1;
             this.validateChildDependecies(skill);
           }
