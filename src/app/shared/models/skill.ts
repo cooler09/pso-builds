@@ -26,6 +26,7 @@ export class Skill {
   }
 
   setParent(dependency: SkillDependency) {
+    this.locked = true;
     this.parent = dependency;
     return this;
   }

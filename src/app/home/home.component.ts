@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   classes: any[];
   selectedPrimaryClass: string = "hunter";
   selectedSecondaryClass: string = "ranger";
-  selectedLevel: number = 1;
+  selectedLevel: number = 75;
   levels: number[] = [];
   selectedCoSP: number = 0;
   coSkillPoints: number[] = [];
@@ -24,13 +24,13 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.skillTree = MockData.buildSkillTree();
     this.classes = MockData.buildClasses();
-    for (let index = 1; index <= 70; index++) {
+    for (let index = 1; index <= 75; index++) {
       this.levels.push(index);
     }
     for (let index = 0; index < 15; index++) {
       this.coSkillPoints.push(index);
     }
-    this.availableSkills = 1;
+    this.updateAvailableSP();
     this.displayedSkill = this.skillTree["1"];
   }
 
