@@ -6,6 +6,7 @@ export class Skill {
   name: string;
   desc: string;
   imagePath: string;
+  levelReq: number;
   locked: boolean;
   parent: SkillDependency;
   skillType: SkillType;
@@ -24,7 +25,10 @@ export class Skill {
     this.locked = false;
     this.children = [];
   }
-
+  setLevelReq(level: number) {
+    this.levelReq = level;
+    return this;
+  }
   setParent(dependency: SkillDependency) {
     this.locked = true;
     this.parent = dependency;

@@ -27,9 +27,10 @@ export default class HunterData {
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/hp_up_1.png").setDesc(
-          "Jumping during a Dodge Action transitions you into a dash."
-        )
+        new Skill("2", "Sidestep Jump", "/assets/icons/hp_up_1.png")
+          .setDesc("Jumping during a Dodge Action transitions you into a dash.")
+          .setSkillType(SkillType.LevelReq)
+          .setLevelReq(10)
       )
       .setSkill(
         0,

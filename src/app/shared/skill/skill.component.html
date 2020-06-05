@@ -8,7 +8,8 @@
   "
   [class.skill-max]="
     (!skill.locked && skill.skillType === skillType.Passive) ||
-    skill.currentLevel >= skill.maxLevel
+    skill.currentLevel >= skill.maxLevel ||
+    skill.skillType === skillType.LevelReq
   "
   [class.skill-locked]="skill.locked"
 >
@@ -29,11 +30,29 @@
       >
         <span>{{ parent.name }}</span>
 
-        <span>{{ parent.currentLevel }}/{{ skill.parent.prerequisite }}</span>
+        <span class="px-1"
+          >{{ parent.currentLevel }}/{{ skill.parent.prerequisite }}</span
+        >
       </div>
     </div>
   </div>
   <div
+    class="p-2 d-flex justify-content-between align-items-center"
+    style="flex: 100%;"
+    *ngIf="skill.skillType === skillType.LevelReq"
+  >
+    <div>
+      <mat-icon
+        class="text-danger"
+        aria-hidden="false"
+        aria-label="Locked Skill"
+        >lock</mat-icon
+      >
+    </div>
+    <span>Level Req: {{ skill.levelReq }}</span>
+  </div>
+  <div
+    *ngIf="skill.skillType !== skillType.LevelReq"
     class="p-2 d-flex justify-content-between align-items-center"
     style="flex: 100%;"
   >
@@ -42,7 +61,7 @@
         class="text-danger"
         *ngIf="skill.locked"
         aria-hidden="false"
-        aria-label="Example home icon"
+        aria-label="Locked Skill"
         >lock</mat-icon
       >
       <div
