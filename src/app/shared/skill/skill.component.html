@@ -20,7 +20,7 @@
         [src]="skill.imagePath"
       />
     </div>
-    <div class="p-1 fnt-s-10" style="flex: 70%;">
+    <div class="px-1 fnt-s-10" style="flex: 70%;">
       <div class="mb-1">{{ skill.name }}</div>
       <div
         *ngIf="parent"
@@ -28,6 +28,7 @@
         [class.text-danger]="parent.currentLevel < skill.parent.prerequisite"
       >
         <span>{{ parent.name }}</span>
+
         <span>{{ parent.currentLevel }}/{{ skill.parent.prerequisite }}</span>
       </div>
     </div>
@@ -37,6 +38,13 @@
     style="flex: 100%;"
   >
     <div>
+      <mat-icon
+        class="text-danger"
+        *ngIf="skill.locked"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        >lock</mat-icon
+      >
       <div
         *ngIf="!skill.locked && skill.skillType !== skillType.Passive"
         class="hand"

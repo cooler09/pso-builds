@@ -10,6 +10,7 @@ import { SkillRowComponent } from "./shared/skill-row/skill-row.component";
 import { MatSelectModule } from "@angular/material/select";
 import { MatInputModule } from "@angular/material/input";
 import { MatTabsModule } from "@angular/material/tabs";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MatTabsModule } from "@angular/material/tabs";
     MatSelectModule,
     MatInputModule,
     MatTabsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
