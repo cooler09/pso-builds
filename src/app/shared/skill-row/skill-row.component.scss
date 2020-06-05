@@ -1,0 +1,20 @@
+::ng-deep .mat-select-value-text {
+  color: rgb(255, 255, 255);
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start {
+  border: 1px solid white !important;
+  border-right-style: none !important;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-gap {
+  border: 1px solid white !important;
+  border-right-style: none !important;
+  border-left-style: none !important;
+  border-top-color: transparent !important;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border: 1px solid white !important;
+  border-left-style: none !important;
+}
+::ng-deep .mat-select-arrow {
+  color: white;
+}
