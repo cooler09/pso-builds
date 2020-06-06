@@ -6,11 +6,27 @@ import { SkillType } from "./skill-type";
 export default class HunterData {
   static getSkillTree(): SkillTree {
     let skillTree = new SkillTree(13);
-    skillTree = skillTree
+    skillTree = this.loadRowOne(skillTree);
+    skillTree = this.loadRowTwo(skillTree);
+    skillTree = this.loadRowThree(skillTree);
+    skillTree = this.loadRowFour(skillTree);
+    skillTree = this.loadRowFive(skillTree);
+    skillTree = this.loadRowSix(skillTree);
+    skillTree = this.loadRowSeven(skillTree);
+    skillTree = this.loadRowEight(skillTree);
+    skillTree = this.loadRowNine(skillTree);
+    skillTree = this.loadRowTen(skillTree);
+    skillTree = this.loadRowEleven(skillTree);
+    skillTree = this.loadRowTwelve(skillTree);
+    skillTree = this.loadRowThirteen(skillTree);
+    return skillTree;
+  }
+  static loadRowOne(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         0,
         0,
-        new Skill("1", "HP Up 1", "/assets/icons/hp_up_1.png")
+        new Skill("1", "HP Up 1", "/assets/icons/hunter/hp.png")
           .setMaxLevel(10)
           .setDesc("Boosts your Max HP.")
           .setChildren([
@@ -27,7 +43,7 @@ export default class HunterData {
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/hp_up_1.png")
+        new Skill("2", "Sidestep Jump", "/assets/icons/hunter/sidestep_alt.png")
           .setDesc("Jumping during a Dodge Action transitions you into a dash.")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
@@ -38,17 +54,21 @@ export default class HunterData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/hp_up_1.png"
-        ).setDesc(
-          "Turns your first attack into a Perfect Attack. A cooldown is applied after activation. Doesn't affect Harmonizer attacks, pet attacks, or Techniques."
+          "/assets/icons/hunter/first_arts_atk.png"
         )
+          .setDesc(
+            "Turns your first attack into a Perfect Attack. A cooldown is applied after activation. Doesn't affect Harmonizer attacks, pet attacks, or Techniques."
+          )
+          .setSkillType(SkillType.LevelReq)
+          .setLevelReq(20)
       )
       .setSkill(
         0,
         3,
-        new Skill("4", "Air Reversal", "/assets/icons/hp_up_1.png").setDesc(
-          "Allows you to perform a break-fall while in the air."
-        )
+        new Skill("4", "Air Reversal", "/assets/icons/hunter/double_jump.png")
+          .setDesc("Allows you to perform a break-fall while in the air.")
+          .setSkillType(SkillType.LevelReq)
+          .setLevelReq(30)
       )
       .setSkill(
         0,
@@ -56,38 +76,49 @@ export default class HunterData {
         new Skill(
           "5",
           "Perf. Recovery & ATK Combo",
-          "/assets/icons/hp_up_1.png"
-        ).setDesc("Makes Perfect-Attack timing apply after a Perfect Recovery.")
+          "/assets/icons/hunter/double_jump.png"
+        )
+          .setDesc(
+            "Makes Perfect-Attack timing apply after a Perfect Recovery."
+          )
+          .setSkillType(SkillType.LevelReq)
+          .setLevelReq(30)
       )
       .setSkill(
         0,
         5,
-        new Skill("6", "Double Jump", "/assets/icons/hp_up_1.png").setDesc(
-          "Enables two-stage jumping."
-        )
+        new Skill("6", "Double Jump", "/assets/icons/hunter/double_jump.png")
+          .setDesc("Enables two-stage jumping.")
+          .setSkillType(SkillType.LevelReq)
+          .setLevelReq(40)
+      );
+  }
+  static loadRowTwo(skillTree: SkillTree): SkillTree {
+    return skillTree.setSkill(
+      1,
+      5,
+      new Skill(
+        "7",
+        "Sidestep & Perf. ATK Combo",
+        "/assets/icons/hunter/sidestep_alt.png"
       )
-      .setSkill(
-        1,
-        5,
-        new Skill(
-          "7",
-          "Sidestep & Perf. ATK Combo",
-          "/assets/icons/hp_up_1.png"
-        )
-          .setSkillType(SkillType.Passive)
-          .setDesc("Makes Perfect-Attack timing apply during a Sidestep.")
-      )
+        .setSkillType(SkillType.Passive)
+        .setDesc("Makes Perfect-Attack timing apply during a Sidestep.")
+    );
+  }
+  static loadRowThree(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         2,
         1,
-        new Skill("8", "Dexterity Up", "/assets/icons/hp_up_1.png")
+        new Skill("8", "Dexterity Up", "/assets/icons/hunter/dex.png")
           .setMaxLevel(10)
           .setDesc("Boosts your Dexterity.")
       )
       .setSkill(
         2,
         2,
-        new Skill("9", "Melee Power Up 1", "/assets/icons/hp_up_1.png")
+        new Skill("9", "Melee Power Up 1", "/assets/icons/hunter/melee.png")
           .setMaxLevel(10)
           .setDesc("Boosts your Melee Power.")
           .setChildren([new SkillDependency("14", 3)])
@@ -95,7 +126,11 @@ export default class HunterData {
       .setSkill(
         2,
         3,
-        new Skill("10", "Arms Enthusiast: Hunter", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "10",
+          "Arms Enthusiast: Hunter",
+          "/assets/icons/hunter/arms_enthusiast_alt.png"
+        )
           .setSkillType(SkillType.Passive)
           .setDesc(
             "Boosts the damage you deal when a weapon of Rarity 10(Star) or greater is equipped. This skill can only be used with a Main Class."
@@ -104,7 +139,7 @@ export default class HunterData {
       .setSkill(
         2,
         4,
-        new Skill("11", "Guard", "/assets/icons/hp_up_1.png")
+        new Skill("11", "Guard", "/assets/icons/hunter/guard.png")
           .setSkillType(SkillType.Passive)
           .setDesc(
             "Allows you to protect against enemy attacks by raising your weapon in front of you."
@@ -113,14 +148,18 @@ export default class HunterData {
       .setSkill(
         2,
         5,
-        new Skill("12", "Sidestep", "/assets/icons/hp_up_1.png")
+        new Skill("12", "Sidestep", "/assets/icons/hunter/sidestep.png")
           .setSkillType(SkillType.Passive)
           .setDesc("Swiftly move a short distance by moving in deftly.")
-      )
+      );
+  }
+
+  static loadRowFour(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         3,
         1,
-        new Skill("13", "HP Up 2", "/assets/icons/hp_up_1.png")
+        new Skill("13", "HP Up 2", "/assets/icons/hunter/hp.png")
           .setMaxLevel(10)
           .setDesc(
             "Boosts your Max HP. Produces a stronger effect than HP Up 1."
@@ -132,7 +171,7 @@ export default class HunterData {
       .setSkill(
         3,
         2,
-        new Skill("14", "Melee Power Up 2", "/assets/icons/hp_up_1.png")
+        new Skill("14", "Melee Power Up 2", "/assets/icons/hunter/melee.png")
           .setMaxLevel(10)
           .setLocked(true)
           .setParent(new SkillDependency("9", 3))
@@ -147,7 +186,7 @@ export default class HunterData {
         new Skill(
           "15",
           "Hunter Focus Boost",
-          "/assets/icons/hp_up_1.png"
+          "/assets/icons/hunter/focus_boost.png"
         ).setDesc(
           "Grants a bonus to the rate of increase of the Focus Gauge of Hunter weapons during Fury Stance or Guard Stance. This skill can only be used with a Main Class."
         )
@@ -155,7 +194,7 @@ export default class HunterData {
       .setSkill(
         3,
         4,
-        new Skill("16", "Perfect Guard", "/assets/icons/hp_up_1.png")
+        new Skill("16", "Perfect Guard", "/assets/icons/hunter/guard_alt.png")
           .setSkillType(SkillType.Passive)
           .setDesc(
             "Negates damage when you Guard just before getting hit by an enemy attack."
@@ -164,14 +203,22 @@ export default class HunterData {
       .setSkill(
         3,
         5,
-        new Skill("17", "Sidestep Plus", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "17",
+          "Sidestep Plus",
+          "/assets/icons/hunter/sidestep_alt.png"
+        )
           .setMaxLevel(10)
           .setDesc("Extends the duration of invulnerability during a Sidestep.")
-      )
+      );
+  }
+
+  static loadRowFive(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         4,
         1,
-        new Skill("18", "HP Up 3", "/assets/icons/hp_up_1.png")
+        new Skill("18", "HP Up 3", "/assets/icons/hunter/hp.png")
           .setMaxLevel(10)
           .setLocked(true)
           .setDesc(
@@ -182,7 +229,7 @@ export default class HunterData {
       .setSkill(
         4,
         2,
-        new Skill("19", "Melee Power Up 3", "/assets/icons/hp_up_1.png")
+        new Skill("19", "Melee Power Up 3", "/assets/icons/hunter/melee.png")
           .setMaxLevel(10)
           .setLocked(true)
           .setParent(new SkillDependency("14", 3))
@@ -193,7 +240,11 @@ export default class HunterData {
       .setSkill(
         4,
         3,
-        new Skill("20", "Charged Parry", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "20",
+          "Charged Parry",
+          "/assets/icons/hunter/charged_parry.png"
+        )
           .setMaxLevel(1)
           .setDesc(
             "Allows you to perform a Perfect Guard when initiating charged Photon Arts with a Hunter weapon."
@@ -202,7 +253,7 @@ export default class HunterData {
       .setSkill(
         4,
         4,
-        new Skill("21", "Perfect Counter", "/assets/icons/hp_up_1.png")
+        new Skill("21", "Perfect Counter", "/assets/icons/hunter/guard_alt.png")
           .setSkillType(SkillType.Passive)
           .setDesc(
             "Attacks performed immediately after a successful Perfect Guard become Perfect Attacks."
@@ -211,21 +262,36 @@ export default class HunterData {
       .setSkill(
         4,
         5,
-        new Skill("22", "Sidestep Strike", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "22",
+          "Sidestep Strike",
+          "/assets/icons/hunter/sidestep_alt.png"
+        )
           .setSkillType(SkillType.Passive)
           .setDesc("Allows you to attack while performing a Sidestep.")
-      )
+      );
+  }
+  static loadRowSix(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         5,
         1,
-        new Skill("23", "Melee Defense Up", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "23",
+          "Melee Defense Up",
+          "/assets/icons/hunter/melee_def.png"
+        )
           .setMaxLevel(10)
           .setDesc("Boosts your Melee Defense.")
       )
       .setSkill(
         5,
         3,
-        new Skill("24", "Perfect Guard PP Gain", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "24",
+          "Perfect Guard PP Gain",
+          "/assets/icons/hunter/guard_pp_gain.png"
+        )
           .setMaxLevel(1)
           .setDesc(
             "Recovers PP when you perform a successful Perfect Guard with a Hunter weapon. This skill can only be used with a Main Class."
@@ -234,7 +300,11 @@ export default class HunterData {
       .setSkill(
         5,
         4,
-        new Skill("25", "Healing Guard", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "25",
+          "Healing Guard",
+          "/assets/icons/hunter/guard_healing.png"
+        )
           .setMaxLevel(1)
           .setDesc(
             "Recovers your HP and the HP of others in the vicinity when you perform a successful Perfect Guard."
@@ -243,16 +313,23 @@ export default class HunterData {
       .setSkill(
         5,
         5,
-        new Skill("26", "Perfect Recovery", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "26",
+          "Perfect Recovery",
+          "/assets/icons/hunter/sidestep_alt.png"
+        )
           .setSkillType(SkillType.Passive)
           .setDesc(
             "Allows you to quickly jump up after being knocked back onto the ground."
           )
-      )
+      );
+  }
+  static loadRowSeven(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         6,
         1,
-        new Skill("27", "Sword Focus", "/assets/icons/hp_up_1.png")
+        new Skill("27", "Sword Focus", "/assets/icons/hunter/sword_focus.png")
           .setMaxLevel(1)
           .setParent(new SkillDependency("1", 1))
           .setDesc(
@@ -262,7 +339,11 @@ export default class HunterData {
       .setSkill(
         6,
         2,
-        new Skill("28", "Wired Lance Focus", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "28",
+          "Wired Lance Focus",
+          "/assets/icons/hunter/wired_lance.png"
+        )
           .setMaxLevel(1)
           .setParent(new SkillDependency("1", 1))
           .setDesc(
@@ -272,7 +353,11 @@ export default class HunterData {
       .setSkill(
         6,
         3,
-        new Skill("29", "Partisan Focus", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "29",
+          "Partisan Focus",
+          "/assets/icons/hunter/partisan_focus.png"
+        )
           .setMaxLevel(1)
           .setParent(new SkillDependency("1", 1))
           .setDesc(
@@ -282,16 +367,23 @@ export default class HunterData {
       .setSkill(
         6,
         4,
-        new Skill("30", "All Guard", "/assets/icons/hp_up_1.png")
+        new Skill("30", "All Guard", "/assets/icons/hunter/all_guard.png")
           .setMaxLevel(1)
           .setDesc(
             "Allows for Guard to be performed in all directions, with Hunter weapons only. This skill can only be used with a Main Class."
           )
-      )
+      );
+  }
+  static loadRowEight(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         7,
         0,
-        new Skill("31", "Perfect Attack Bonus 1", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "31",
+          "Perfect Attack Bonus 1",
+          "/assets/icons/hunter/perfect_attack.png"
+        )
           .setMaxLevel(10)
           .setParent(new SkillDependency("1", 5))
           .setDesc("Grants a damage bonus to non-Technique Perfect Attacks.")
@@ -303,7 +395,7 @@ export default class HunterData {
       .setSkill(
         7,
         2,
-        new Skill("32", "Guard Stance", "/assets/icons/hp_up_1.png")
+        new Skill("32", "Guard Stance", "/assets/icons/hunter/guard_stance.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("1", 3))
           .setDesc(
@@ -321,7 +413,7 @@ export default class HunterData {
       .setSkill(
         7,
         4,
-        new Skill("33", "War Cry", "/assets/icons/hp_up_1.png")
+        new Skill("33", "War Cry", "/assets/icons/hunter/war_cry.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("1", 3))
           .setDesc("Draws the enemy's attention to you.")
@@ -330,18 +422,25 @@ export default class HunterData {
       .setSkill(
         7,
         5,
-        new Skill("34", "Iron Will", "/assets/icons/hp_up_1.png")
+        new Skill("34", "Iron Will", "/assets/icons/hunter/guard_alt.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("1", 3))
           .setDesc(
             "Adds a chance of retaining 1 HP when you suffer damage that would have otherwise incapacitated you. Renders you invicible for a short time when activated."
           )
           .setChildren([new SkillDependency("37", 2)])
-      )
+      );
+  }
+  static loadRowNine(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         8,
         3,
-        new Skill("35", "Guard Stance Up", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "35",
+          "Guard Stance Up",
+          "/assets/icons/hunter/guard_stance_alt.png"
+        )
           .setMaxLevel(10)
           .setParent(new SkillDependency("32", 3))
           .setDesc("Boosts your Melee Resistance while Guard Stance is in use.")
@@ -349,7 +448,7 @@ export default class HunterData {
       .setSkill(
         8,
         4,
-        new Skill("36", "War Brave", "/assets/icons/hp_up_1.png")
+        new Skill("36", "War Brave", "/assets/icons/hunter/war_brave.png")
           .setMaxLevel(1)
           .setParent(new SkillDependency("33", 3))
           .setDesc(
@@ -359,17 +458,24 @@ export default class HunterData {
       .setSkill(
         8,
         5,
-        new Skill("37", "Stalwart Spirit", "/assets/icons/hp_up_1.png")
+        new Skill("37", "Stalwart Spirit", "/assets/icons/hunter/melee_def.png")
           .setMaxLevel(5)
           .setParent(new SkillDependency("34", 2))
           .setDesc(
             "Ups Melee Power for 60 seconds after using Iron Will, and extends invulnerability. Raising the skill level boosts Melee Power and extends invulnerability even more."
           )
-      )
+      );
+  }
+  static loadRowTen(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         9,
         0,
-        new Skill("38", "Fury Stance", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "38",
+          "Fury Stance",
+          "/assets/icons/hunter/fury_stance_alt.png"
+        )
           .setMaxLevel(10)
           .setParent(new SkillDependency("31", 3))
           .setDesc(
@@ -385,7 +491,11 @@ export default class HunterData {
       .setSkill(
         9,
         1,
-        new Skill("39", "Perfect Attack Bonus 2", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "39",
+          "Perfect Attack Bonus 2",
+          "/assets/icons/hunter/perfect_attack.png"
+        )
           .setMaxLevel(10)
           .setParent(new SkillDependency("31", 3))
           .setDesc("Grants a damage bonus to non-Technique Perfect Attacks.")
@@ -393,7 +503,7 @@ export default class HunterData {
       .setSkill(
         9,
         3,
-        new Skill("40", "Absorption", "/assets/icons/hp_up_1.png")
+        new Skill("40", "Absorption", "/assets/icons/hunter/absorption.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("32", 3))
           .setDesc(
@@ -403,7 +513,7 @@ export default class HunterData {
       .setSkill(
         9,
         4,
-        new Skill("41", "Auto-Mate Half", "/assets/icons/hp_up_1.png")
+        new Skill("41", "Auto-Mate Half", "/assets/icons/hunter/auto_mate.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("32", 3))
           .setDesc(
@@ -413,16 +523,27 @@ export default class HunterData {
       .setSkill(
         9,
         5,
-        new Skill("42", "Guard Stance Poison", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "42",
+          "Guard Stance Poison",
+          "/assets/icons/hunter/guard_poison.png"
+        )
           .setMaxLevel(1)
           .setParent(new SkillDependency("32", 1))
           .setDesc("Heals status ailment Poison when Guard Stance is in use.")
           .setChildren([new SkillDependency("46", 1)])
-      )
+      );
+  }
+  static loadRowEleven(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         10,
         1,
-        new Skill("43", "Critical Fury", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "43",
+          "Critical Fury",
+          "/assets/icons/hunter/fury_stance_alt.png"
+        )
           .setMaxLevel(5)
           .setParent(new SkillDependency("38", 5))
           .setDesc("Boosts your critcal hit rate while using Fury Stance.")
@@ -430,7 +551,7 @@ export default class HunterData {
       .setSkill(
         10,
         2,
-        new Skill("44", "Flash Guard 1", "/assets/icons/hp_up_1.png")
+        new Skill("44", "Flash Guard 1", "/assets/icons/hunter/melee_def.png")
           .setParent(new SkillDependency("32", 3))
           .setMaxLevel(10)
           .setDesc("Decreases melee and ranged damage.")
@@ -443,7 +564,11 @@ export default class HunterData {
       .setSkill(
         10,
         3,
-        new Skill("45", "Advanced Guard Stance", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "45",
+          "Advanced Guard Stance",
+          "/assets/icons/hunter/adv_guard_stance.png"
+        )
           .setMaxLevel(5)
           .setParent(new SkillDependency("32", 3))
           .setDesc(
@@ -453,16 +578,27 @@ export default class HunterData {
       .setSkill(
         10,
         5,
-        new Skill("46", "Guard Stance Burn", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "46",
+          "Guard Stance Burn",
+          "/assets/icons/hunter/guard_burn.png"
+        )
           .setMaxLevel(1)
           .setParent(new SkillDependency("42", 1))
           .setDesc("Heals status ailment Burn when Guard Stance is in use.")
           .setChildren([new SkillDependency("51", 1)])
-      )
+      );
+  }
+  static loadRowTwelve(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         11,
         1,
-        new Skill("47", "Perfect Fury Bonus", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "47",
+          "Perfect Fury Bonus",
+          "/assets/icons/hunter/fury_stance_alt.png"
+        )
           .setMaxLevel(10)
           .setParent(new SkillDependency("38", 5))
           .setDesc(
@@ -472,7 +608,7 @@ export default class HunterData {
       .setSkill(
         11,
         2,
-        new Skill("48", "Flash Guard 2", "/assets/icons/hp_up_1.png")
+        new Skill("48", "Flash Guard 2", "/assets/icons/hunter/melee_def.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("44", 5))
           .setDesc("Decreases melee and ranged damage.")
@@ -480,7 +616,7 @@ export default class HunterData {
       .setSkill(
         11,
         3,
-        new Skill("49", "Flash Tech Guard", "/assets/icons/hp_up_1.png")
+        new Skill("49", "Flash Tech Guard", "/assets/icons/hunter/tech_def.png")
           .setMaxLevel(10)
           .setParent(new SkillDependency("44", 5))
           .setDesc("Decreases Technique damage.")
@@ -488,7 +624,7 @@ export default class HunterData {
       .setSkill(
         11,
         4,
-        new Skill("50", "Hunter Physique", "/assets/icons/hp_up_1.png")
+        new Skill("50", "Hunter Physique", "/assets/icons/hunter/physique.png")
           .setMaxLevel(5)
           .setParent(new SkillDependency("44", 3))
           .setDesc(
@@ -498,15 +634,22 @@ export default class HunterData {
       .setSkill(
         11,
         5,
-        new Skill("51", "Not Bad", "/assets/icons/hp_up_1.png")
+        new Skill("51", "Not Bad", "/assets/icons/hunter/not_bad.png")
           .setMaxLevel(5)
           .setParent(new SkillDependency("46", 1))
           .setDesc("Reduces the duration of status ailments affecting you.")
-      )
+      );
+  }
+  static loadRowThirteen(skillTree: SkillTree): SkillTree {
+    return skillTree
       .setSkill(
         12,
         0,
-        new Skill("52", "Fury Stance Up 1", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "52",
+          "Fury Stance Up 1",
+          "/assets/icons/hunter/fury_stance_alt.png"
+        )
           .setMaxLevel(5)
           .setParent(new SkillDependency("38", 5))
           .setDesc(
@@ -516,13 +659,16 @@ export default class HunterData {
       .setSkill(
         12,
         1,
-        new Skill("53", "Fury Stance Up 2", "/assets/icons/hp_up_1.png")
+        new Skill(
+          "53",
+          "Fury Stance Up 2",
+          "/assets/icons/hunter/fury_stance_alt.png"
+        )
           .setMaxLevel(5)
           .setParent(new SkillDependency("38", 5))
           .setDesc(
             "Boosts the melee and ranged attack damage that you deal to enemies while using Fury Stance."
           )
       );
-    return skillTree;
   }
 }
