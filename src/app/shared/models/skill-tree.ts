@@ -1,4 +1,5 @@
 import { Skill } from "./skill";
+import { SkillDependency } from "./skill-dependency";
 
 export class SkillTree {
   skillTreeRows: string[][];
@@ -15,5 +16,11 @@ export class SkillTree {
       this[skill.id] = skill;
     }
     return this;
+  }
+  setDependency(parentId: string, childId: string, prerequisite: number) {
+    if (this[parentId] && this[childId]) {
+      this[childId].setParent(new SkillDependency(parentId, prerequisite));
+      this[parentId].children.push(new SkillDependency(childId, prerequisite));
+    }
   }
 }
