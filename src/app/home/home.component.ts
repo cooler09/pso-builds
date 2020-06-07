@@ -3,6 +3,7 @@ import { Skill } from "../shared/models/skill";
 import { SkillAction } from "../shared/models/skill-action";
 import { SkillTree } from "../shared/models/skill-tree";
 import MockData from "../shared/models/mock-data";
+import { Character } from "../shared/models/character";
 
 @Component({
   selector: "app-home",
@@ -10,6 +11,7 @@ import MockData from "../shared/models/mock-data";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
+  characters: Character[];
   availableSkills: number;
   skillTree: SkillTree;
   displayedSkill: Skill;
