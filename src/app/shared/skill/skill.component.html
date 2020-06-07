@@ -43,10 +43,12 @@
   >
     <div>
       <mat-icon
-        class="text-danger"
+        style="font-size: 20px;"
+        [class.text-danger]="false"
+        [class.text-light]="true"
         aria-hidden="false"
         aria-label="Locked Skill"
-        >lock</mat-icon
+        >{{ false ? "lock" : "lock_open" }}</mat-icon
       >
     </div>
     <span>Level Req: {{ skill.levelReq }}</span>
@@ -58,8 +60,9 @@
   >
     <div>
       <mat-icon
-        class="text-danger"
         *ngIf="skill.locked"
+        style="font-size: 20px;"
+        class="text-danger"
         aria-hidden="false"
         aria-label="Locked Skill"
         >lock</mat-icon
