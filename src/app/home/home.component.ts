@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Skill } from "../shared/models/skill";
 import { SkillAction } from "../shared/models/skill-action";
-import { SkillTree } from "../shared/models/skill-tree";
 import MockData from "../shared/models/mock-data";
 import { Character } from "../shared/models/character";
 
@@ -11,29 +10,29 @@ import { Character } from "../shared/models/character";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  characters: Character[];
-  availableSkills: number;
-  skillTree: SkillTree;
+  characters: any;
   displayedSkill: Skill;
-  classes: any[];
   selectedPrimaryClass: string = "hunter";
   selectedSecondaryClass: string = "ranger";
-  selectedLevel: number = 75;
-  levels: number[] = [];
-  selectedCoSP: number = 0;
+  selectedCharacterId: string = "bouncer";
+  classIds: string[] = [];
+  selectedTab: number = 0;
   coSkillPoints: number[] = [];
+  levels: number[] = [];
 
   constructor() {
-    this.skillTree = MockData.buildSkillTree();
-    this.classes = MockData.buildClasses();
+    this.characters = MockData.buildCharacterSkillTrees();
+
     for (let index = 1; index <= 75; index++) {
       this.levels.push(index);
     }
     for (let index = 0; index < 15; index++) {
       this.coSkillPoints.push(index);
     }
-    this.updateAvailableSP();
-    this.displayedSkill = this.skillTree["1"];
+    this.classIds = (Object.values(this.characters) as Character[]).map((_) => {
+      return _.id;
+    });
+    this.displayedSkill = this.characters["bouncer"].skillTree["1"];
   }
 
   ngOnInit(): void {}
@@ -41,44 +40,20 @@ export class HomeComponent implements OnInit {
     if (data) {
       switch (data.action) {
         case SkillAction.Add:
-          if (this.availableSkills > 0) {
-            let skill = this.skillTree[data.id];
-            if (skill && skill.currentLevel < skill.maxLevel) {
-              skill.currentLevel += 1;
-              this.availableSkills -= 1;
-              this.validateChildDependecies(skill);
-            }
-          }
+          this.characters[this.selectedCharacterId].add(data.id);
           break;
         case SkillAction.Remove:
-          let skill = this.skillTree[data.id];
-          if (skill && skill.currentLevel > 0) {
-            this.availableSkills += 1;
-            skill.currentLevel -= 1;
-            this.validateChildDependecies(skill);
-          }
+          this.characters[this.selectedCharacterId].remove(data.id);
           break;
       }
     }
   }
-  updateAvailableSP() {
-    this.availableSkills = this.selectedLevel + this.selectedCoSP;
+  updateSelectedCharacter() {
+    this.selectedCharacterId = this.characters[
+      this.classIds[this.selectedTab]
+    ].id;
   }
   displaySkill(skill: Skill) {
     this.displayedSkill = skill;
-  }
-  private validateChildDependecies(skill: Skill) {
-    if (skill.children && skill.children.length > 0) {
-      skill.children.forEach((_) => {
-        let child = this.skillTree[_.id];
-        if (child) {
-          if (skill.currentLevel >= _.prerequisite) {
-            child.locked = false;
-          } else {
-            child.locked = true;
-          }
-        }
-      });
-    }
   }
 }

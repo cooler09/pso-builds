@@ -1,51 +1,23 @@
-import { SkillTree } from "./skill-tree";
-import { Skill } from "./skill";
-import { SkillDependency } from "./skill-dependency";
-import { SkillType } from "./skill-type";
 import HunterData from "./hunter-data";
+import { Character } from "./character";
+import BouncerData from "./bouncer-data";
 
 export default class MockData {
-  static buildClasses(): any[] {
-    return [
-      {
-        value: "hunter",
-        viewValue: "Hunter",
-      },
-      {
-        value: "fighter",
-        viewValue: "Fighter",
-      },
-      {
-        value: "ranger",
-        viewValue: "Ranger",
-      },
-      {
-        value: "gunner",
-        viewValue: "Gunner",
-      },
-      {
-        value: "force",
-        viewValue: "Force",
-      },
-      {
-        value: "techter",
-        viewValue: "Techter",
-      },
-      {
-        value: "braver",
-        viewValue: "Braver",
-      },
-      {
-        value: "bouncer",
-        viewValue: "Bouncer",
-      },
-      {
-        value: "summoner",
-        viewValue: "Summoner",
-      },
-    ];
-  }
-  static buildSkillTree(): SkillTree {
-    return HunterData.getSkillTree();
+  static buildCharacterSkillTrees(): any {
+    return {
+      hunter: new Character("hunter", "Hunter", HunterData.getSkillTree()),
+      fighter: new Character("fighter", "Fighter", BouncerData.getSkillTree()),
+      ranger: new Character("ranger", "Ranger", BouncerData.getSkillTree()),
+      gunner: new Character("gunner", "Gunner", BouncerData.getSkillTree()),
+      force: new Character("force", "Force", BouncerData.getSkillTree()),
+      techter: new Character("techter", "Techter", BouncerData.getSkillTree()),
+      braver: new Character("braver", "Braver", BouncerData.getSkillTree()),
+      bouncer: new Character("bouncer", "Bouncer", BouncerData.getSkillTree()),
+      summoner: new Character(
+        "summoner",
+        "Summoner",
+        BouncerData.getSkillTree()
+      ),
+    };
   }
 }
