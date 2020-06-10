@@ -2,6 +2,12 @@ import HunterData from "./hunter-data";
 import { Character } from "./character";
 import BouncerData from "./bouncer-data";
 import FighterData from "./fighter-data";
+import RangerData from "./ranger-data";
+import GunnerData from "./gunner-data";
+import ForceData from "./force-data";
+import TechterData from "./techter-data";
+import BraverData from "./braver-data";
+import SummonerData from "./summoner-data";
 
 export default class MockData {
   static buildCharacterSkillTrees(): any {
@@ -13,16 +19,16 @@ export default class MockData {
         1,
         FighterData.getSkillTree()
       ),
-      ranger: new Character("ranger", "Ranger", 2, BouncerData.getSkillTree()),
-      gunner: new Character("gunner", "Gunner", 3, BouncerData.getSkillTree()),
-      force: new Character("force", "Force", 4, BouncerData.getSkillTree()),
+      ranger: new Character("ranger", "Ranger", 2, RangerData.getSkillTree()),
+      gunner: new Character("gunner", "Gunner", 3, GunnerData.getSkillTree()),
+      force: new Character("force", "Force", 4, ForceData.getSkillTree()),
       techter: new Character(
         "techter",
         "Techter",
         5,
-        BouncerData.getSkillTree()
+        TechterData.getSkillTree()
       ),
-      braver: new Character("braver", "Braver", 6, BouncerData.getSkillTree()),
+      braver: new Character("braver", "Braver", 6, BraverData.getSkillTree()),
       bouncer: new Character(
         "bouncer",
         "Bouncer",
@@ -33,7 +39,7 @@ export default class MockData {
         "summoner",
         "Summoner",
         8,
-        BouncerData.getSkillTree()
+        SummonerData.getSkillTree()
       ),
     };
   }
