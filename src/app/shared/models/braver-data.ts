@@ -61,7 +61,7 @@ export default class BraverData {
         new Skill(
           "40",
           "Basic Stance Charge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -70,7 +70,7 @@ export default class BraverData {
         new Skill(
           "41",
           "Basic Stance Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -79,7 +79,7 @@ export default class BraverData {
         new Skill(
           "42",
           "Rapid Fire Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/rapid_fire_up.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -88,7 +88,7 @@ export default class BraverData {
         new Skill(
           "43",
           "Advanced Rapid Fire",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/rapid_fire_up.png"
         ).setMaxLevel(5)
       );
   }
@@ -100,7 +100,7 @@ export default class BraverData {
         new Skill(
           "35",
           "Combat Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -109,7 +109,7 @@ export default class BraverData {
         new Skill(
           "36",
           "Precision Stance Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/precision_stance_alt.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -118,7 +118,7 @@ export default class BraverData {
         new Skill(
           "37",
           "Precision Stance Charge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/precision_stance_alt.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -127,7 +127,7 @@ export default class BraverData {
         new Skill(
           "38",
           "Rapid Fire Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/rapid_fire_up.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -136,7 +136,7 @@ export default class BraverData {
         new Skill(
           "39",
           "Rapid Fire Mastery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/rapid_fire_up.png"
         ).setMaxLevel(5)
       );
   }
@@ -148,7 +148,7 @@ export default class BraverData {
         new Skill(
           "30",
           "Basic Stance Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -157,7 +157,7 @@ export default class BraverData {
         new Skill(
           "31",
           "Combat P. Attack Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/combat_p_atk_bonus.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -166,7 +166,7 @@ export default class BraverData {
         new Skill(
           "32",
           "Combat Finish",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/combat_p_atk_bonus.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -175,7 +175,7 @@ export default class BraverData {
         new Skill(
           "33",
           "Percision Stance Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/precision_stance_alt.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -184,7 +184,7 @@ export default class BraverData {
         new Skill(
           "34",
           "Bow Charge Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/bow_charge_bonus.png"
         ).setMaxLevel(1)
       );
   }
@@ -196,7 +196,7 @@ export default class BraverData {
         new Skill(
           "25",
           "Basic Stance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -205,7 +205,7 @@ export default class BraverData {
         new Skill(
           "26",
           "Katana Combat",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/katana_combat.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -214,7 +214,7 @@ export default class BraverData {
         new Skill(
           "27",
           "Precision Stance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/precision_stance.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -223,7 +223,7 @@ export default class BraverData {
         new Skill(
           "28",
           "Rapid Fire",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/rapid_fire.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -232,7 +232,7 @@ export default class BraverData {
         new Skill(
           "29",
           "Charged Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/charged_shot.png"
         ).setMaxLevel(5)
       );
   }
@@ -243,7 +243,7 @@ export default class BraverData {
       new Skill(
         "24",
         "Counter Bonus",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/braver/counter_bonus.png"
       ).setMaxLevel(1)
     );
   }
@@ -255,7 +255,7 @@ export default class BraverData {
         new Skill(
           "22",
           "Counter Edge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/counter_edge.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -264,7 +264,7 @@ export default class BraverData {
         new Skill(
           "23",
           "Katana Focus Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/katana_focus.png"
         ).setMaxLevel(1)
       );
   }
@@ -276,7 +276,7 @@ export default class BraverData {
         new Skill(
           "18",
           "Katana Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/katana.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -285,7 +285,7 @@ export default class BraverData {
         new Skill(
           "19",
           "Enhanced Attack",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -294,7 +294,7 @@ export default class BraverData {
         new Skill(
           "20",
           "Quick Mate",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/quick_mate.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -303,7 +303,7 @@ export default class BraverData {
         new Skill(
           "21",
           "Perfect Recovery Heal",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/heal_recovery.png"
         ).setMaxLevel(5)
       );
   }
@@ -315,7 +315,7 @@ export default class BraverData {
         new Skill(
           "14",
           "Melee Power Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -324,7 +324,7 @@ export default class BraverData {
         new Skill(
           "15",
           "Ranged Power Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/braver/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -333,7 +333,7 @@ export default class BraverData {
         new Skill(
           "16",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -342,7 +342,7 @@ export default class BraverData {
         new Skill(
           "17",
           "Sidestep Tackle",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setMaxLevel(1)
       );
   }
@@ -354,7 +354,7 @@ export default class BraverData {
         new Skill(
           "11",
           "Dexterity Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -363,7 +363,7 @@ export default class BraverData {
         new Skill(
           "12",
           "Dodge Attack",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -372,7 +372,7 @@ export default class BraverData {
         new Skill(
           "13",
           "Advanced Dodge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setMaxLevel(10)
       );
   }
@@ -384,7 +384,7 @@ export default class BraverData {
         new Skill(
           "8",
           "Arms Enthusiast: Braver",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -393,7 +393,7 @@ export default class BraverData {
         new Skill(
           "9",
           "Braver Mag",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/mag.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -402,7 +402,7 @@ export default class BraverData {
         new Skill(
           "10",
           "Dodge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -413,7 +413,7 @@ export default class BraverData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/sidestep_alt.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -425,13 +425,13 @@ export default class BraverData {
         new Skill(
           "1",
           "Dexterity Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill("2", "Sidestep Jump", "/assets/icons/shared/sidestep_alt.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -441,7 +441,7 @@ export default class BraverData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
@@ -449,7 +449,7 @@ export default class BraverData {
       .setSkill(
         0,
         3,
-        new Skill("4", "Air Reversal", "/assets/icons/shared/cannot.png")
+        new Skill("4", "Air Reversal", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
       )
@@ -459,7 +459,7 @@ export default class BraverData {
         new Skill(
           "5",
           "Perf. Recovery & ATK Combo",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/double_jump.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
@@ -467,7 +467,7 @@ export default class BraverData {
       .setSkill(
         0,
         5,
-        new Skill("6", "Double Jump", "/assets/icons/shared/cannot.png")
+        new Skill("6", "Double Jump", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(40)
       );
