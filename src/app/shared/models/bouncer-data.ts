@@ -39,7 +39,7 @@ export default class BouncerData {
     skillTree.setDependency("38", "43", 3);
   }
   static getSkillTree(): SkillTree {
-    let skillTree = new SkillTree(13);
+    let skillTree = new SkillTree(16);
     skillTree = this.loadRowOne(skillTree);
     skillTree = this.loadRowTwo(skillTree);
     skillTree = this.loadRowThree(skillTree);
