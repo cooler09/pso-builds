@@ -69,7 +69,7 @@ export default class BouncerData {
         new Skill(
           "42",
           "Break Stance Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/break_stance_alt.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -78,7 +78,7 @@ export default class BouncerData {
         new Skill(
           "43",
           "Break Stance Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/break_stance_alt.png"
         ).setMaxLevel(5)
       );
   }
@@ -90,7 +90,7 @@ export default class BouncerData {
         new Skill(
           "39",
           "Elemental Stance Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/ele_stance.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -99,7 +99,7 @@ export default class BouncerData {
         new Skill(
           "40",
           "Elemental Stance Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/ele_stance.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -108,7 +108,7 @@ export default class BouncerData {
         new Skill(
           "41",
           "Break Stance D bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/break_stance_d_bonus.png"
         ).setMaxLevel(1)
       );
   }
@@ -120,7 +120,7 @@ export default class BouncerData {
         new Skill(
           "37",
           "Elemental Stance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/ele_stance.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -129,7 +129,7 @@ export default class BouncerData {
         new Skill(
           "38",
           "Break Stance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/break_stance.png"
         ).setMaxLevel(10)
       );
   }
@@ -141,7 +141,7 @@ export default class BouncerData {
         new Skill(
           "35",
           "Rapid Boost JA Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/rapid_boost_ja_bonus.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -150,7 +150,7 @@ export default class BouncerData {
         new Skill(
           "36",
           "Photon Blades Fever Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/photon_blades_fever_up.png"
         ).setMaxLevel(5)
       );
   }
@@ -162,7 +162,7 @@ export default class BouncerData {
         new Skill(
           "30",
           "Rapid Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/rapid_boost.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -171,7 +171,7 @@ export default class BouncerData {
         new Skill(
           "31",
           "Elemental Burst",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/ele_burst.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -180,7 +180,7 @@ export default class BouncerData {
         new Skill(
           "32",
           "Switch Strike",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/switch_strike.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -189,7 +189,7 @@ export default class BouncerData {
         new Skill(
           "33",
           "Photon Blades Fever",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/photon_blades_escape.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -198,7 +198,7 @@ export default class BouncerData {
         new Skill(
           "34",
           "Photon Blades Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/photon_blade_escape.png"
         ).setMaxLevel(5)
       );
   }
@@ -209,7 +209,7 @@ export default class BouncerData {
       new Skill(
         "29",
         "Healing Bonus",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/hp.png"
       ).setMaxLevel(5)
     );
   }
@@ -221,7 +221,7 @@ export default class BouncerData {
         new Skill(
           "26",
           "Shifta Air Attack Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/shifta_air_attack_boost.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -230,7 +230,7 @@ export default class BouncerData {
         new Skill(
           "27",
           "Deband Attack PP Restorate",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/deband_atk_pp_restorate.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -239,7 +239,7 @@ export default class BouncerData {
         new Skill(
           "28",
           "Heal Sharing",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/heal_sharing.png"
         ).setMaxLevel(5)
       );
   }
@@ -250,7 +250,7 @@ export default class BouncerData {
       new Skill(
         "25",
         "Perfect Recovery PP Gain",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/bouncer/pp_gain_recovery.png"
       ).setMaxLevel(5)
     );
   }
@@ -262,7 +262,7 @@ export default class BouncerData {
         new Skill(
           "21",
           "Elemental PP Restorate Field",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/pp_restorate_field.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -271,7 +271,7 @@ export default class BouncerData {
         new Skill(
           "22",
           "Critical Field",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/critical_field.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -280,7 +280,7 @@ export default class BouncerData {
         new Skill(
           "23",
           "Field Remain",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/field_remain.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -289,7 +289,7 @@ export default class BouncerData {
         new Skill(
           "24",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -300,7 +300,7 @@ export default class BouncerData {
       new Skill(
         "20",
         "Jet Boots Focus Boost",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/bouncer/jet_boots_focus_boost.png"
       ).setMaxLevel(1)
     );
   }
@@ -312,7 +312,7 @@ export default class BouncerData {
         new Skill(
           "15",
           "Jet Boots Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/jet_boots_focus.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -321,7 +321,7 @@ export default class BouncerData {
         new Skill(
           "16",
           "Jet Boots Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/jet_boots_escape.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -330,7 +330,7 @@ export default class BouncerData {
         new Skill(
           "17",
           "Encore Jump",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/encore_jump.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -339,7 +339,7 @@ export default class BouncerData {
         new Skill(
           "18",
           "Soaring Blades Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/blades_focus.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -348,7 +348,7 @@ export default class BouncerData {
         new Skill(
           "19",
           "Dodge Attack",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -359,7 +359,7 @@ export default class BouncerData {
       new Skill(
         "14",
         "Melee Power Up 2",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/melee.png"
       ).setMaxLevel(10)
     );
   }
@@ -371,7 +371,7 @@ export default class BouncerData {
         new Skill(
           "10",
           "Melee Power Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -380,7 +380,7 @@ export default class BouncerData {
         new Skill(
           "11",
           "Tech. Power Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -389,7 +389,7 @@ export default class BouncerData {
         new Skill(
           "12",
           "Bouncer Mag",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/bouncer/bouncer_mag.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -398,7 +398,7 @@ export default class BouncerData {
         new Skill(
           "13",
           "Advanced Dodge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setMaxLevel(10)
       );
   }
@@ -410,7 +410,7 @@ export default class BouncerData {
         new Skill(
           "8",
           "Arms Enthusiast: Bouncer",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
