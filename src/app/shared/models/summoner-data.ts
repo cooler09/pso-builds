@@ -2,43 +2,40 @@ import { SkillTree } from "./skill-tree";
 import { Skill } from "./skill";
 import { SkillType } from "./skill-type";
 
-export default class BouncerData {
+export default class SummonerData {
   static setDependencies(skillTree: SkillTree) {
-    skillTree.setDependency("1", "10", 3);
-    skillTree.setDependency("1", "11", 3);
-    skillTree.setDependency("1", "14", 3);
-    skillTree.setDependency("1", "15", 1);
-    skillTree.setDependency("1", "16", 3);
-    skillTree.setDependency("1", "17", 3);
-    skillTree.setDependency("1", "18", 1);
-    skillTree.setDependency("1", "21", 3);
-    skillTree.setDependency("1", "22", 3);
-    skillTree.setDependency("1", "23", 3);
-    skillTree.setDependency("1", "26", 3);
-    skillTree.setDependency("1", "27", 3);
-    skillTree.setDependency("1", "28", 3);
-    skillTree.setDependency("1", "30", 3);
-    skillTree.setDependency("1", "31", 3);
-    skillTree.setDependency("1", "32", 3);
-    skillTree.setDependency("1", "33", 3);
-    skillTree.setDependency("1", "34", 3);
-    skillTree.setDependency("1", "37", 3);
-    skillTree.setDependency("1", "38", 3);
-    skillTree.setDependency("9", "13", 1);
-    skillTree.setDependency("10", "14", 3);
-    skillTree.setDependency("15", "20", 1);
-    skillTree.setDependency("24", "25", 1);
-    skillTree.setDependency("28", "29", 5);
-    skillTree.setDependency("30", "35", 3);
-    skillTree.setDependency("33", "36", 3);
-    skillTree.setDependency("37", "39", 5);
-    skillTree.setDependency("37", "40", 3);
-    skillTree.setDependency("38", "41", 1);
-    skillTree.setDependency("38", "42", 5);
-    skillTree.setDependency("38", "43", 3);
+    skillTree.setDependency("1", "11", 1);
+    skillTree.setDependency("1", "12", 1);
+    skillTree.setDependency("1", "14", 1);
+    skillTree.setDependency("14", "15", 1);
+    skillTree.setDependency("14", "16", 1);
+    skillTree.setDependency("14", "17", 1);
+    skillTree.setDependency("15", "18", 5);
+    skillTree.setDependency("15", "19", 1);
+    skillTree.setDependency("18", "20", 3);
+    skillTree.setDependency("18", "21", 1);
+    skillTree.setDependency("18", "22", 1);
+    skillTree.setDependency("18", "23", 1);
+    skillTree.setDependency("18", "24", 1);
+    skillTree.setDependency("20", "25", 5);
+    skillTree.setDependency("20", "26", 1);
+    skillTree.setDependency("25", "27", 3);
+    skillTree.setDependency("25", "28", 3);
+    skillTree.setDependency("25", "29", 3);
+    skillTree.setDependency("28", "30", 3);
+    skillTree.setDependency("28", "31", 3);
+    skillTree.setDependency("28", "32", 3);
+    skillTree.setDependency("28", "33", 3);
+    skillTree.setDependency("28", "34", 3);
+    skillTree.setDependency("28", "35", 3);
+    skillTree.setDependency("28", "39", 3);
+    skillTree.setDependency("28", "40", 3);
+    skillTree.setDependency("32", "36", 3);
+    skillTree.setDependency("33", "37", 3);
+    skillTree.setDependency("34", "38", 3);
   }
   static getSkillTree(): SkillTree {
-    let skillTree = new SkillTree(16);
+    let skillTree = new SkillTree(15);
     skillTree = this.loadRowOne(skillTree);
     skillTree = this.loadRowTwo(skillTree);
     skillTree = this.loadRowThree(skillTree);
@@ -54,33 +51,10 @@ export default class BouncerData {
     skillTree = this.loadRowThirteen(skillTree);
     skillTree = this.loadRowFourteen(skillTree);
     skillTree = this.loadRowFifteen(skillTree);
-    skillTree = this.loadRowSixteen(skillTree);
 
-    BouncerData.setDependencies(skillTree);
+    SummonerData.setDependencies(skillTree);
 
     return skillTree;
-  }
-
-  static loadRowSixteen(skillTree: SkillTree): SkillTree {
-    return skillTree
-      .setSkill(
-        15,
-        2,
-        new Skill(
-          "42",
-          "Break Stance Up",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      )
-      .setSkill(
-        15,
-        3,
-        new Skill(
-          "43",
-          "Break Stance Critical",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      );
   }
   static loadRowFifteen(skillTree: SkillTree): SkillTree {
     return skillTree
@@ -89,7 +63,7 @@ export default class BouncerData {
         0,
         new Skill(
           "39",
-          "Elemental Stance Up",
+          "Advanced Photon Blast",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       )
@@ -98,28 +72,19 @@ export default class BouncerData {
         1,
         new Skill(
           "40",
-          "Elemental Stance Critical",
+          "Alter Ego",
           "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      )
-      .setSkill(
-        14,
-        3,
-        new Skill(
-          "41",
-          "Break Stance D bonus",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(1)
+        ).setMaxLevel(10)
       );
   }
   static loadRowFourteen(skillTree: SkillTree): SkillTree {
     return skillTree
       .setSkill(
         13,
-        0,
+        1,
         new Skill(
-          "37",
-          "Elemental Stance",
+          "35",
+          "HP Mega-Up",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(10)
       )
@@ -127,8 +92,26 @@ export default class BouncerData {
         13,
         2,
         new Skill(
+          "36",
+          "PP Up 2",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(10)
+      )
+      .setSkill(
+        13,
+        3,
+        new Skill(
+          "37",
+          "Total Attack Mega-Up",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(10)
+      )
+      .setSkill(
+        13,
+        4,
+        new Skill(
           "38",
-          "Break Stance",
+          "Total Defense/Dexterity Mega-Up",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(10)
       );
@@ -137,10 +120,19 @@ export default class BouncerData {
     return skillTree
       .setSkill(
         12,
-        1,
+        2,
         new Skill(
-          "35",
-          "Rapid Boost JA Bonus",
+          "32",
+          "PP Up 1",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(5)
+      )
+      .setSkill(
+        12,
+        3,
+        new Skill(
+          "33",
+          "Total Attack Up",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       )
@@ -148,8 +140,8 @@ export default class BouncerData {
         12,
         4,
         new Skill(
-          "36",
-          "Photon Blades Fever Up",
+          "34",
+          "Total Defense/Dexterity Up",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       );
@@ -161,7 +153,7 @@ export default class BouncerData {
         1,
         new Skill(
           "30",
-          "Rapid Boost",
+          "Pet Elemental Precision Hit",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       )
@@ -170,98 +162,81 @@ export default class BouncerData {
         2,
         new Skill(
           "31",
-          "Elemental Burst",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      )
-      .setSkill(
-        11,
-        3,
-        new Skill(
-          "32",
-          "Switch Strike",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(1)
-      )
-      .setSkill(
-        11,
-        4,
-        new Skill(
-          "33",
-          "Photon Blades Fever",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      )
-      .setSkill(
-        11,
-        5,
-        new Skill(
-          "34",
-          "Photon Blades Escape",
+          "Pet Elemental PP Restorate",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       );
   }
   static loadRowEleven(skillTree: SkillTree): SkillTree {
-    return skillTree.setSkill(
-      10,
-      4,
-      new Skill(
-        "29",
-        "Healing Bonus",
-        "/assets/icons/shared/cannot.png"
-      ).setMaxLevel(5)
-    );
-  }
-  static loadRowTen(skillTree: SkillTree): SkillTree {
     return skillTree
       .setSkill(
-        9,
+        10,
+        0,
+        new Skill(
+          "28",
+          "Pet Recovery",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(5)
+      )
+      .setSkill(
+        10,
+        1,
+        new Skill(
+          "29",
+          "Reserve Recovery",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(1)
+      );
+  }
+  static loadRowTen(skillTree: SkillTree): SkillTree {
+    return skillTree.setSkill(
+      9,
+      1,
+      new Skill(
+        "27",
+        "Enhanced Mark",
+        "/assets/icons/shared/cannot.png"
+      ).setMaxLevel(1)
+    );
+  }
+  static loadRowNine(skillTree: SkillTree): SkillTree {
+    return skillTree
+      .setSkill(
+        8,
+        0,
+        new Skill(
+          "25",
+          "Summoner's Mark",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(10)
+      )
+      .setSkill(
+        8,
         1,
         new Skill(
           "26",
-          "Shifta Air Attack Boost",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      )
-      .setSkill(
-        9,
-        3,
-        new Skill(
-          "27",
-          "Deband Attack PP Restorate",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
-      )
-      .setSkill(
-        9,
-        4,
-        new Skill(
-          "28",
-          "Heal Sharing",
+          "Pet Photon Barrier",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       );
-  }
-  static loadRowNine(skillTree: SkillTree): SkillTree {
-    return skillTree.setSkill(
-      8,
-      5,
-      new Skill(
-        "25",
-        "Perfect Recovery PP Gain",
-        "/assets/icons/shared/cannot.png"
-      ).setMaxLevel(5)
-    );
   }
   static loadRowEight(skillTree: SkillTree): SkillTree {
     return skillTree
       .setSkill(
         7,
+        0,
+        new Skill(
+          "20",
+          "All Attack Bonus 2",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(5)
+      )
+      .setSkill(
+        7,
         1,
         new Skill(
           "21",
-          "Elemental PP Restorate Field",
+          "Harmonize Up",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       )
@@ -270,95 +245,87 @@ export default class BouncerData {
         2,
         new Skill(
           "22",
-          "Critical Field",
+          "Sympathy Time",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       )
       .setSkill(
         7,
-        4,
+        3,
         new Skill(
           "23",
-          "Field Remain",
+          "Easy Sympathy",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(1)
       )
       .setSkill(
         7,
-        5,
+        4,
         new Skill(
           "24",
-          "Perfect Recovery",
+          "Love Distance Love",
           "/assets/icons/shared/cannot.png"
-        ).setSkillType(SkillType.Passive)
+        ).setMaxLevel(1)
       );
   }
   static loadRowSeven(skillTree: SkillTree): SkillTree {
-    return skillTree.setSkill(
-      6,
-      1,
-      new Skill(
-        "20",
-        "Jet Boots Focus Boost",
-        "/assets/icons/shared/cannot.png"
-      ).setMaxLevel(1)
-    );
+    return skillTree
+      .setSkill(
+        6,
+        0,
+        new Skill(
+          "18",
+          "Pet Sympathy",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(10)
+      )
+      .setSkill(
+        6,
+        1,
+        new Skill(
+          "19",
+          "Dia Master",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(5)
+      );
   }
   static loadRowSix(skillTree: SkillTree): SkillTree {
     return skillTree
       .setSkill(
         5,
-        1,
+        0,
         new Skill(
           "15",
-          "Jet Boots Focus",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(1)
-      )
-      .setSkill(
-        5,
-        2,
-        new Skill(
-          "16",
-          "Jet Boots Escape",
+          "All Attack Bonus 1",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(5)
       )
       .setSkill(
         5,
-        3,
+        1,
+        new Skill(
+          "16",
+          "Quick Recovery",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(5)
+      )
+      .setSkill(
+        5,
+        2,
         new Skill(
           "17",
-          "Encore Jump",
+          "Unstoppable Recovery",
           "/assets/icons/shared/cannot.png"
         ).setMaxLevel(1)
-      )
-      .setSkill(
-        5,
-        4,
-        new Skill(
-          "18",
-          "Soaring Blades Focus",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(1)
-      )
-      .setSkill(
-        5,
-        5,
-        new Skill(
-          "19",
-          "Dodge Attack",
-          "/assets/icons/shared/cannot.png"
-        ).setSkillType(SkillType.Passive)
       );
   }
   static loadRowFive(skillTree: SkillTree): SkillTree {
     return skillTree.setSkill(
       4,
-      1,
+      0,
       new Skill(
         "14",
-        "Melee Power Up 2",
+        "HP Restorate",
         "/assets/icons/shared/cannot.png"
       ).setMaxLevel(10)
     );
@@ -369,47 +336,47 @@ export default class BouncerData {
         3,
         1,
         new Skill(
-          "10",
-          "Melee Power Up 1",
+          "11",
+          "Pet Switch Strike",
           "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        ).setMaxLevel(1)
       )
       .setSkill(
         3,
         2,
         new Skill(
-          "11",
-          "Tech. Power Up",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
-      )
-      .setSkill(
-        3,
-        4,
-        new Skill(
           "12",
-          "Bouncer Mag",
+          "Pet Switch Shot",
           "/assets/icons/shared/cannot.png"
-        ).setSkillType(SkillType.Passive)
+        ).setMaxLevel(1)
       )
       .setSkill(
         3,
         5,
         new Skill(
           "13",
-          "Advanced Dodge",
+          "Perfect Recovery",
           "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        ).setSkillType(SkillType.Passive)
       );
   }
   static loadRowThree(skillTree: SkillTree): SkillTree {
     return skillTree
       .setSkill(
         2,
-        4,
+        3,
         new Skill(
           "8",
-          "Arms Enthusiast: Bouncer",
+          "Assist Share",
+          "/assets/icons/shared/cannot.png"
+        ).setMaxLevel(1)
+      )
+      .setSkill(
+        2,
+        4,
+        new Skill(
+          "9",
+          "Sub-Class Growth Up",
           "/assets/icons/shared/cannot.png"
         ).setSkillType(SkillType.Passive)
       )
@@ -417,9 +384,9 @@ export default class BouncerData {
         2,
         5,
         new Skill(
-          "9",
-          "Binding Sidestep",
-          "/assets/icons/shared/sidestep.png"
+          "10",
+          "Blind Escape",
+          "/assets/icons/shared/cannot.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -430,7 +397,7 @@ export default class BouncerData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/sidestep_alt.png"
+        "/assets/icons/shared/cannot.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -439,17 +406,14 @@ export default class BouncerData {
       .setSkill(
         0,
         0,
-        new Skill(
-          "1",
-          "Dexterity Up",
-          "/assets/icons/shared/dex.png"
-        ).setMaxLevel(10)
+        new Skill("1", "HP Up", "/assets/icons/shared/cannot.png").setMaxLevel(
+          5
+        )
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/sidestep_alt.png")
-          .setDesc("Jumping during a Dodge Action transitions you into a dash.")
+        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -459,19 +423,15 @@ export default class BouncerData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/first_arts_atk.png"
+          "/assets/icons/shared/cannot.png"
         )
-          .setDesc(
-            "Turns your first attack into a Perfect Attack. A cooldown is applied after activation. Doesn't affect Harmonizer attacks, pet attacks, or Techniques."
-          )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
       )
       .setSkill(
         0,
         3,
-        new Skill("4", "Air Reversal", "/assets/icons/shared/double_jump.png")
-          .setDesc("Allows you to perform a break-fall while in the air.")
+        new Skill("4", "Air Reversal", "/assets/icons/shared/cannot.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
       )
@@ -480,20 +440,16 @@ export default class BouncerData {
         4,
         new Skill(
           "5",
-          "Perf. Recovery & ATK Combo",
-          "/assets/icons/shared/double_jump.png"
+          "Perf. Recovery & ARK Combo",
+          "/assets/icons/shared/cannot.png"
         )
-          .setDesc(
-            "Makes Perfect-Attack timing apply after a Perfect Recovery."
-          )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
       )
       .setSkill(
         0,
         5,
-        new Skill("6", "Double Jump", "/assets/icons/shared/double_jump.png")
-          .setDesc("Enables two-stage jumping.")
+        new Skill("6", "Double Jump", "/assets/icons/shared/cannot.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(40)
       );

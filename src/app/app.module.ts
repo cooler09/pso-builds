@@ -11,6 +11,8 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatInputModule } from "@angular/material/input";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { CharacterTabComponent } from './shared/character-tab/character-tab.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { MatIconModule } from "@angular/material/icon";
     HomeComponent,
     SkillComponent,
     SkillRowComponent,
+    CharacterTabComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { MatIconModule } from "@angular/material/icon";
     MatInputModule,
     MatTabsModule,
     MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
