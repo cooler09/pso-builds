@@ -18,7 +18,6 @@ export default class FighterData {
     skillTree.setDependency("1", "37", 3);
     skillTree.setDependency("1", "38", 3);
     skillTree.setDependency("1", "39", 5);
-    skillTree.setDependency("12", "15", 1);
     skillTree.setDependency("20", "23", 1);
     skillTree.setDependency("21", "24", 1);
     skillTree.setDependency("22", "25", 1);
