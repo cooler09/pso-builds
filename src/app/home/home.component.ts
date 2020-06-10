@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
   displayedSkill: Skill;
   selectedPrimaryClass: string = "hunter";
   selectedSecondaryClass: string = "ranger";
-  selectedCharacterId: string = "bouncer";
-  classIds: string[] = [];
+  selectedCharacterId: string = "hunter";
+  orderedClasses: Character[];
   selectedTab: number = 0;
   coSkillPoints: number[] = [];
   levels: number[] = [];
@@ -29,10 +29,12 @@ export class HomeComponent implements OnInit {
     for (let index = 0; index < 15; index++) {
       this.coSkillPoints.push(index);
     }
-    this.classIds = (Object.values(this.characters) as Character[]).map((_) => {
-      return _.id;
-    });
-    this.displayedSkill = this.characters["bouncer"].skillTree["1"];
+    this.orderedClasses = (Object.values(this.characters) as Character[]).sort(
+      function (a, b) {
+        return b.tabIndex + a.tabIndex;
+      }
+    );
+    this.displayedSkill = this.characters["hunter"].skillTree["1"];
   }
 
   ngOnInit(): void {}
@@ -49,9 +51,11 @@ export class HomeComponent implements OnInit {
     }
   }
   updateSelectedCharacter() {
-    this.selectedCharacterId = this.characters[
-      this.classIds[this.selectedTab]
-    ].id;
+    this.selectedCharacterId = (Object.values(
+      this.characters
+    ) as Character[]).find((_) => {
+      return _.tabIndex === this.selectedTab;
+    }).id;
   }
   displaySkill(skill: Skill) {
     this.displayedSkill = skill;

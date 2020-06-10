@@ -4,12 +4,19 @@ import { Skill } from "./skill";
 export class Character {
   id: string;
   name: string;
+  tabIndex: number;
   skillTree: SkillTree;
   availableSkills: number;
   selectedLevel: number = 75;
   selectedCoSP: number = 0;
-  constructor(id: string, name: string, skillTree: SkillTree) {
+  constructor(
+    id: string,
+    name: string,
+    tabIndex: number,
+    skillTree: SkillTree
+  ) {
     this.id = id;
+    this.tabIndex = tabIndex;
     this.name = name;
     this.skillTree = skillTree;
 

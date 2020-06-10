@@ -77,21 +77,21 @@
     backgroundColor="accent"
   >
     <app-character-tab></app-character-tab>
-    <mat-tab *ngFor="let pair of characters | keyvalue">
+    <mat-tab *ngFor="let class of orderedClasses">
       <ng-template mat-tab-label>
         <img
-          *ngIf="pair.value.id === selectedPrimaryClass"
+          *ngIf="class.id === selectedPrimaryClass"
           class="px-1"
           alt="Selected Primary class"
           src="/assets/icons/main.png"
         />
         <img
-          *ngIf="pair.value.id === selectedSecondaryClass"
+          *ngIf="class.id === selectedSecondaryClass"
           class="px-1"
           alt="Selected Sub class"
           src="/assets/icons/sub.png"
         />
-        {{ pair.value.name }}
+        {{ class.name }}
       </ng-template>
 
       <ng-template matTabContent
