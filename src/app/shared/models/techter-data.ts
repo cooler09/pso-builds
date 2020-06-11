@@ -510,7 +510,7 @@ export default class TechterData {
       .setSkill(
         0,
         3,
-        new Skill("4", "Air Reversal", "/assets/icons/shared/cannot.png")
+        new Skill("4", "Air Reversal", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
       )
@@ -520,7 +520,7 @@ export default class TechterData {
         new Skill(
           "5",
           "Perf. Recovery & ARK Combo",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/double_jump.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
@@ -528,7 +528,7 @@ export default class TechterData {
       .setSkill(
         0,
         5,
-        new Skill("6", "Double Jump", "/assets/icons/shared/cannot.png")
+        new Skill("6", "Double Jump", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(40)
       );
