@@ -60,7 +60,7 @@ export default class RangerData {
         new Skill(
           "43",
           "Precision Hit Blast Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/percision_hit_blast_bonus.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -69,7 +69,7 @@ export default class RangerData {
         new Skill(
           "44",
           "Stationary Fire 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/stationary_fire.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -78,7 +78,7 @@ export default class RangerData {
         new Skill(
           "45",
           "PP Preservation Bullet",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/pp_preservation_bullet.png"
         ).setMaxLevel(10)
       );
   }
@@ -90,7 +90,7 @@ export default class RangerData {
         new Skill(
           "37",
           "Advanced Precision Hit 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/adv_precision_hit.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -99,7 +99,7 @@ export default class RangerData {
         new Skill(
           "38",
           "Stationary Fire 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/stationary_fire.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -108,7 +108,7 @@ export default class RangerData {
         new Skill(
           "39",
           "Mobile Fire",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/mobile_fire.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -117,7 +117,7 @@ export default class RangerData {
         new Skill(
           "40",
           "Power Bullet",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/power_bullet.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -126,7 +126,7 @@ export default class RangerData {
         new Skill(
           "41",
           "Ammo Maintenance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/ammo_maintenance.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -135,7 +135,7 @@ export default class RangerData {
         new Skill(
           "42",
           "Massive Bullet",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/massive_bullet.png"
         ).setMaxLevel(1)
       );
   }
@@ -147,7 +147,7 @@ export default class RangerData {
         new Skill(
           "32",
           "Blight Rounds",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/blight_round.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -156,7 +156,7 @@ export default class RangerData {
         new Skill(
           "33",
           "Bind Bullet",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/bind_bullet.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -165,7 +165,7 @@ export default class RangerData {
         new Skill(
           "34",
           "Blinding Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/blinding_shot.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -174,7 +174,7 @@ export default class RangerData {
         new Skill(
           "35",
           "Panic Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/panic_shot.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -183,7 +183,7 @@ export default class RangerData {
         new Skill(
           "36",
           "Jellen Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/jellen_shot.png"
         ).setMaxLevel(10)
       );
   }
@@ -195,7 +195,7 @@ export default class RangerData {
         new Skill(
           "29",
           "Advanced Precision Hit 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/adv_precision_hit.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -204,7 +204,7 @@ export default class RangerData {
         new Skill(
           "30",
           "First Hit",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -213,7 +213,7 @@ export default class RangerData {
         new Skill(
           "31",
           "Eradication Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/eradication_bonus.png"
         ).setMaxLevel(10)
       );
   }
@@ -225,7 +225,7 @@ export default class RangerData {
         new Skill(
           "26",
           "Custom Spring Trap",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/spring_trap_alt.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -234,7 +234,7 @@ export default class RangerData {
         new Skill(
           "27",
           "Custom Poison Trap",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/poison_trap_alt.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -243,7 +243,7 @@ export default class RangerData {
         new Skill(
           "28",
           "Tactical Trap",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/tactical_trap.png"
         ).setMaxLevel(5)
       );
   }
@@ -255,7 +255,7 @@ export default class RangerData {
         new Skill(
           "21",
           "Stun Grenade",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/stun_grenade.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -264,7 +264,7 @@ export default class RangerData {
         new Skill(
           "22",
           "Gravity Bomb",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/gravity_bomb.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -273,7 +273,7 @@ export default class RangerData {
         new Skill(
           "23",
           "Spring Trap",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/spring_trap.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -282,7 +282,7 @@ export default class RangerData {
         new Skill(
           "24",
           "Poison Trap",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/poison_trap.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -291,7 +291,7 @@ export default class RangerData {
         new Skill(
           "25",
           "Tool Mastery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/tool_mastery.png"
         ).setMaxLevel(10)
       );
   }
@@ -303,7 +303,7 @@ export default class RangerData {
         new Skill(
           "19",
           "Keep Roll Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -312,7 +312,7 @@ export default class RangerData {
         new Skill(
           "20",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -324,7 +324,7 @@ export default class RangerData {
         new Skill(
           "17",
           "Dexterity Up 3",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -333,7 +333,7 @@ export default class RangerData {
         new Skill(
           "18",
           "Dive Roll Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setMaxLevel(1)
       );
   }
@@ -345,7 +345,7 @@ export default class RangerData {
         new Skill(
           "12",
           "Dexterity Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -354,7 +354,7 @@ export default class RangerData {
         new Skill(
           "13",
           "Ranged PWR Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -363,7 +363,7 @@ export default class RangerData {
         new Skill(
           "14",
           "Trap Search",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/trap_search.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -372,7 +372,7 @@ export default class RangerData {
         new Skill(
           "15",
           "Sharp Shooter",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/ranger/sharp_shooter.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -381,7 +381,7 @@ export default class RangerData {
         new Skill(
           "16",
           "Advanced Dive Roll",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setMaxLevel(10)
       );
   }
@@ -393,7 +393,7 @@ export default class RangerData {
         new Skill(
           "8",
           "Ranged PWR Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -402,7 +402,7 @@ export default class RangerData {
         new Skill(
           "9",
           "Ranged DEF Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged_def.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -411,7 +411,7 @@ export default class RangerData {
         new Skill(
           "10",
           "Arms Enthusiast: Ranger",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -420,7 +420,7 @@ export default class RangerData {
         new Skill(
           "11",
           "Dive Roll",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_blue.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -431,7 +431,7 @@ export default class RangerData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/sidestep_alt_blue.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -443,13 +443,17 @@ export default class RangerData {
         new Skill(
           "1",
           "Dexterity Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill(
+          "2",
+          "Sidestep Jump",
+          "/assets/icons/shared/sidestep_alt_blue.png"
+        )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -459,7 +463,7 @@ export default class RangerData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
