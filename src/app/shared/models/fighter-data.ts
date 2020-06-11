@@ -281,7 +281,7 @@ export default class FighterData {
         new Skill(
           "20",
           "Double Saber Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/double_saber_focus.png"
         ).setMaxLevel(1)
       )
       .setSkill(
