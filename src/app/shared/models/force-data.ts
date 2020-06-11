@@ -64,7 +64,7 @@ export default class ForceData {
       new Skill(
         "47",
         "F Detonation Boost",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/force/detonation_boost.png"
       ).setMaxLevel(5)
     );
   }
@@ -76,7 +76,7 @@ export default class ForceData {
         new Skill(
           "45",
           "Freeze Mastery 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/freeze_mastery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -85,7 +85,7 @@ export default class ForceData {
         new Skill(
           "46",
           "Frozen Detonation",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/frozen_detonation.png"
         ).setMaxLevel(10)
       );
   }
@@ -97,7 +97,7 @@ export default class ForceData {
         new Skill(
           "40",
           "Flame Mastery 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/flame_mastery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -106,7 +106,7 @@ export default class ForceData {
         new Skill(
           "41",
           "Burn Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/flame_mastery.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -115,7 +115,7 @@ export default class ForceData {
         new Skill(
           "42",
           "Freeze Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/freeze_mastery.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -124,7 +124,7 @@ export default class ForceData {
         new Skill(
           "43",
           "Lightning Mastery 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/lightning_mastery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -133,7 +133,7 @@ export default class ForceData {
         new Skill(
           "44",
           "Shock Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/lightning_mastery.png"
         ).setMaxLevel(10)
       );
   }
@@ -145,7 +145,7 @@ export default class ForceData {
         new Skill(
           "37",
           "Flame Tech Short Charge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/flame_mastery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -154,7 +154,7 @@ export default class ForceData {
         new Skill(
           "38",
           "Deep Freeze",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/deep_freeze.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -163,7 +163,7 @@ export default class ForceData {
         new Skill(
           "39",
           "Lightning Tech PP Preservation",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/lightning_mastery.png"
         ).setMaxLevel(5)
       );
   }
@@ -175,7 +175,7 @@ export default class ForceData {
         new Skill(
           "34",
           "Flame Mastery 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/flame_mastery.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -184,7 +184,7 @@ export default class ForceData {
         new Skill(
           "35",
           "Freeze Mastery 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/freeze_mastery.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -193,7 +193,7 @@ export default class ForceData {
         new Skill(
           "36",
           "Lightning Mastery 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/lightning_mastery.png"
         ).setMaxLevel(10)
       );
   }
@@ -204,7 +204,7 @@ export default class ForceData {
       new Skill(
         "33",
         "Photo Flare Boost",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/force/photon_flare_boost.png"
       ).setMaxLevel(10)
     );
   }
@@ -216,7 +216,7 @@ export default class ForceData {
         new Skill(
           "31",
           "Advanced Photon Flare",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/photon_flare_alt.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -225,7 +225,7 @@ export default class ForceData {
         new Skill(
           "32",
           "Photon Flare Afterburst",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/photon_flare_alt.png"
         ).setMaxLevel(1)
       );
   }
@@ -236,7 +236,7 @@ export default class ForceData {
       new Skill(
         "30",
         "Photon Flare",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/force/photon_flare.png"
       ).setMaxLevel(10)
     );
   }
@@ -248,7 +248,7 @@ export default class ForceData {
         new Skill(
           "28",
           "Advanced Tech Charge 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -257,7 +257,7 @@ export default class ForceData {
         new Skill(
           "29",
           "Advanced Tech Charge 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(5)
       );
   }
@@ -268,7 +268,7 @@ export default class ForceData {
       new Skill(
         "27",
         "Rod Preservation Bonus",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/force/rod_preservation.png"
       ).setMaxLevel(1)
     );
   }
@@ -280,7 +280,7 @@ export default class ForceData {
         new Skill(
           "23",
           "Advanced Normal Tech",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -289,7 +289,7 @@ export default class ForceData {
         new Skill(
           "24",
           "Charged Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/charged_escape.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -307,7 +307,7 @@ export default class ForceData {
         new Skill(
           "26",
           "Advanced Tech. Perfect Attacks",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       );
   }
@@ -319,7 +319,7 @@ export default class ForceData {
         new Skill(
           "20",
           "Technique Power Mega-Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -328,7 +328,7 @@ export default class ForceData {
         new Skill(
           "21",
           "Element Conversion",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -337,7 +337,7 @@ export default class ForceData {
         new Skill(
           "22",
           "Tech Charge JA Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/tech_charge.png"
         ).setMaxLevel(1)
       );
   }
@@ -349,7 +349,7 @@ export default class ForceData {
         new Skill(
           "18",
           "Talis Fast Throw",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/talis_fast_throw.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -358,7 +358,7 @@ export default class ForceData {
         new Skill(
           "19",
           "Photon Bullet",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/photon_bullet.png"
         ).setMaxLevel(5)
       );
   }
@@ -370,7 +370,7 @@ export default class ForceData {
         new Skill(
           "13",
           "Tech. Power Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -385,9 +385,7 @@ export default class ForceData {
       .setSkill(
         3,
         3,
-        new Skill("15", "HP Up", "/assets/icons/shared/cannot.png").setMaxLevel(
-          10
-        )
+        new Skill("15", "HP Up", "/assets/icons/shared/hp.png").setMaxLevel(10)
       )
       .setSkill(
         3,
@@ -395,7 +393,7 @@ export default class ForceData {
         new Skill(
           "16",
           "Talis Tech Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/talis_tech.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -404,7 +402,7 @@ export default class ForceData {
         new Skill(
           "17",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -416,7 +414,7 @@ export default class ForceData {
         new Skill(
           "8",
           "Dexterity Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -434,7 +432,7 @@ export default class ForceData {
         new Skill(
           "10",
           "Technique DEF Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/tech_def_up.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -443,7 +441,7 @@ export default class ForceData {
         new Skill(
           "11",
           "Arms Enthusiast: Force",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -452,7 +450,7 @@ export default class ForceData {
         new Skill(
           "12",
           "Blind Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/force/sidestep.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -463,7 +461,7 @@ export default class ForceData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/force/sidestep_alt.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -475,13 +473,13 @@ export default class ForceData {
         new Skill(
           "1",
           "Tech. Power Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill("2", "Sidestep Jump", "/assets/icons/force/sidestep_alt.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -491,7 +489,7 @@ export default class ForceData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
