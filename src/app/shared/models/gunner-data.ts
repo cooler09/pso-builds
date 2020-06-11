@@ -54,7 +54,7 @@ export default class GunnerData {
         new Skill(
           "37",
           "Point Blank Boost 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -63,7 +63,7 @@ export default class GunnerData {
         new Skill(
           "38",
           "Zero Range Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -72,7 +72,7 @@ export default class GunnerData {
         new Skill(
           "39",
           "Attack PP Restorate",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/pp.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -81,7 +81,7 @@ export default class GunnerData {
         new Skill(
           "40",
           "Perfectionist",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -90,7 +90,7 @@ export default class GunnerData {
         new Skill(
           "41",
           "Stylish Roll Perf. Atk Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/stylish_roll_up.png"
         ).setMaxLevel(5)
       );
   }
@@ -102,7 +102,7 @@ export default class GunnerData {
         new Skill(
           "35",
           "High Time",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/time_save.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -111,7 +111,7 @@ export default class GunnerData {
         new Skill(
           "36",
           "Stylish Roll Finisher",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/stylish_roll_up.png"
         ).setMaxLevel(5)
       );
   }
@@ -123,7 +123,7 @@ export default class GunnerData {
         new Skill(
           "31",
           "Encore Time",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/encore_time.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -132,7 +132,7 @@ export default class GunnerData {
         new Skill(
           "32",
           "Time Save",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/time_save.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -141,7 +141,7 @@ export default class GunnerData {
         new Skill(
           "33",
           "Double Chain",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/double_chain.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -150,7 +150,7 @@ export default class GunnerData {
         new Skill(
           "34",
           "Stylish Roll Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/stylish_roll_up.png"
         ).setMaxLevel(5)
       );
   }
@@ -162,7 +162,7 @@ export default class GunnerData {
         new Skill(
           "27",
           "Point Blank Boost 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -171,7 +171,7 @@ export default class GunnerData {
         new Skill(
           "28",
           "Showtime Star",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/showtime_star.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -180,7 +180,7 @@ export default class GunnerData {
         new Skill(
           "29",
           "Chain Finish",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/chain_finish.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -189,7 +189,7 @@ export default class GunnerData {
         new Skill(
           "30",
           "Chain Finisher Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/chain_finisher_bonus.png"
         ).setMaxLevel(1)
       );
   }
@@ -201,7 +201,7 @@ export default class GunnerData {
         new Skill(
           "23",
           "Advanced Aerial",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/adv_aerial.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -210,7 +210,7 @@ export default class GunnerData {
         new Skill(
           "24",
           "Auto-Mate Deadline",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/auto_mate.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -219,7 +219,7 @@ export default class GunnerData {
         new Skill(
           "25",
           "Showtime",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/showtime.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -228,7 +228,7 @@ export default class GunnerData {
         new Skill(
           "26",
           "Chain Trigger",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/chain_trigger.png"
         ).setMaxLevel(10)
       );
   }
@@ -240,7 +240,7 @@ export default class GunnerData {
         new Skill(
           "21",
           "Twin Machine Guns Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/twin_machine_gun_focus.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -249,7 +249,7 @@ export default class GunnerData {
         new Skill(
           "22",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -261,15 +261,13 @@ export default class GunnerData {
         new Skill(
           "17",
           "Ranged PWR Up 3",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         4,
         2,
-        new Skill("18", "HP Up", "/assets/icons/shared/cannot.png").setMaxLevel(
-          10
-        )
+        new Skill("18", "HP Up", "/assets/icons/shared/hp.png").setMaxLevel(10)
       )
       .setSkill(
         4,
@@ -277,7 +275,7 @@ export default class GunnerData {
         new Skill(
           "19",
           "Twin Mach. Guns Stylish Charge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/twin_machine_stylish_charge.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -286,7 +284,7 @@ export default class GunnerData {
         new Skill(
           "20",
           "Dive Roll Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setMaxLevel(1)
       );
   }
@@ -298,7 +296,7 @@ export default class GunnerData {
         new Skill(
           "12",
           "Ranged PWR Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -307,7 +305,7 @@ export default class GunnerData {
         new Skill(
           "13",
           "Dexterity Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -316,7 +314,7 @@ export default class GunnerData {
         new Skill(
           "14",
           "Ranged DEF Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged_def.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -325,7 +323,7 @@ export default class GunnerData {
         new Skill(
           "15",
           "Twin Machine Guns Mastery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/gunner/twin_machine_guns.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -334,7 +332,7 @@ export default class GunnerData {
         new Skill(
           "16",
           "Advanced Dive Roll",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_blue.png"
         ).setMaxLevel(10)
       );
   }
@@ -346,7 +344,7 @@ export default class GunnerData {
         new Skill(
           "8",
           "Dexterity Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -355,7 +353,7 @@ export default class GunnerData {
         new Skill(
           "9",
           "Ranged DEF Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged_def.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -364,7 +362,7 @@ export default class GunnerData {
         new Skill(
           "10",
           "Arms Enthusiast: Gunner",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -373,7 +371,7 @@ export default class GunnerData {
         new Skill(
           "11",
           "Dive Roll",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_blue.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -384,7 +382,7 @@ export default class GunnerData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/sidestep_alt_blue.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -396,13 +394,17 @@ export default class GunnerData {
         new Skill(
           "1",
           "Ranged PWR Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill(
+          "2",
+          "Sidestep Jump",
+          "/assets/icons/shared/sidestep_alt_blue.png"
+        )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -412,7 +414,7 @@ export default class GunnerData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)

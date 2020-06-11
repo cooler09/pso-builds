@@ -324,7 +324,7 @@ export default class BraverData {
         new Skill(
           "15",
           "Ranged Power Up",
-          "/assets/icons/braver/ranged.png"
+          "/assets/icons/shared/ranged.png"
         ).setMaxLevel(10)
       )
       .setSkill(

@@ -494,7 +494,7 @@ export default class HunterData {
       .setSkill(
         9,
         4,
-        new Skill("41", "Auto-Mate Half", "/assets/icons/hunter/auto_mate.png")
+        new Skill("41", "Auto-Mate Half", "/assets/icons/shared/auto_mate.png")
           .setMaxLevel(10)
           .setDesc(
             "Automatically uses a '-mate' item when you HP falls below 50%."
