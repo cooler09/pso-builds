@@ -298,7 +298,7 @@ export default class ForceData {
         new Skill(
           "25",
           "Charged PP Revival",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/pp.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -376,11 +376,9 @@ export default class ForceData {
       .setSkill(
         3,
         2,
-        new Skill(
-          "14",
-          "PP Up 2",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("14", "PP Up 2", "/assets/icons/shared/pp.png").setMaxLevel(
+          10
+        )
       )
       .setSkill(
         3,
@@ -420,11 +418,7 @@ export default class ForceData {
       .setSkill(
         2,
         2,
-        new Skill(
-          "9",
-          "PP Up 1",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("9", "PP Up 1", "/assets/icons/shared/pp.png").setMaxLevel(10)
       )
       .setSkill(
         2,
