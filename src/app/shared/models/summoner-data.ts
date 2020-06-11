@@ -64,7 +64,7 @@ export default class SummonerData {
         new Skill(
           "39",
           "Advanced Photon Blast",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/adv_photon_blast.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -73,7 +73,7 @@ export default class SummonerData {
         new Skill(
           "40",
           "Alter Ego",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/alter_ego.png"
         ).setMaxLevel(10)
       );
   }
@@ -85,17 +85,15 @@ export default class SummonerData {
         new Skill(
           "35",
           "HP Mega-Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/hp.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         13,
         2,
-        new Skill(
-          "36",
-          "PP Up 2",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("36", "PP Up 2", "/assets/icons/shared/pp.png").setMaxLevel(
+          10
+        )
       )
       .setSkill(
         13,
@@ -103,7 +101,7 @@ export default class SummonerData {
         new Skill(
           "37",
           "Total Attack Mega-Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/all_atk.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -112,7 +110,7 @@ export default class SummonerData {
         new Skill(
           "38",
           "Total Defense/Dexterity Mega-Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/total_def.png"
         ).setMaxLevel(10)
       );
   }
@@ -121,11 +119,7 @@ export default class SummonerData {
       .setSkill(
         12,
         2,
-        new Skill(
-          "32",
-          "PP Up 1",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(5)
+        new Skill("32", "PP Up 1", "/assets/icons/shared/pp.png").setMaxLevel(5)
       )
       .setSkill(
         12,
@@ -133,7 +127,7 @@ export default class SummonerData {
         new Skill(
           "33",
           "Total Attack Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/all_atk.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -142,7 +136,7 @@ export default class SummonerData {
         new Skill(
           "34",
           "Total Defense/Dexterity Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/total_def.png"
         ).setMaxLevel(5)
       );
   }
@@ -154,7 +148,7 @@ export default class SummonerData {
         new Skill(
           "30",
           "Pet Elemental Precision Hit",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/per_ele_precision_hit.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -163,7 +157,7 @@ export default class SummonerData {
         new Skill(
           "31",
           "Pet Elemental PP Restorate",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/per_ele_pp_restorate.png"
         ).setMaxLevel(5)
       );
   }
@@ -175,7 +169,7 @@ export default class SummonerData {
         new Skill(
           "28",
           "Pet Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/pet_recovery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -184,7 +178,7 @@ export default class SummonerData {
         new Skill(
           "29",
           "Reserve Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/reserve_recovery.png"
         ).setMaxLevel(1)
       );
   }
@@ -195,7 +189,7 @@ export default class SummonerData {
       new Skill(
         "27",
         "Enhanced Mark",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/summoner/enhanced_mark.png"
       ).setMaxLevel(1)
     );
   }
@@ -207,7 +201,7 @@ export default class SummonerData {
         new Skill(
           "25",
           "Summoner's Mark",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/summoners_mark.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -216,7 +210,7 @@ export default class SummonerData {
         new Skill(
           "26",
           "Pet Photon Barrier",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/pet_photon_barrier.png"
         ).setMaxLevel(5)
       );
   }
@@ -228,7 +222,7 @@ export default class SummonerData {
         new Skill(
           "20",
           "All Attack Bonus 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/all_atk.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -237,7 +231,7 @@ export default class SummonerData {
         new Skill(
           "21",
           "Harmonize Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/harmonize.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -246,7 +240,7 @@ export default class SummonerData {
         new Skill(
           "22",
           "Sympathy Time",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/harmonize.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -255,7 +249,7 @@ export default class SummonerData {
         new Skill(
           "23",
           "Easy Sympathy",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/harmonize.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -264,7 +258,7 @@ export default class SummonerData {
         new Skill(
           "24",
           "Love Distance Love",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/long_distance_love.png"
         ).setMaxLevel(1)
       );
   }
@@ -276,7 +270,7 @@ export default class SummonerData {
         new Skill(
           "18",
           "Pet Sympathy",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/pet_sympathy.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -285,7 +279,7 @@ export default class SummonerData {
         new Skill(
           "19",
           "Dia Master",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/dia_master.png"
         ).setMaxLevel(5)
       );
   }
@@ -297,7 +291,7 @@ export default class SummonerData {
         new Skill(
           "15",
           "All Attack Bonus 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/all_atk.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -306,7 +300,7 @@ export default class SummonerData {
         new Skill(
           "16",
           "Quick Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/quick_recovery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -315,7 +309,7 @@ export default class SummonerData {
         new Skill(
           "17",
           "Unstoppable Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/unstoppable_recovery.png"
         ).setMaxLevel(1)
       );
   }
@@ -326,7 +320,7 @@ export default class SummonerData {
       new Skill(
         "14",
         "HP Restorate",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/summoner/hp_restorate.png"
       ).setMaxLevel(10)
     );
   }
@@ -338,7 +332,7 @@ export default class SummonerData {
         new Skill(
           "11",
           "Pet Switch Strike",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/pet_switch_strike.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -347,7 +341,7 @@ export default class SummonerData {
         new Skill(
           "12",
           "Pet Switch Shot",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/pet_switch_shot.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -356,7 +350,7 @@ export default class SummonerData {
         new Skill(
           "13",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_yellow.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -368,7 +362,7 @@ export default class SummonerData {
         new Skill(
           "8",
           "Assist Share",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/assist_share.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -377,7 +371,7 @@ export default class SummonerData {
         new Skill(
           "9",
           "Sub-Class Growth Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/summoner/sub_class_growth.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -386,7 +380,7 @@ export default class SummonerData {
         new Skill(
           "10",
           "Blind Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_yellow.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -397,7 +391,7 @@ export default class SummonerData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/sidestep_alt_yellow.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -406,14 +400,16 @@ export default class SummonerData {
       .setSkill(
         0,
         0,
-        new Skill("1", "HP Up", "/assets/icons/shared/cannot.png").setMaxLevel(
-          5
-        )
+        new Skill("1", "HP Up", "/assets/icons/shared/hp.png").setMaxLevel(5)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill(
+          "2",
+          "Sidestep Jump",
+          "/assets/icons/shared/sidestep_alt_yellow.png"
+        )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -423,7 +419,7 @@ export default class SummonerData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
