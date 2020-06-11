@@ -59,7 +59,7 @@ export default class FighterData {
         new Skill(
           "40",
           "Extra Chaser Damage",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/chaser_damage.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -68,7 +68,7 @@ export default class FighterData {
         new Skill(
           "41",
           "Chaser Bind",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/chaser_bind.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -77,7 +77,7 @@ export default class FighterData {
         new Skill(
           "42",
           "Photon Slayer",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/photon_slayer.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -86,7 +86,7 @@ export default class FighterData {
         new Skill(
           "43",
           "Crazy Heart",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/crazy_heart.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -95,7 +95,7 @@ export default class FighterData {
         new Skill(
           "44",
           "Crazy Beat",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/crazy_beat.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -104,7 +104,7 @@ export default class FighterData {
         new Skill(
           "45",
           "Overload Photon Charge",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/overload_photon_charge.png"
         ).setMaxLevel(1)
       );
   }
@@ -116,7 +116,7 @@ export default class FighterData {
         new Skill(
           "35",
           "Chaser Damage",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/chaser_damage.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -125,7 +125,7 @@ export default class FighterData {
         new Skill(
           "36",
           "Halfline Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/halfline_boost.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -134,7 +134,7 @@ export default class FighterData {
         new Skill(
           "37",
           "Deadline Slayer",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/halfline_slayer.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -143,7 +143,7 @@ export default class FighterData {
         new Skill(
           "38",
           "Halfline Slayer",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/halfline_slayer.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -152,7 +152,7 @@ export default class FighterData {
         new Skill(
           "39",
           "Overload",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/overload.png"
         ).setMaxLevel(10)
       );
   }
@@ -164,7 +164,7 @@ export default class FighterData {
         new Skill(
           "30",
           "Valiant Stance Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/valiant_stance.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -173,7 +173,7 @@ export default class FighterData {
         new Skill(
           "31",
           "Valiant Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/valiant_stance.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -182,7 +182,7 @@ export default class FighterData {
         new Skill(
           "32",
           "Wise Stance Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/wise_stance_alt.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -191,7 +191,7 @@ export default class FighterData {
         new Skill(
           "33",
           "Wise Critical",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/wise_stance_alt.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -200,7 +200,7 @@ export default class FighterData {
         new Skill(
           "34",
           "Combo Var. P. Attack PP Save",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/combo_atk_pp_save.png"
         ).setMaxLevel(5)
       );
   }
@@ -212,7 +212,7 @@ export default class FighterData {
         new Skill(
           "26",
           "Valiant Stance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/valiant_stance.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -221,7 +221,7 @@ export default class FighterData {
         new Skill(
           "27",
           "Wise Stance",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/wise_stance.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -230,7 +230,7 @@ export default class FighterData {
         new Skill(
           "28",
           "Adrenaline",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/adrenaline.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -239,7 +239,7 @@ export default class FighterData {
         new Skill(
           "29",
           "Tech Arts Perfect Attack Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/tech_art_atk_bonus.png"
         ).setMaxLevel(5)
       );
   }
@@ -251,7 +251,7 @@ export default class FighterData {
         new Skill(
           "23",
           "Double Saber Wind Parry",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/double_saber_parry.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -260,7 +260,7 @@ export default class FighterData {
         new Skill(
           "24",
           "Twin Daggers Somersault",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/twin_dagger_somersault.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -269,7 +269,7 @@ export default class FighterData {
         new Skill(
           "25",
           "Knuckles Focus Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/knuckles_focus_boost.png"
         ).setMaxLevel(1)
       );
   }
@@ -290,7 +290,7 @@ export default class FighterData {
         new Skill(
           "21",
           "Twin Daggers Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/twin_datter_focus.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -299,7 +299,7 @@ export default class FighterData {
         new Skill(
           "22",
           "Knuckles Focus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/fighter/knuckles_focus.png"
         ).setMaxLevel(1)
       );
   }
@@ -311,7 +311,7 @@ export default class FighterData {
         new Skill(
           "16",
           "Melee Power Up 3",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -320,7 +320,7 @@ export default class FighterData {
         new Skill(
           "17",
           "Critical Strike",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -329,7 +329,7 @@ export default class FighterData {
         new Skill(
           "18",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -338,7 +338,7 @@ export default class FighterData {
         new Skill(
           "19",
           "Sidestep Strike",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -350,17 +350,15 @@ export default class FighterData {
         new Skill(
           "13",
           "Melee Power Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         3,
         2,
-        new Skill(
-          "14",
-          "HP Up 2",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("14", "HP Up 2", "/assets/icons/shared/hp.png").setMaxLevel(
+          10
+        )
       )
       .setSkill(
         3,
@@ -368,7 +366,7 @@ export default class FighterData {
         new Skill(
           "15",
           "Sidestep Plus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt.png"
         ).setMaxLevel(10)
       );
   }
@@ -380,17 +378,13 @@ export default class FighterData {
         new Skill(
           "8",
           "Dexterity Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         2,
         2,
-        new Skill(
-          "9",
-          "HP Up 1",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("9", "HP Up 1", "/assets/icons/shared/hp.png").setMaxLevel(10)
       )
       .setSkill(
         2,
@@ -398,7 +392,7 @@ export default class FighterData {
         new Skill(
           "10",
           "Arms Enthusiast: Fighter",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -407,7 +401,7 @@ export default class FighterData {
         new Skill(
           "11",
           "Melee Defense Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee_def.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -416,7 +410,7 @@ export default class FighterData {
         new Skill(
           "12",
           "Sidestep",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -427,7 +421,7 @@ export default class FighterData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/sidestep_alt.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -439,13 +433,13 @@ export default class FighterData {
         new Skill(
           "1",
           "Melee Power Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill("2", "Sidestep Jump", "/assets/icons/shared/sidestep_alt.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -455,7 +449,7 @@ export default class FighterData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
@@ -463,7 +457,7 @@ export default class FighterData {
       .setSkill(
         0,
         3,
-        new Skill("4", "Air Reversal", "/assets/icons/shared/cannot.png")
+        new Skill("4", "Air Reversal", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
       )
@@ -473,7 +467,7 @@ export default class FighterData {
         new Skill(
           "5",
           "Perf. Recovery & ARK Combo",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/double_jump.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
@@ -481,7 +475,7 @@ export default class FighterData {
       .setSkill(
         0,
         5,
-        new Skill("6", "Double Jump", "/assets/icons/shared/cannot.png")
+        new Skill("6", "Double Jump", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(40)
       );
