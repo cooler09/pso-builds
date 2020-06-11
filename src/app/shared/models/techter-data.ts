@@ -65,7 +65,7 @@ export default class TechterData {
         new Skill(
           "48",
           "Dark Mastery 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/dark_mastery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -74,7 +74,7 @@ export default class TechterData {
         new Skill(
           "49",
           "Poison Detonation",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/poison_detonation.png"
         ).setMaxLevel(10)
       );
   }
@@ -86,7 +86,7 @@ export default class TechterData {
         new Skill(
           "43",
           "Wind Mastery 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/wind_master.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -95,7 +95,7 @@ export default class TechterData {
         new Skill(
           "44",
           "Blind Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/blind_boost.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -104,7 +104,7 @@ export default class TechterData {
         new Skill(
           "45",
           "Light Mastery 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/light_mastery.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -113,7 +113,7 @@ export default class TechterData {
         new Skill(
           "46",
           "Panic Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/panic_boost.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -122,7 +122,7 @@ export default class TechterData {
         new Skill(
           "47",
           "Poison Boost",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/poison_boost.png"
         ).setMaxLevel(10)
       );
   }
@@ -134,7 +134,7 @@ export default class TechterData {
         new Skill(
           "39",
           "Wind Mastery 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/wind_master.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -143,7 +143,7 @@ export default class TechterData {
         new Skill(
           "40",
           "Light Mastery 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/light_mastery.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -152,7 +152,7 @@ export default class TechterData {
         new Skill(
           "41",
           "Dark Mastery 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/dark_mastery.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -161,7 +161,7 @@ export default class TechterData {
         new Skill(
           "42",
           "Elemental Percision Hit",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/ele_percision_hit.png"
         ).setMaxLevel(5)
       );
   }
@@ -172,7 +172,7 @@ export default class TechterData {
       new Skill(
         "38",
         "Territory PP Save",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/techter/territory_pp_save.png"
       ).setMaxLevel(5)
     );
   }
@@ -184,7 +184,7 @@ export default class TechterData {
         new Skill(
           "35",
           "Wand Reactor",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/wand_reactor.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -193,7 +193,7 @@ export default class TechterData {
         new Skill(
           "36",
           "Wand Focus Element",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/wand_focus_ele.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -202,7 +202,7 @@ export default class TechterData {
         new Skill(
           "37",
           "Support Range Extender",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/support_range_extender.png"
         ).setMaxLevel(1)
       );
   }
@@ -214,7 +214,7 @@ export default class TechterData {
         new Skill(
           "30",
           "Wand Lovers",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/wand_lovers.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -223,7 +223,7 @@ export default class TechterData {
         new Skill(
           "31",
           "PP Converstion",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/pp_conversion.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -232,7 +232,7 @@ export default class TechterData {
         new Skill(
           "32",
           "Territory Burst",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/territory_burst.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -241,7 +241,7 @@ export default class TechterData {
         new Skill(
           "33",
           "Super Treatment",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/super_treatment.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -250,7 +250,7 @@ export default class TechterData {
         new Skill(
           "34",
           "Reverser Field",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/reverser_field.png"
         ).setMaxLevel(10)
       );
   }
@@ -262,7 +262,7 @@ export default class TechterData {
         new Skill(
           "26",
           "Critical Shifta",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_shifta.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -271,7 +271,7 @@ export default class TechterData {
         new Skill(
           "27",
           "Shifta Strike",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_shifta.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -280,7 +280,7 @@ export default class TechterData {
         new Skill(
           "28",
           "Deband Cut",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_deband.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -289,7 +289,7 @@ export default class TechterData {
         new Skill(
           "29",
           "Deband Toughness",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_deband.png"
         ).setMaxLevel(5)
       );
   }
@@ -301,7 +301,7 @@ export default class TechterData {
         new Skill(
           "21",
           "PP Restorate",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/pp.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -310,7 +310,7 @@ export default class TechterData {
         new Skill(
           "22",
           "Advanced Shifta",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_shifta.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -319,7 +319,7 @@ export default class TechterData {
         new Skill(
           "23",
           "Advanced Resta",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_resta.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -328,7 +328,7 @@ export default class TechterData {
         new Skill(
           "24",
           "Advanced Deband",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/adv_deband.png"
         ).setMaxLevel(5)
       )
       .setSkill(
@@ -337,7 +337,7 @@ export default class TechterData {
         new Skill(
           "25",
           "Reverse Bonus",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/reverse_bonus.png"
         ).setMaxLevel(1)
       );
   }
@@ -348,7 +348,7 @@ export default class TechterData {
       new Skill(
         "20",
         "Wand Focus",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/techter/wand_focus.png"
       ).setMaxLevel(1)
     );
   }
@@ -360,7 +360,7 @@ export default class TechterData {
         new Skill(
           "17",
           "Melee Power Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/melee.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -369,7 +369,7 @@ export default class TechterData {
         new Skill(
           "18",
           "Longarm Assist",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/extend_assist.png"
         ).setMaxLevel(1)
       )
       .setSkill(
@@ -378,7 +378,7 @@ export default class TechterData {
         new Skill(
           "19",
           "Tech Charge JA Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech_charge.png"
         ).setMaxLevel(1)
       );
   }
@@ -390,17 +390,15 @@ export default class TechterData {
         new Skill(
           "13",
           "Tech. Power Up 2",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         3,
         2,
-        new Skill(
-          "14",
-          "PP Up 2",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("14", "PP Up 2", "/assets/icons/shared/pp.png").setMaxLevel(
+          10
+        )
       )
       .setSkill(
         3,
@@ -408,7 +406,7 @@ export default class TechterData {
         new Skill(
           "15",
           "Extend Assist",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/techter/extend_assist.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -417,7 +415,7 @@ export default class TechterData {
         new Skill(
           "16",
           "Perfect Recovery",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_alt_yellow.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -429,17 +427,13 @@ export default class TechterData {
         new Skill(
           "8",
           "Dexterity Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/dex.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         2,
         2,
-        new Skill(
-          "9",
-          "PP Up 1",
-          "/assets/icons/shared/cannot.png"
-        ).setMaxLevel(10)
+        new Skill("9", "PP Up 1", "/assets/icons/shared/pp.png").setMaxLevel(10)
       )
       .setSkill(
         2,
@@ -447,7 +441,7 @@ export default class TechterData {
         new Skill(
           "10",
           "Technique DEF Up",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech_def_up.png"
         ).setMaxLevel(10)
       )
       .setSkill(
@@ -456,7 +450,7 @@ export default class TechterData {
         new Skill(
           "11",
           "Arms Enthusiast: Techter",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/arms_enthusiast.png"
         ).setSkillType(SkillType.Passive)
       )
       .setSkill(
@@ -465,7 +459,7 @@ export default class TechterData {
         new Skill(
           "12",
           "Blind Escape",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/sidestep_yellow.png"
         ).setSkillType(SkillType.Passive)
       );
   }
@@ -476,7 +470,7 @@ export default class TechterData {
       new Skill(
         "7",
         "Sidestep & Perf. ATK Combo",
-        "/assets/icons/shared/cannot.png"
+        "/assets/icons/shared/sidestep_alt_yellow.png"
       ).setSkillType(SkillType.Passive)
     );
   }
@@ -488,13 +482,17 @@ export default class TechterData {
         new Skill(
           "1",
           "Tech. Power Up 1",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/tech.png"
         ).setMaxLevel(10)
       )
       .setSkill(
         0,
         1,
-        new Skill("2", "Sidestep Jump", "/assets/icons/shared/cannot.png")
+        new Skill(
+          "2",
+          "Sidestep Jump",
+          "/assets/icons/shared/sidestep_alt_yellow.png"
+        )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
       )
@@ -504,7 +502,7 @@ export default class TechterData {
         new Skill(
           "3",
           "First Arts Perfect Attack Addition",
-          "/assets/icons/shared/cannot.png"
+          "/assets/icons/shared/first_arts_atk.png"
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
