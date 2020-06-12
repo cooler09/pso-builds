@@ -65,7 +65,9 @@ export default class ForceData {
         "47",
         "F Detonation Boost",
         "/assets/icons/force/detonation_boost.png"
-      ).setMaxLevel(5)
+      )
+        .setMaxLevel(5)
+        .setDesc("Boosts the potency and area of effect of Frozen Detonation.")
     );
   }
   static loadRowSixteen(skillTree: SkillTree): SkillTree {
@@ -77,7 +79,9 @@ export default class ForceData {
           "45",
           "Freeze Mastery 2",
           "/assets/icons/force/freeze_mastery.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc("Boosts the potency of Ice Techniques.")
       )
       .setSkill(
         15,
@@ -86,7 +90,11 @@ export default class ForceData {
           "46",
           "Frozen Detonation",
           "/assets/icons/force/frozen_detonation.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc(
+            "Deals major damage with an explosive blast to fozen enemies."
+          )
       );
   }
   static loadRowFifteen(skillTree: SkillTree): SkillTree {
@@ -98,16 +106,16 @@ export default class ForceData {
           "40",
           "Flame Mastery 2",
           "/assets/icons/force/flame_mastery.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc("Boosts the potency of Fire Techniques.")
       )
       .setSkill(
         14,
         1,
-        new Skill(
-          "41",
-          "Burn Boost",
-          "/assets/icons/force/flame_mastery.png"
-        ).setMaxLevel(10)
+        new Skill("41", "Burn Boost", "/assets/icons/force/flame_mastery.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts the chance of inflicting a Burn status ailment.")
       )
       .setSkill(
         14,
@@ -116,7 +124,9 @@ export default class ForceData {
           "42",
           "Freeze Boost",
           "/assets/icons/force/freeze_mastery.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts the chance of inflicting a Freeze status ailment.")
       )
       .setSkill(
         14,
@@ -125,7 +135,9 @@ export default class ForceData {
           "43",
           "Lightning Mastery 2",
           "/assets/icons/force/lightning_mastery.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc("Boosts the potency of Lightning Techniques.")
       )
       .setSkill(
         14,
@@ -134,7 +146,9 @@ export default class ForceData {
           "44",
           "Shock Boost",
           "/assets/icons/force/lightning_mastery.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts the chance of inflicting a Shock status ailment.")
       );
   }
   static loadRowFourteen(skillTree: SkillTree): SkillTree {
@@ -146,16 +160,18 @@ export default class ForceData {
           "37",
           "Flame Tech Short Charge",
           "/assets/icons/force/flame_mastery.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc("Reduces the charging time of Fire Techniques.")
       )
       .setSkill(
         13,
         3,
-        new Skill(
-          "38",
-          "Deep Freeze",
-          "/assets/icons/force/deep_freeze.png"
-        ).setMaxLevel(5)
+        new Skill("38", "Deep Freeze", "/assets/icons/force/deep_freeze.png")
+          .setMaxLevel(5)
+          .setDesc(
+            "Boosts resistance to the Freeze status ailment and makes it harder to undo with attacks."
+          )
       )
       .setSkill(
         13,
@@ -164,7 +180,9 @@ export default class ForceData {
           "39",
           "Lightning Tech PP Preservation",
           "/assets/icons/force/lightning_mastery.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc("Reduces the amount of PP consumed by Lightning Techniques.")
       );
   }
   static loadRowThirteen(skillTree: SkillTree): SkillTree {
@@ -176,7 +194,9 @@ export default class ForceData {
           "34",
           "Flame Mastery 1",
           "/assets/icons/force/flame_mastery.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts the potency of Fire Techniques.")
       )
       .setSkill(
         12,
@@ -185,7 +205,9 @@ export default class ForceData {
           "35",
           "Freeze Mastery 1",
           "/assets/icons/force/freeze_mastery.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts the potency of Ice Techniques.")
       )
       .setSkill(
         12,
@@ -194,7 +216,9 @@ export default class ForceData {
           "36",
           "Lightning Mastery 1",
           "/assets/icons/force/lightning_mastery.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts the potency of Lightning Techniques.")
       );
   }
   static loadRowTwelve(skillTree: SkillTree): SkillTree {
@@ -205,7 +229,11 @@ export default class ForceData {
         "33",
         "Photo Flare Boost",
         "/assets/icons/force/photon_flare_boost.png"
-      ).setMaxLevel(10)
+      )
+        .setMaxLevel(10)
+        .setDesc(
+          "Boosts the chance of inflicting a status ailment when Photon Flare is activated."
+        )
     );
   }
   static loadRowEleven(skillTree: SkillTree): SkillTree {
@@ -217,7 +245,11 @@ export default class ForceData {
           "31",
           "Advanced Photon Flare",
           "/assets/icons/force/photon_flare_alt.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc(
+            "Further boosts your Technique Power when Photon Flare is activated."
+          )
       )
       .setSkill(
         10,
@@ -226,18 +258,20 @@ export default class ForceData {
           "32",
           "Photon Flare Afterburst",
           "/assets/icons/force/photon_flare_alt.png"
-        ).setMaxLevel(1)
+        )
+          .setMaxLevel(1)
+          .setDesc(
+            "Boosts your Technique Power for 30 seconds after the end of a Photon Flare effect."
+          )
       );
   }
   static loadRowTen(skillTree: SkillTree): SkillTree {
     return skillTree.setSkill(
       9,
       1,
-      new Skill(
-        "30",
-        "Photon Flare",
-        "/assets/icons/force/photon_flare.png"
-      ).setMaxLevel(10)
+      new Skill("30", "Photon Flare", "/assets/icons/force/photon_flare.png")
+        .setMaxLevel(10)
+        .setDesc("Temporarily boosts your Technique Power.")
     );
   }
   static loadRowNine(skillTree: SkillTree): SkillTree {
@@ -249,7 +283,9 @@ export default class ForceData {
           "28",
           "Advanced Tech Charge 1",
           "/assets/icons/shared/tech.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts damage dealt using Charged Techniques.")
       )
       .setSkill(
         8,
@@ -258,7 +294,9 @@ export default class ForceData {
           "29",
           "Advanced Tech Charge 2",
           "/assets/icons/shared/tech.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc("Boosts damage dealt using Charged Techniques.")
       );
   }
   static loadRowEight(skillTree: SkillTree): SkillTree {
@@ -269,7 +307,11 @@ export default class ForceData {
         "27",
         "Rod Preservation Bonus",
         "/assets/icons/force/rod_preservation.png"
-      ).setMaxLevel(1)
+      )
+        .setMaxLevel(1)
+        .setDesc(
+          "While a Rod is equipped, allows you to use a Technique maintained with Charged Escape without consuming PP."
+        )
     );
   }
   static loadRowSeven(skillTree: SkillTree): SkillTree {
@@ -277,11 +319,9 @@ export default class ForceData {
       .setSkill(
         6,
         1,
-        new Skill(
-          "23",
-          "Advanced Normal Tech",
-          "/assets/icons/shared/tech.png"
-        ).setMaxLevel(10)
+        new Skill("23", "Advanced Normal Tech", "/assets/icons/shared/tech.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts damage dealt by uncharged Techniques.")
       )
       .setSkill(
         6,
@@ -290,16 +330,18 @@ export default class ForceData {
           "24",
           "Charged Escape",
           "/assets/icons/force/charged_escape.png"
-        ).setMaxLevel(1)
+        )
+          .setMaxLevel(1)
+          .setDesc(
+            "Temporarily maintains charging when you perform a Dodge Action while charging a Technique. This skill can only be used with a Main Class."
+          )
       )
       .setSkill(
         6,
         3,
-        new Skill(
-          "25",
-          "Charged PP Revival",
-          "/assets/icons/shared/pp.png"
-        ).setMaxLevel(1)
+        new Skill("25", "Charged PP Revival", "/assets/icons/shared/pp.png")
+          .setMaxLevel(1)
+          .setDesc("Recovers PP while a Technique is being charged.")
       )
       .setSkill(
         6,
@@ -308,7 +350,9 @@ export default class ForceData {
           "26",
           "Advanced Tech. Perfect Attacks",
           "/assets/icons/shared/tech.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Grants a damage bonus to Technique Perfect Attacks.")
       );
   }
   static loadRowSix(skillTree: SkillTree): SkillTree {
@@ -320,16 +364,20 @@ export default class ForceData {
           "20",
           "Technique Power Mega-Up",
           "/assets/icons/shared/tech.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc(
+            "Boosts your Technique Power. Produces a stronger effect than a Technique Power Up."
+          )
       )
       .setSkill(
         5,
         4,
-        new Skill(
-          "21",
-          "Element Conversion",
-          "/assets/icons/shared/tech.png"
-        ).setMaxLevel(5)
+        new Skill("21", "Element Conversion", "/assets/icons/shared/tech.png")
+          .setMaxLevel(5)
+          .setDesc(
+            "Converts your weapon's Element Level into a Technique damage bonus. Bonus is increased if the weapon and Technique Elements match. For Main Class only."
+          )
       )
       .setSkill(
         5,
@@ -338,7 +386,11 @@ export default class ForceData {
           "22",
           "Tech Charge JA Addition",
           "/assets/icons/force/tech_charge.png"
-        ).setMaxLevel(1)
+        )
+          .setMaxLevel(1)
+          .setDesc(
+            "Grants an effect that converts your Charged Techniques into Perfect Attacks. A cooldown is applied after activation."
+          )
       );
   }
   static loadRowFive(skillTree: SkillTree): SkillTree {
@@ -350,7 +402,11 @@ export default class ForceData {
           "18",
           "Talis Fast Throw",
           "/assets/icons/force/talis_fast_throw.png"
-        ).setMaxLevel(1)
+        )
+          .setMaxLevel(1)
+          .setDesc(
+            "Boosts you Talis speed. This skill can only be used with a Main Class."
+          )
       )
       .setSkill(
         4,
@@ -359,7 +415,11 @@ export default class ForceData {
           "19",
           "Photon Bullet",
           "/assets/icons/force/photon_bullet.png"
-        ).setMaxLevel(5)
+        )
+          .setMaxLevel(5)
+          .setDesc(
+            "Adds a Technique round when you perform a Normal Attack with a Rod. This skill can only be used with a Main Class."
+          )
       );
   }
   static loadRowFour(skillTree: SkillTree): SkillTree {
@@ -367,23 +427,25 @@ export default class ForceData {
       .setSkill(
         3,
         1,
-        new Skill(
-          "13",
-          "Tech. Power Up 2",
-          "/assets/icons/shared/tech.png"
-        ).setMaxLevel(10)
+        new Skill("13", "Tech. Power Up 2", "/assets/icons/shared/tech.png")
+          .setMaxLevel(10)
+          .setDesc(
+            "Boosts your Technique Power. Produces a stronger effect than Technique Power Up 1."
+          )
       )
       .setSkill(
         3,
         2,
-        new Skill("14", "PP Up 2", "/assets/icons/shared/pp.png").setMaxLevel(
-          10
-        )
+        new Skill("14", "PP Up 2", "/assets/icons/shared/pp.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts your Max PP.")
       )
       .setSkill(
         3,
         3,
-        new Skill("15", "HP Up", "/assets/icons/shared/hp.png").setMaxLevel(10)
+        new Skill("15", "HP Up", "/assets/icons/shared/hp.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts your Max HP.")
       )
       .setSkill(
         3,
@@ -392,7 +454,11 @@ export default class ForceData {
           "16",
           "Talis Tech Bonus",
           "/assets/icons/force/talis_tech.png"
-        ).setMaxLevel(1)
+        )
+          .setMaxLevel(1)
+          .setDesc(
+            "Grants a potency bonus to Techniques activated from a thrown Talis."
+          )
       )
       .setSkill(
         3,
@@ -401,7 +467,11 @@ export default class ForceData {
           "17",
           "Perfect Recovery",
           "/assets/icons/force/sidestep_alt.png"
-        ).setSkillType(SkillType.Passive)
+        )
+          .setSkillType(SkillType.Passive)
+          .setDesc(
+            "Allows you to quickly jump up after being knocked back onto the ground."
+          )
       );
   }
   static loadRowThree(skillTree: SkillTree): SkillTree {
@@ -409,16 +479,16 @@ export default class ForceData {
       .setSkill(
         2,
         1,
-        new Skill(
-          "8",
-          "Dexterity Up",
-          "/assets/icons/shared/dex.png"
-        ).setMaxLevel(10)
+        new Skill("8", "Dexterity Up", "/assets/icons/shared/dex.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts your Dexterity.")
       )
       .setSkill(
         2,
         2,
-        new Skill("9", "PP Up 1", "/assets/icons/shared/pp.png").setMaxLevel(10)
+        new Skill("9", "PP Up 1", "/assets/icons/shared/pp.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts your Max PP.")
       )
       .setSkill(
         2,
@@ -427,7 +497,9 @@ export default class ForceData {
           "10",
           "Technique DEF Up",
           "/assets/icons/force/tech_def_up.png"
-        ).setMaxLevel(10)
+        )
+          .setMaxLevel(10)
+          .setDesc("Boosts your Technique Defense.")
       )
       .setSkill(
         2,
@@ -436,16 +508,20 @@ export default class ForceData {
           "11",
           "Arms Enthusiast: Force",
           "/assets/icons/shared/arms_enthusiast.png"
-        ).setSkillType(SkillType.Passive)
+        )
+          .setSkillType(SkillType.Passive)
+          .setDesc(
+            "Boosts the damage you deal when a weapon of Rarity 10 stars or greater is equipped. This skill can only be used with a Main Class."
+          )
       )
       .setSkill(
         2,
         5,
-        new Skill(
-          "12",
-          "Blind Escape",
-          "/assets/icons/force/sidestep.png"
-        ).setSkillType(SkillType.Passive)
+        new Skill("12", "Blind Escape", "/assets/icons/force/sidestep.png")
+          .setSkillType(SkillType.Passive)
+          .setDesc(
+            "Allows you to move a set distance in an invulnerable state after disrupting the enemy's vision."
+          )
       );
   }
   static loadRowTwo(skillTree: SkillTree): SkillTree {
@@ -456,7 +532,9 @@ export default class ForceData {
         "7",
         "Sidestep & Perf. ATK Combo",
         "/assets/icons/force/sidestep_alt.png"
-      ).setSkillType(SkillType.Passive)
+      )
+        .setSkillType(SkillType.Passive)
+        .setDesc("Makes Perfect-Attack timing apply during a Sidestep.")
     );
   }
   static loadRowOne(skillTree: SkillTree): SkillTree {
@@ -464,11 +542,9 @@ export default class ForceData {
       .setSkill(
         0,
         0,
-        new Skill(
-          "1",
-          "Tech. Power Up 1",
-          "/assets/icons/shared/tech.png"
-        ).setMaxLevel(10)
+        new Skill("1", "Tech. Power Up 1", "/assets/icons/shared/tech.png")
+          .setMaxLevel(10)
+          .setDesc("Boosts your Technique Power.")
       )
       .setSkill(
         0,
@@ -476,6 +552,7 @@ export default class ForceData {
         new Skill("2", "Sidestep Jump", "/assets/icons/force/sidestep_alt.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(10)
+          .setDesc("Jumping during a Dodge Action transitions you into a dash.")
       )
       .setSkill(
         0,
@@ -487,6 +564,9 @@ export default class ForceData {
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(20)
+          .setDesc(
+            "Turns your first attack into a Perfect Attack. A cooldown is applied after activation. Doesn't affect Harmonizer attacks, pet attacks, or Techniques."
+          )
       )
       .setSkill(
         0,
@@ -494,6 +574,7 @@ export default class ForceData {
         new Skill("4", "Air Reversal", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
+          .setDesc("Allows you to perform a break-fall while in the air.")
       )
       .setSkill(
         0,
@@ -505,6 +586,9 @@ export default class ForceData {
         )
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(30)
+          .setDesc(
+            "Makes Perfect-Attack timing apply after a Perfect Recovery."
+          )
       )
       .setSkill(
         0,
@@ -512,6 +596,7 @@ export default class ForceData {
         new Skill("6", "Double Jump", "/assets/icons/shared/double_jump.png")
           .setSkillType(SkillType.LevelReq)
           .setLevelReq(40)
+          .setDesc("Enables two-stage jumping.")
       );
   }
 }
