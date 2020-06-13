@@ -29,10 +29,6 @@
         [class.text-danger]="parent.currentLevel < skill.parent.prerequisite"
       >
         <span>{{ parent.name }}</span>
-
-        <span class="px-1"
-          >{{ parent.currentLevel }}/{{ skill.parent.prerequisite }}</span
-        >
       </div>
     </div>
   </div>
@@ -59,14 +55,24 @@
     style="flex: 100%;"
   >
     <div>
-      <mat-icon
+      <div
         *ngIf="skill.locked"
-        style="font-size: 20px;"
-        class="text-danger"
-        aria-hidden="false"
-        aria-label="Locked Skill"
-        >lock</mat-icon
+        class="d-flex justify-content-center align-items-center"
       >
+        <mat-icon
+          style="font-size: 20px;"
+          class="text-danger"
+          aria-hidden="false"
+          aria-label="Locked Skill"
+          >lock</mat-icon
+        >
+        <span
+          class="px-1"
+          *ngIf="parent"
+          [class.text-danger]="parent.currentLevel < skill.parent.prerequisite"
+          >{{ parent.currentLevel }}/{{ skill.parent.prerequisite }}</span
+        >
+      </div>
       <div
         *ngIf="!skill.locked && skill.skillType !== skillType.Passive"
         class="hand"

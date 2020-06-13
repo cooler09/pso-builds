@@ -113,7 +113,7 @@ export default class SummonerData {
         4,
         new Skill(
           "38",
-          "Total Defense/Dexterity Mega-Up",
+          "Total Def/Dex Mega-Up",
           "/assets/icons/shared/total_def.png"
         )
           .setMaxLevel(10)
@@ -145,7 +145,7 @@ export default class SummonerData {
         4,
         new Skill(
           "34",
-          "Total Defense/Dexterity Up",
+          "Total Def/Dex Up",
           "/assets/icons/shared/total_def.png"
         )
           .setMaxLevel(5)

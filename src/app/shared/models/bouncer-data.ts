@@ -24,10 +24,8 @@ export default class BouncerData {
     skillTree.setDependency("1", "34", 3);
     skillTree.setDependency("1", "37", 3);
     skillTree.setDependency("1", "38", 3);
-    skillTree.setDependency("9", "13", 1);
     skillTree.setDependency("10", "14", 3);
     skillTree.setDependency("15", "20", 1);
-    skillTree.setDependency("24", "25", 1);
     skillTree.setDependency("28", "29", 5);
     skillTree.setDependency("30", "35", 3);
     skillTree.setDependency("33", "36", 3);

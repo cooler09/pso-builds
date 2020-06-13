@@ -13,7 +13,6 @@ export default class GunnerData {
     skillTree.setDependency("1", "26", 3);
     skillTree.setDependency("1", "27", 3);
     skillTree.setDependency("8", "13", 3);
-    skillTree.setDependency("11", "16", 1);
     skillTree.setDependency("25", "28", 2);
     skillTree.setDependency("25", "28", 2);
     skillTree.setDependency("26", "29", 3);

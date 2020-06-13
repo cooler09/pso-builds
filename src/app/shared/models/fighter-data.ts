@@ -241,7 +241,7 @@ export default class FighterData {
         5,
         new Skill(
           "34",
-          "Combo Var. P. Attack PP Save",
+          "Combo Var. P. Atk PP Save",
           "/assets/icons/fighter/combo_atk_pp_save.png"
         )
           .setMaxLevel(5)
@@ -288,7 +288,7 @@ export default class FighterData {
         5,
         new Skill(
           "29",
-          "Tech Arts Perfect Attack Bonus",
+          "Tech Arts Perf. Atk",
           "/assets/icons/fighter/tech_art_atk_bonus.png"
         )
           .setMaxLevel(5)

@@ -101,7 +101,7 @@ export default class RangerData {
         0,
         new Skill(
           "37",
-          "Advanced Precision Hit 2",
+          "Adv. Precision Hit 2",
           "/assets/icons/ranger/adv_precision_hit.png"
         )
           .setMaxLevel(10)
@@ -230,7 +230,7 @@ export default class RangerData {
         0,
         new Skill(
           "29",
-          "Advanced Precision Hit 1",
+          "Adv. Precision Hit 1",
           "/assets/icons/ranger/adv_precision_hit.png"
         )
           .setMaxLevel(10)
@@ -432,7 +432,7 @@ export default class RangerData {
         5,
         new Skill(
           "16",
-          "Advanced Dive Roll",
+          "Adv. Dive Roll",
           "/assets/icons/shared/sidestep_alt_blue.png"
         )
           .setMaxLevel(10)
