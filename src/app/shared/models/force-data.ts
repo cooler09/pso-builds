@@ -385,7 +385,7 @@ export default class ForceData {
         new Skill(
           "22",
           "Tech Charge JA Addition",
-          "/assets/icons/force/tech_charge.png"
+          "/assets/icons/shared/tech_charge.png"
         )
           .setMaxLevel(1)
           .setDesc(
@@ -496,7 +496,7 @@ export default class ForceData {
         new Skill(
           "10",
           "Technique DEF Up",
-          "/assets/icons/force/tech_def_up.png"
+          "/assets/icons/shared/tech_def_up.png"
         )
           .setMaxLevel(10)
           .setDesc("Boosts your Technique Defense.")

@@ -474,7 +474,7 @@ export default class BouncerData {
       .setSkill(
         3,
         4,
-        new Skill("12", "Bouncer Mag", "/assets/icons/bouncer/bouncer_mag.png")
+        new Skill("12", "Bouncer Mag", "/assets/icons/shared/mag.png")
           .setSkillType(SkillType.Passive)
           .setDesc(
             "Adds a set percentage of an equipped Mag's Dexterity to Melee Power and Technique Power."
