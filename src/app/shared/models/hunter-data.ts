@@ -59,7 +59,7 @@ export default class HunterData {
       .setSkill(
         0,
         0,
-        new Skill("1", "HP Up 1", "/assets/icons/hunter/hp.png")
+        new Skill("1", "HP Up 1", "/assets/icons/shared/hp.png")
           .setMaxLevel(10)
           .setDesc("Boosts your Max HP.")
       )
@@ -141,7 +141,7 @@ export default class HunterData {
       .setSkill(
         2,
         2,
-        new Skill("9", "Melee Power Up 1", "/assets/icons/hunter/melee.png")
+        new Skill("9", "Melee Power Up 1", "/assets/icons/shared/melee.png")
           .setMaxLevel(10)
           .setDesc("Boosts your Melee Power.")
       )
@@ -181,7 +181,7 @@ export default class HunterData {
       .setSkill(
         3,
         1,
-        new Skill("13", "HP Up 2", "/assets/icons/hunter/hp.png")
+        new Skill("13", "HP Up 2", "/assets/icons/shared/hp.png")
           .setMaxLevel(10)
           .setDesc(
             "Boosts your Max HP. Produces a stronger effect than HP Up 1."
@@ -191,7 +191,7 @@ export default class HunterData {
       .setSkill(
         3,
         2,
-        new Skill("14", "Melee Power Up 2", "/assets/icons/hunter/melee.png")
+        new Skill("14", "Melee Power Up 2", "/assets/icons/shared/melee.png")
           .setMaxLevel(10)
           .setLocked(true)
           .setDesc(
@@ -236,7 +236,7 @@ export default class HunterData {
       .setSkill(
         4,
         1,
-        new Skill("18", "HP Up 3", "/assets/icons/hunter/hp.png")
+        new Skill("18", "HP Up 3", "/assets/icons/shared/hp.png")
           .setMaxLevel(10)
           .setDesc(
             "Boosts your Max HP. Produces a stronger effect than HP Up 2."
@@ -245,7 +245,7 @@ export default class HunterData {
       .setSkill(
         4,
         2,
-        new Skill("19", "Melee Power Up 3", "/assets/icons/hunter/melee.png")
+        new Skill("19", "Melee Power Up 3", "/assets/icons/shared/melee.png")
           .setMaxLevel(10)
           .setDesc(
             "Boosts your Melee Power. Produces a stronger effect than Melee Power Up 2."
@@ -293,7 +293,7 @@ export default class HunterData {
         new Skill(
           "23",
           "Melee Defense Up",
-          "/assets/icons/hunter/melee_def.png"
+          "/assets/icons/shared/melee_def.png"
         )
           .setMaxLevel(10)
           .setDesc("Boosts your Melee Defense.")
@@ -449,7 +449,7 @@ export default class HunterData {
       .setSkill(
         8,
         5,
-        new Skill("37", "Stalwart Spirit", "/assets/icons/hunter/melee_def.png")
+        new Skill("37", "Stalwart Spirit", "/assets/icons/shared/melee_def.png")
           .setMaxLevel(5)
           .setDesc(
             "Ups Melee Power for 60 seconds after using Iron Will, and extends invulnerability. Raising the skill level boosts Melee Power and extends invulnerability even more."
@@ -528,7 +528,7 @@ export default class HunterData {
       .setSkill(
         10,
         2,
-        new Skill("44", "Flash Guard 1", "/assets/icons/hunter/melee_def.png")
+        new Skill("44", "Flash Guard 1", "/assets/icons/shared/melee_def.png")
           .setMaxLevel(10)
           .setDesc("Decreases melee and ranged damage.")
       )
@@ -575,7 +575,7 @@ export default class HunterData {
       .setSkill(
         11,
         2,
-        new Skill("48", "Flash Guard 2", "/assets/icons/hunter/melee_def.png")
+        new Skill("48", "Flash Guard 2", "/assets/icons/shared/melee_def.png")
           .setMaxLevel(10)
           .setDesc("Decreases melee and ranged damage.")
       )
