@@ -2,7 +2,9 @@
   <div class="row pb-3">
     <div class="col-sm-6 bg-dark-blue p-0">
       <div class="bg-lt-blue text-white p-2">Character Information</div>
-      <div class="p-2 d-flex justify-content-center flex-wrap">
+      <div
+        class="p-2 d-flex justify-content-center align-items-center flex-wrap"
+      >
         <mat-form-field class="m-2" style="width: 100px;" appearance="outline">
           <mat-label class="text-white">Primary Class</mat-label>
           <mat-select panelClass="bg-lt-blue" [(value)]="selectedPrimaryClass">
@@ -30,6 +32,18 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
+
+        <button
+          class="shadow"
+          title="Copy sharable url"
+          style="background-color: #313e66; color: white;"
+          mat-mini-fab
+          (click)="displaySnackBar()"
+          [cdkCopyToClipboard]="generateUrl()"
+          aria-label="Share url"
+        >
+          <mat-icon>share</mat-icon>
+        </button>
       </div>
     </div>
     <div class="col-sm-6 p-0 bg-dark-blue">

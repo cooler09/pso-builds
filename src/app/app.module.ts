@@ -1,5 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { NgModule, FactoryProvider, InjectionToken } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -12,7 +12,17 @@ import { MatInputModule } from "@angular/material/input";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
+import { ClipboardModule } from "@angular/cdk/clipboard";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CharacterTabComponent } from "./shared/character-tab/character-tab.component";
+export const WINDOW = new InjectionToken<Window>("window");
+
+const windowProvider: FactoryProvider = {
+  provide: WINDOW,
+  useFactory: () => window,
+};
+
+export const WINDOW_PROVIDERS = [windowProvider];
 
 @NgModule({
   declarations: [
@@ -26,13 +36,15 @@ import { CharacterTabComponent } from "./shared/character-tab/character-tab.comp
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatSnackBarModule,
+    ClipboardModule,
     MatSelectModule,
     MatInputModule,
     MatTabsModule,
     MatIconModule,
     MatButtonModule,
   ],
-  providers: [],
+  providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
