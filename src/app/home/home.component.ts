@@ -51,7 +51,18 @@ export class HomeComponent implements OnInit {
     this.subscription = this.route.params.subscribe((params) => {
       let preload = params["preload"];
       if (preload) {
-        console.log(JSON.parse(decodeURIComponent(preload)));
+        let initialData = JSON.parse(decodeURIComponent(preload));
+        if (initialData.selectedPrimaryClass) {
+          this.selectedPrimaryClass = initialData.selectedPrimaryClass;
+        }
+        if (initialData.selectedSecondaryClass) {
+          this.selectedSecondaryClass = initialData.selectedSecondaryClass;
+        }
+
+        if (initialData.selectedTab) {
+          this.selectedTab = initialData.selectedTab;
+          this.updateSelectedCharacter();
+        }
       }
     });
   }
@@ -84,9 +95,9 @@ export class HomeComponent implements OnInit {
   generateUrl() {
     let param = encodeURIComponent(
       JSON.stringify({
-        primary: "1",
-        secondary: "2",
-        test: ["asdf", "dfsf"],
+        selectedSecondaryClass: this.selectedSecondaryClass,
+        selectedPrimaryClass: this.selectedPrimaryClass,
+        selectedTab: this.selectedTab,
       })
     );
     return `${this.window.location.hostname}/${param}`;
