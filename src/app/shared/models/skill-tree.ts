@@ -29,7 +29,7 @@ export class SkillTree {
     keys.forEach((key) => {
       if (key !== "skillTreeRows") {
         let skill = this[key] as Skill;
-        if (skill.currentLevel > 1) model[key] = skill.simplifyModel();
+        if (skill.currentLevel > 0) model[key] = skill.simplifyModel();
       }
     });
     return model;

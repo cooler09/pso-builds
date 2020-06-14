@@ -64,13 +64,13 @@ export class Character {
     this.availableSkills = this.selectedLevel + this.selectedCoSP;
   }
   simplifyModel(): CharacterMin {
-    let model = new CharacterMin();
-    model.i = this.id;
-    model.c = this.selectedCoSP;
-    model.l = this.selectedLevel;
-    model.a = this.availableSkills;
-    model.s = this.skillTree.simplifyModel();
-    return model;
+    return new CharacterMin(
+      this.id,
+      this.skillTree.simplifyModel(),
+      this.availableSkills,
+      this.selectedLevel,
+      this.selectedCoSP
+    );
   }
   setMinData(minData: CharacterMin) {
     this.availableSkills = minData.a;

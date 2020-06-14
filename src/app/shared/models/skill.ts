@@ -59,11 +59,7 @@ export class Skill {
     return this;
   }
   simplifyModel(): SkillMin {
-    let model = new SkillMin();
-    model.c = this.currentLevel;
-    model.l = this.locked;
-
-    return model;
+    return new SkillMin(this.locked, this.currentLevel);
   }
   setMinData(minData: SkillMin) {
     this.currentLevel = minData.c;
