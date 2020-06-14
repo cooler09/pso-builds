@@ -137,9 +137,7 @@
                   <mat-select
                     panelClass="bg-lt-blue"
                     [(value)]="characters[selectedCharacterId].selectedLevel"
-                    (selectionChange)="
-                      characters[selectedCharacterId].updateAvailableSP()
-                    "
+                    (selectionChange)="updateAvailableSkills()"
                   >
                     <mat-option
                       class="text-white"
@@ -159,9 +157,7 @@
                   <mat-select
                     panelClass="bg-lt-blue"
                     [(value)]="characters[selectedCharacterId].selectedCoSP"
-                    (selectionChange)="
-                      characters[selectedCharacterId].updateAvailableSP()
-                    "
+                    (selectionChange)="updateAvailableSkills()"
                   >
                     <mat-option
                       class="text-white"

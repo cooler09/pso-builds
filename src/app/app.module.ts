@@ -15,6 +15,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { ClipboardModule } from "@angular/cdk/clipboard";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CharacterTabComponent } from "./shared/character-tab/character-tab.component";
+import { CompressionService } from "./shared/services/compression.service";
 export const WINDOW = new InjectionToken<Window>("window");
 
 const windowProvider: FactoryProvider = {
@@ -44,7 +45,7 @@ export const WINDOW_PROVIDERS = [windowProvider];
     MatIconModule,
     MatButtonModule,
   ],
-  providers: [WINDOW_PROVIDERS],
+  providers: [WINDOW_PROVIDERS, CompressionService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

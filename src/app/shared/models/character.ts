@@ -60,13 +60,14 @@ export class Character {
     model.i = this.id;
     model.c = this.selectedCoSP;
     model.l = this.selectedLevel;
+    model.a = this.availableSkills;
     model.s = this.skillTree.simplifyModel();
     return model;
   }
   setMinData(minData: CharacterMin) {
+    this.availableSkills = minData.a;
     this.selectedLevel = minData.l;
     this.selectedCoSP = minData.c;
-    this.updateAvailableSP();
     this.skillTree.setMinData(minData.s);
   }
   private validateChildDependecies(skill: Skill) {

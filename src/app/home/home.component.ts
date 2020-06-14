@@ -7,6 +7,7 @@ import { WINDOW } from "../app.module";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { Subscription } from "rxjs";
 import { ActivatedRoute } from "@angular/router";
+import { CompressionService } from "../shared/services/compression.service";
 
 @Component({
   selector: "app-home",
@@ -27,9 +28,10 @@ export class HomeComponent implements OnInit {
   subscription: Subscription;
 
   constructor(
-    @Inject(WINDOW) private window: Window,
-    private route: ActivatedRoute,
-    private _snackBar: MatSnackBar
+    @Inject(WINDOW) private readonly window: Window,
+    private readonly route: ActivatedRoute,
+    private readonly compression: CompressionService,
+    private readonly _snackBar: MatSnackBar
   ) {
     this.characters = MockData.buildCharacterSkillTrees();
 
@@ -51,7 +53,11 @@ export class HomeComponent implements OnInit {
     this.subscription = this.route.params.subscribe((params) => {
       let preload = params["preload"];
       if (preload) {
-        let initialData = JSON.parse(decodeURIComponent(preload));
+        let initialData = this.compression.decompressObject(
+          decodeURIComponent(preload)
+        );
+        console.log(initialData);
+
         if (initialData.selectedPrimaryClass) {
           this.selectedPrimaryClass = initialData.selectedPrimaryClass;
         }
@@ -65,7 +71,7 @@ export class HomeComponent implements OnInit {
         }
         if (initialData.characters && initialData.characters.length > 0) {
           initialData.characters.forEach((_) => {
-            this.characters[_.id].setMinData(_);
+            this.characters[_.i].setMinData(_);
           });
         }
       }
@@ -87,6 +93,10 @@ export class HomeComponent implements OnInit {
       }
     }
   }
+  updateAvailableSkills() {
+    this.characters[this.selectedCharacterId].updateAvailableSP();
+    this.characters[this.selectedCharacterId].resetSkills();
+  }
   updateSelectedCharacter() {
     this.selectedCharacterId = (Object.values(
       this.characters
@@ -105,14 +115,12 @@ export class HomeComponent implements OnInit {
       .map((_) => {
         return _.simplifyModel();
       });
-    let param = encodeURIComponent(
-      JSON.stringify({
-        selectedSecondaryClass: this.selectedSecondaryClass,
-        selectedPrimaryClass: this.selectedPrimaryClass,
-        selectedTab: this.selectedTab,
-        characters: characters,
-      })
-    );
+    let param = this.compression.compressObject({
+      selectedSecondaryClass: this.selectedSecondaryClass,
+      selectedPrimaryClass: this.selectedPrimaryClass,
+      selectedTab: this.selectedTab,
+      characters: characters,
+    });
     return `${this.window.location.hostname}/${param}`;
   }
   displaySnackBar() {
