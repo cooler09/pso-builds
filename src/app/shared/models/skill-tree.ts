@@ -23,4 +23,21 @@ export class SkillTree {
       this[parentId].children.push(new SkillDependency(childId, prerequisite));
     }
   }
+  simplifyModel() {
+    let model = {};
+    let keys = Object.keys(this);
+    keys.forEach((key) => {
+      if (key !== "skillTreeRows") {
+        let skill = this[key] as Skill;
+        if (skill.currentLevel > 1) model[key] = skill.simplifyModel();
+      }
+    });
+    return model;
+  }
+  setMinData(minData: any) {
+    let keys = Object.keys(minData);
+    keys.forEach((key) => {
+      this[key].setMinData(minData[key]);
+    });
+  }
 }

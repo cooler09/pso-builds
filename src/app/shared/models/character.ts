@@ -1,5 +1,6 @@
 import { SkillTree } from "./skill-tree";
 import { Skill } from "./skill";
+import { CharacterMin } from "./character-min";
 
 export class Character {
   id: string;
@@ -53,6 +54,20 @@ export class Character {
   }
   updateAvailableSP() {
     this.availableSkills = this.selectedLevel + this.selectedCoSP;
+  }
+  simplifyModel(): CharacterMin {
+    let model = new CharacterMin();
+    model.i = this.id;
+    model.c = this.selectedCoSP;
+    model.l = this.selectedLevel;
+    model.s = this.skillTree.simplifyModel();
+    return model;
+  }
+  setMinData(minData: CharacterMin) {
+    this.selectedLevel = minData.l;
+    this.selectedCoSP = minData.c;
+    this.updateAvailableSP();
+    this.skillTree.setMinData(minData.s);
   }
   private validateChildDependecies(skill: Skill) {
     if (skill.children && skill.children.length > 0) {

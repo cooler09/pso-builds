@@ -63,6 +63,11 @@ export class HomeComponent implements OnInit {
           this.selectedTab = initialData.selectedTab;
           this.updateSelectedCharacter();
         }
+        if (initialData.characters && initialData.characters.length > 0) {
+          initialData.characters.forEach((_) => {
+            this.characters[_.id].setMinData(_);
+          });
+        }
       }
     });
   }
@@ -93,11 +98,19 @@ export class HomeComponent implements OnInit {
     this.displayedSkill = skill;
   }
   generateUrl() {
+    let characters = (Object.values(this.characters) as Character[])
+      .filter((_) => {
+        return _.availableSkills < _.selectedCoSP + _.selectedLevel;
+      })
+      .map((_) => {
+        return _.simplifyModel();
+      });
     let param = encodeURIComponent(
       JSON.stringify({
         selectedSecondaryClass: this.selectedSecondaryClass,
         selectedPrimaryClass: this.selectedPrimaryClass,
         selectedTab: this.selectedTab,
+        characters: characters,
       })
     );
     return `${this.window.location.hostname}/${param}`;
