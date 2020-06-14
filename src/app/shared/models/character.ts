@@ -1,6 +1,7 @@
 import { SkillTree } from "./skill-tree";
 import { Skill } from "./skill";
 import { CharacterMin } from "./character-min";
+import { SkillType } from "./skill-type";
 
 export class Character {
   id: string;
@@ -27,8 +28,15 @@ export class Character {
     this.skillTree.skillTreeRows.forEach((row) => {
       row.forEach((skill) => {
         if (skill) {
-          this.skillTree[skill].currentLevel = 0;
-          this.validateChildDependecies(this.skillTree[skill]);
+          let refSkill = this.skillTree[skill];
+          if (
+            refSkill &&
+            refSkill.skillType !== SkillType.Passive &&
+            refSkill.skillType !== SkillType.LevelReq
+          ) {
+            refSkill.currentLevel = 0;
+            this.validateChildDependecies(refSkill);
+          }
         }
       });
     });
