@@ -8,6 +8,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 import { Subscription } from "rxjs";
 import { ActivatedRoute } from "@angular/router";
 import { CompressionService } from "../shared/services/compression.service";
+import { CharactersDictionary } from "../shared/models/characters-dictionary";
 
 @Component({
   selector: "app-home",
@@ -15,7 +16,7 @@ import { CompressionService } from "../shared/services/compression.service";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  characters: any;
+  characters: CharactersDictionary;
   displayedSkill: Skill;
   selectedPrimaryClass: string = "hunter";
   selectedSecondaryClass: string = "ranger";
@@ -56,7 +57,6 @@ export class HomeComponent implements OnInit {
         let initialData = this.compression.decompressObject(
           decodeURIComponent(preload)
         );
-        console.log(initialData);
 
         if (initialData.selectedPrimaryClass) {
           this.selectedPrimaryClass = initialData.selectedPrimaryClass;
@@ -83,19 +83,22 @@ export class HomeComponent implements OnInit {
 
   skillClicked(data: any) {
     if (data) {
+      let characterRef = this.characters[this.selectedCharacterId];
       switch (data.action) {
         case SkillAction.Add:
-          this.characters[this.selectedCharacterId].add(data.id);
+          characterRef.add(data.id);
+          characterRef.updateAvailableSP();
           break;
         case SkillAction.Remove:
-          this.characters[this.selectedCharacterId].remove(data.id);
+          characterRef.remove(data.id);
+          characterRef.updateAvailableSP();
           break;
       }
     }
   }
   updateAvailableSkills() {
-    this.characters[this.selectedCharacterId].updateAvailableSP();
     this.characters[this.selectedCharacterId].resetSkills();
+    this.characters[this.selectedCharacterId].updateAvailableSP();
   }
   updateSelectedCharacter() {
     this.selectedCharacterId = (Object.values(

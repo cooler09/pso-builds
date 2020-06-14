@@ -1,5 +1,6 @@
 import { Skill } from "./skill";
 import { SkillDependency } from "./skill-dependency";
+import { SkillType } from "./skill-type";
 
 export class SkillTree {
   skillTreeRows: string[][];
@@ -9,6 +10,19 @@ export class SkillTree {
     for (let index = 0; index < rows; index++) {
       this.skillTreeRows.push([null, null, null, null, null, null]);
     }
+  }
+  getUsedLevels(): number {
+    let totalLevelsUsed = 0;
+    Object.values(this).forEach((_) => {
+      if (
+        _.currentLevel &&
+        _.skillType !== SkillType.LevelReq &&
+        _.skillType !== SkillType.Passive
+      ) {
+        totalLevelsUsed += _.currentLevel;
+      }
+    });
+    return totalLevelsUsed;
   }
   setSkill(row: number, col: number, skill: Skill) {
     if (row < this.skillTreeRows.length && col < 6) {

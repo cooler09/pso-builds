@@ -60,8 +60,12 @@ export class Character {
       this.validateChildDependecies(skill);
     }
   }
+  totalAvailableSkills(): number {
+    return this.selectedLevel + this.selectedCoSP;
+  }
   updateAvailableSP() {
-    this.availableSkills = this.selectedLevel + this.selectedCoSP;
+    this.availableSkills =
+      this.totalAvailableSkills() - this.skillTree.getUsedLevels();
   }
   simplifyModel(): CharacterMin {
     return new CharacterMin(
@@ -77,16 +81,23 @@ export class Character {
     this.selectedLevel = minData.l;
     this.selectedCoSP = minData.c;
     this.skillTree.setMinData(minData.s);
+    Object.keys(this.skillTree).forEach((_) => {
+      if (_ !== "skillTreeRows") {
+        this.validateChildDependecies(this.skillTree[_]);
+      }
+    });
   }
   private validateChildDependecies(skill: Skill) {
     if (skill.children && skill.children.length > 0) {
       skill.children.forEach((_) => {
-        let child = this.skillTree[_.id];
+        let child = this.skillTree[_.id] as Skill;
         if (child) {
           if (skill.currentLevel >= _.prerequisite) {
             child.locked = false;
           } else {
+            child.currentLevel = 0;
             child.locked = true;
+            this.validateChildDependecies(child);
           }
         }
       });
