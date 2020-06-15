@@ -61,7 +61,8 @@
     </div>
   </div>
   <app-skill-row
-    *ngFor="let skillRow of character.skillTree.skillTreeRows"
+    *ngFor="let skillRow of character.skillTree.skillTreeRows; let i = index"
+    [rowIndex]="i.toString()"
     [skillTree]="character.skillTree"
     [skills]="skillRow"
     (displaySkill)="displaySkill.emit($event)"

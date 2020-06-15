@@ -1,9 +1,35 @@
 <div class="row">
   <div
-    *ngFor="let skillId of skills"
-    class="col-12 col-sm-2 p-2 bg-gradient-blue"
+    *ngFor="let skillId of skills; let i = index"
+    class="col-12 col-sm-2 bg-gradient-blue"
   >
+    <div
+      *ngIf="skillTree.vltSkillIds[rowIndex + '-' + i.toString()]"
+      class="vl-t"
+    ></div>
+    <div
+      *ngIf="skillTree.vlbSkillIds[rowIndex + '-' + i.toString()]"
+      class="vl-b"
+    ></div>
+    <div
+      *ngIf="skillTree.vlfSkillIds[rowIndex + '-' + i.toString()]"
+      class="vl-f"
+    ></div>
+    <div
+      *ngIf="skillTree.hlrSkillIds[rowIndex + '-' + i.toString()]"
+      class="hl-r"
+    ></div>
+    <div
+      *ngIf="skillTree.hllSkillIds[rowIndex + '-' + i.toString()]"
+      class="hl-l"
+    ></div>
+    <div
+      *ngIf="skillTree.hlfSkillIds[rowIndex + '-' + i.toString()]"
+      class="hl-f"
+    ></div>
     <app-skill
+      class="m-2"
+      style="position: relative; z-index: 1;"
       *ngIf="skillId"
       [skillTree]="skillTree"
       [skill]="skillTree[skillId]"

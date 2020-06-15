@@ -82,7 +82,15 @@ export class Character {
     this.selectedCoSP = minData.c;
     this.skillTree.setMinData(minData.s);
     Object.keys(this.skillTree).forEach((_) => {
-      if (_ !== "skillTreeRows") {
+      if (
+        _ !== "skillTreeRows" &&
+        _ !== "hlfSkillIds" &&
+        _ !== "hlrSkillIds" &&
+        _ !== "hllSkillIds" &&
+        _ !== "vlfSkillIds" &&
+        _ !== "vltSkillIds" &&
+        _ !== "vlbSkillIds"
+      ) {
         this.validateChildDependecies(this.skillTree[_]);
       }
     });

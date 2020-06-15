@@ -8,6 +8,7 @@ import { SkillTree } from "../models/skill-tree";
   styleUrls: ["./skill-row.component.scss"],
 })
 export class SkillRowComponent implements OnInit {
+  @Input() rowIndex: string;
   @Input() skills: string[];
   @Input() skillTree: SkillTree;
 
