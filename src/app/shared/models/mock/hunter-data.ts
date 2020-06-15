@@ -391,7 +391,7 @@ export default class HunterData {
         0,
         new Skill(
           "31",
-          "Perfect Attack Bonus 1",
+          "Perfect Atk Bonus 1",
           "/assets/icons/hunter/perfect_attack.png"
         )
           .setMaxLevel(10)
@@ -475,7 +475,7 @@ export default class HunterData {
         1,
         new Skill(
           "39",
-          "Perfect Attack Bonus 2",
+          "Perfect Atk Bonus 2",
           "/assets/icons/hunter/perfect_attack.png"
         )
           .setMaxLevel(10)
