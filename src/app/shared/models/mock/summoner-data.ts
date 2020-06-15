@@ -3,6 +3,77 @@ import { Skill } from "../skill";
 import { SkillType } from "../skill-type";
 
 export default class SummonerData {
+  static loadSkillLines(skillTree: SkillTree) {
+    skillTree.vlbSkillIds["0-0"] = true;
+    skillTree.vlfSkillIds["1-0"] = true;
+    skillTree.vlfSkillIds["2-0"] = true;
+    skillTree.hlrSkillIds["3-0"] = true;
+    skillTree.vlfSkillIds["3-0"] = true;
+    skillTree.hlfSkillIds["3-1"] = true;
+    skillTree.vltSkillIds["3-1"] = true;
+    skillTree.vltSkillIds["3-2"] = true;
+    skillTree.hllSkillIds["3-2"] = true;
+    skillTree.vlfSkillIds["4-0"] = true;
+    skillTree.vlfSkillIds["5-0"] = true;
+    skillTree.hlrSkillIds["5-0"] = true;
+    skillTree.hlfSkillIds["5-1"] = true;
+    skillTree.vltSkillIds["5-1"] = true;
+    skillTree.hllSkillIds["5-2"] = true;
+    skillTree.vltSkillIds["5-2"] = true;
+    skillTree.vlfSkillIds["6-0"] = true;
+    skillTree.hlrSkillIds["6-0"] = true;
+    skillTree.hllSkillIds["6-1"] = true;
+    skillTree.vltSkillIds["6-1"] = true;
+    skillTree.vlfSkillIds["7-0"] = true;
+    skillTree.hlrSkillIds["7-0"] = true;
+    skillTree.hlfSkillIds["7-1"] = true;
+    skillTree.vltSkillIds["7-1"] = true;
+    skillTree.hlfSkillIds["7-2"] = true;
+    skillTree.vltSkillIds["7-2"] = true;
+    skillTree.vltSkillIds["7-3"] = true;
+    skillTree.hlfSkillIds["7-3"] = true;
+    skillTree.hllSkillIds["7-4"] = true;
+    skillTree.vltSkillIds["7-4"] = true;
+    skillTree.vlbSkillIds["7-5"] = true;
+    skillTree.vlfSkillIds["8-0"] = true;
+    skillTree.hlrSkillIds["8-0"] = true;
+    skillTree.hllSkillIds["8-1"] = true;
+    skillTree.vltSkillIds["8-1"] = true;
+    skillTree.vlfSkillIds["9-0"] = true;
+    skillTree.hlrSkillIds["9-0"] = true;
+    skillTree.vltSkillIds["9-1"] = true;
+    skillTree.hllSkillIds["9-1"] = true;
+    skillTree.vlfSkillIds["10-0"] = true;
+    skillTree.hlrSkillIds["10-0"] = true;
+    skillTree.vltSkillIds["10-1"] = true;
+    skillTree.hllSkillIds["10-1"] = true;
+    skillTree.vlfSkillIds["11-0"] = true;
+    skillTree.hlrSkillIds["11-0"] = true;
+    skillTree.vltSkillIds["11-1"] = true;
+    skillTree.hlfSkillIds["11-1"] = true;
+    skillTree.vltSkillIds["11-2"] = true;
+    skillTree.hllSkillIds["11-2"] = true;
+    skillTree.vlfSkillIds["12-0"] = true;
+    skillTree.hlrSkillIds["12-0"] = true;
+    skillTree.hlfSkillIds["12-1"] = true;
+    skillTree.hlfSkillIds["12-2"] = true;
+    skillTree.vlfSkillIds["12-2"] = true;
+    skillTree.hlfSkillIds["12-3"] = true;
+    skillTree.vlfSkillIds["12-3"] = true;
+    skillTree.hllSkillIds["12-4"] = true;
+    skillTree.vlfSkillIds["12-4"] = true;
+    skillTree.vlfSkillIds["13-0"] = true;
+    skillTree.hlrSkillIds["13-0"] = true;
+    skillTree.hllSkillIds["13-1"] = true;
+    skillTree.vltSkillIds["13-1"] = true;
+    skillTree.vltSkillIds["13-2"] = true;
+    skillTree.vltSkillIds["13-3"] = true;
+    skillTree.vltSkillIds["13-4"] = true;
+    skillTree.vltSkillIds["14-0"] = true;
+    skillTree.hlrSkillIds["14-0"] = true;
+    skillTree.hllSkillIds["14-1"] = true;
+    skillTree.vltSkillIds["14-1"] = true;
+  }
   static setDependencies(skillTree: SkillTree) {
     skillTree.setDependency("1", "11", 1);
     skillTree.setDependency("1", "12", 1);
@@ -36,6 +107,7 @@ export default class SummonerData {
   }
   static getSkillTree(): SkillTree {
     let skillTree = new SkillTree(15);
+    this.loadSkillLines(skillTree);
     skillTree = this.loadRowOne(skillTree);
     skillTree = this.loadRowTwo(skillTree);
     skillTree = this.loadRowThree(skillTree);
