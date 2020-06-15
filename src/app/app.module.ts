@@ -16,6 +16,7 @@ import { ClipboardModule } from "@angular/cdk/clipboard";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CharacterTabComponent } from "./shared/character-tab/character-tab.component";
 import { CompressionService } from "./shared/services/compression.service";
+import { SafePipe } from './core/safe.pipe';
 export const WINDOW = new InjectionToken<Window>("window");
 
 const windowProvider: FactoryProvider = {
@@ -32,6 +33,7 @@ export const WINDOW_PROVIDERS = [windowProvider];
     SkillComponent,
     SkillRowComponent,
     CharacterTabComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
