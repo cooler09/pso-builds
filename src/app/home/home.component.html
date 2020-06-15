@@ -54,7 +54,7 @@
         <div class="p-2 bg-lt-blue">
           {{ displayedSkill.name }}
         </div>
-        <div class="p-1 border-b-white">
+        <div class="p-2 border-b-white">
           Level:
           <span *ngIf="displayedSkill.currentLevel < displayedSkill.maxLevel"
             >{{ displayedSkill.currentLevel }}/{{
@@ -66,7 +66,7 @@
           >
         </div>
         <div
-          class="p-1 d-flex justify-content-between border-b-white"
+          class="p-2 d-flex justify-content-between border-b-white"
           *ngIf="displayedSkill.parent"
         >
           <span>Prerequisite</span>
@@ -79,7 +79,7 @@
           >
           <span>Lv. {{ displayedSkill.parent.prerequisite }}</span>
         </div>
-        <div class="p-1">
+        <div class="p-2">
           {{ displayedSkill.desc }}
         </div>
       </div>
