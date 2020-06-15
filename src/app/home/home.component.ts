@@ -112,10 +112,15 @@ export class HomeComponent implements OnInit {
     return `${this.window.location.hostname}/${param}`;
   }
   displaySnackBar() {
-    this._snackBar.open("Copied to Clipboard", null, {
-      duration: 3000,
-      horizontalPosition: "center",
-      verticalPosition: "bottom",
-    });
+    this._snackBar.open(
+      "Copied to Clipboard. Note: Only the primary and sub class where copied.",
+      null,
+      {
+        panelClass: "custom-snack-css",
+        duration: 5000,
+        horizontalPosition: "center",
+        verticalPosition: "top",
+      }
+    );
   }
 }
