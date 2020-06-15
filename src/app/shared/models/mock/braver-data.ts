@@ -1,6 +1,6 @@
-import { SkillTree } from "./skill-tree";
-import { Skill } from "./skill";
-import { SkillType } from "./skill-type";
+import { SkillTree } from "../skill-tree";
+import { Skill } from "../skill";
+import { SkillType } from "../skill-type";
 
 export default class BraverData {
   static setDependencies(skillTree: SkillTree) {

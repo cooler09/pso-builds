@@ -1,7 +1,6 @@
-import { SkillTree } from "./skill-tree";
-import { Skill } from "./skill";
-import { SkillDependency } from "./skill-dependency";
-import { SkillType } from "./skill-type";
+import { SkillTree } from "../skill-tree";
+import { Skill } from "../skill";
+import { SkillType } from "../skill-type";
 
 export default class HunterData {
   static getSkillTree(): SkillTree {

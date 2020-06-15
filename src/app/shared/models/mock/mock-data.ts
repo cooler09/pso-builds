@@ -1,5 +1,5 @@
 import HunterData from "./hunter-data";
-import { Character } from "./character";
+import { Character } from "../character";
 import BouncerData from "./bouncer-data";
 import FighterData from "./fighter-data";
 import RangerData from "./ranger-data";
@@ -8,7 +8,7 @@ import ForceData from "./force-data";
 import TechterData from "./techter-data";
 import BraverData from "./braver-data";
 import SummonerData from "./summoner-data";
-import { CharactersDictionary } from "./characters-dictionary";
+import { CharactersDictionary } from "../characters-dictionary";
 
 export default class MockData {
   static buildCharacterSkillTrees(): CharactersDictionary {

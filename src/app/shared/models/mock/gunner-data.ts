@@ -1,6 +1,6 @@
-import { SkillTree } from "./skill-tree";
-import { Skill } from "./skill";
-import { SkillType } from "./skill-type";
+import { SkillTree } from "../skill-tree";
+import { Skill } from "../skill";
+import { SkillType } from "../skill-type";
 
 export default class GunnerData {
   static setDependencies(skillTree: SkillTree) {

@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from "@angular/core";
 import { Skill } from "../shared/models/skill";
 import { SkillAction } from "../shared/models/skill-action";
-import MockData from "../shared/models/mock-data";
+import MockData from "../shared/models/mock/mock-data";
 import { Character } from "../shared/models/character";
 import { WINDOW } from "../app.module";
 import { MatSnackBar } from "@angular/material/snack-bar";
