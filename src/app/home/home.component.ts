@@ -21,10 +21,7 @@ export class HomeComponent implements OnInit {
   selectedPrimaryClass: string = "hunter";
   selectedSecondaryClass: string = "ranger";
   selectedCharacterId: string = "hunter";
-  orderedClasses: Character[];
   selectedTab: number = 0;
-  coSkillPoints: number[] = [];
-  levels: number[] = [];
 
   subscription: Subscription;
 
@@ -36,17 +33,6 @@ export class HomeComponent implements OnInit {
   ) {
     this.characters = MockData.buildCharacterSkillTrees();
 
-    for (let index = 1; index <= 75; index++) {
-      this.levels.push(index);
-    }
-    for (let index = 0; index < 15; index++) {
-      this.coSkillPoints.push(index);
-    }
-    this.orderedClasses = (Object.values(this.characters) as Character[]).sort(
-      function (a, b) {
-        return b.tabIndex + a.tabIndex;
-      }
-    );
     this.displayedSkill = this.characters["hunter"].skillTree["1"];
   }
 
@@ -95,10 +81,6 @@ export class HomeComponent implements OnInit {
           break;
       }
     }
-  }
-  updateAvailableSkills() {
-    this.characters[this.selectedCharacterId].resetSkills();
-    this.characters[this.selectedCharacterId].updateAvailableSP();
   }
   updateSelectedCharacter() {
     this.selectedCharacterId = (Object.values(

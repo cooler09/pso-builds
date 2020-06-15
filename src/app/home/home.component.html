@@ -10,10 +10,10 @@
           <mat-select panelClass="bg-lt-blue" [(value)]="selectedPrimaryClass">
             <mat-option
               class="text-white"
-              *ngFor="let pair of characters | keyvalue"
-              [value]="pair.value.id"
+              *ngFor="let character of characters.getCharacterArray()"
+              [value]="character.id"
             >
-              {{ pair.value.name }}
+              {{ character.name }}
             </mat-option>
           </mat-select>
         </mat-form-field>
@@ -25,10 +25,10 @@
           >
             <mat-option
               class="text-white"
-              *ngFor="let pair of characters | keyvalue"
-              [value]="pair.value.id"
+              *ngFor="let character of characters.getCharacterArray()"
+              [value]="character.id"
             >
-              {{ pair.value.name }}
+              {{ character.name }}
             </mat-option>
           </mat-select>
         </mat-form-field>
@@ -90,99 +90,30 @@
     class="p-0"
     backgroundColor="accent"
   >
-    <app-character-tab></app-character-tab>
-    <mat-tab *ngFor="let class of orderedClasses">
+    <mat-tab *ngFor="let character of characters.getCharacterArray()">
       <ng-template mat-tab-label>
         <img
-          *ngIf="class.id === selectedPrimaryClass"
+          *ngIf="character.id === selectedPrimaryClass"
           class="px-1"
           alt="Selected Primary class"
           src="/assets/icons/main.png"
         />
         <img
-          *ngIf="class.id === selectedSecondaryClass"
+          *ngIf="character.id === selectedSecondaryClass"
           class="px-1"
           alt="Selected Sub class"
           src="/assets/icons/sub.png"
         />
-        {{ class.name }}
+        {{ character.name }}
       </ng-template>
 
-      <ng-template matTabContent
-        ><div class="px-3 skill-tab-content">
-          <div class="row bg-lt-blue">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center flex-wrap"
-            >
-              <div class="d-flex align-items-center">
-                <button
-                  (click)="characters[selectedCharacterId].resetSkills()"
-                  class="m-2 bg-light font-color-blue"
-                  mat-button
-                >
-                  Clear Skills
-                </button>
-                <div class="text-white m-2">
-                  Available Skills:
-                  {{ characters[selectedCharacterId].availableSkills }}
-                </div>
-              </div>
-              <div>
-                <mat-form-field
-                  class="m-2 p-0"
-                  appearance="outline"
-                  style="width: 60px;"
-                >
-                  <mat-label class="text-white">Level</mat-label>
-                  <mat-select
-                    panelClass="bg-lt-blue"
-                    [(value)]="characters[selectedCharacterId].selectedLevel"
-                    (selectionChange)="updateAvailableSkills()"
-                  >
-                    <mat-option
-                      class="text-white"
-                      *ngFor="let lvl of levels"
-                      [value]="lvl"
-                    >
-                      {{ lvl }}
-                    </mat-option>
-                  </mat-select>
-                </mat-form-field>
-                <mat-form-field
-                  class="m-2 p-0"
-                  appearance="outline"
-                  style="width: 100px;"
-                >
-                  <mat-label class="text-white">CO Skill Points</mat-label>
-                  <mat-select
-                    panelClass="bg-lt-blue"
-                    [(value)]="characters[selectedCharacterId].selectedCoSP"
-                    (selectionChange)="updateAvailableSkills()"
-                  >
-                    <mat-option
-                      class="text-white"
-                      *ngFor="let coSP of coSkillPoints"
-                      [value]="coSP"
-                    >
-                      {{ coSP }}
-                    </mat-option>
-                  </mat-select>
-                </mat-form-field>
-              </div>
-            </div>
-          </div>
-          <app-skill-row
-            *ngFor="
-              let skillRow of characters[selectedCharacterId].skillTree
-                .skillTreeRows
-            "
-            [skillTree]="characters[selectedCharacterId].skillTree"
-            [skills]="skillRow"
-            (displaySkill)="displaySkill($event)"
-            (skillClicked)="skillClicked($event)"
-          ></app-skill-row>
-        </div>
-      </ng-template>
+      <ng-template matTabContent>
+        <app-character-tab
+          [character]="character"
+          (displaySkill)="displaySkill($event)"
+          (skillClicked)="skillClicked($event)"
+        ></app-character-tab
+      ></ng-template>
     </mat-tab>
   </mat-tab-group>
 </div>

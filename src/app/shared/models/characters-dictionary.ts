@@ -10,5 +10,18 @@ export class CharactersDictionary {
   braver: Character;
   bouncer: Character;
   summoner: Character;
-  s;
+
+  getCharacterArray(): Character[] {
+    return [
+      this.hunter,
+      this.fighter,
+      this.ranger,
+      this.gunner,
+      this.force,
+      this.techter,
+      this.braver,
+      this.bouncer,
+      this.summoner,
+    ];
+  }
 }
