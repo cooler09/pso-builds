@@ -34,7 +34,6 @@ export default class SummonerData {
     skillTree.hlfSkillIds["7-3"] = true;
     skillTree.hllSkillIds["7-4"] = true;
     skillTree.vltSkillIds["7-4"] = true;
-    skillTree.vlbSkillIds["7-5"] = true;
     skillTree.vlfSkillIds["8-0"] = true;
     skillTree.hlrSkillIds["8-0"] = true;
     skillTree.hllSkillIds["8-1"] = true;
