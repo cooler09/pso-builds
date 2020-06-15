@@ -8,6 +8,9 @@
           (click)="character.resetSkills()"
           class="m-2 bg-light font-color-blue"
           mat-button
+          [disabled]="
+            character.availableSkills >= character.totalAvailableSkills()
+          "
         >
           Clear Skills
         </button>
