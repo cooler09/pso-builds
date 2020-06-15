@@ -1,4 +1,5 @@
 # Node.js with Angular
+
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -14,6 +15,12 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'github.com_cooler09'
+    userRepository: 'cooler09/variables'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
 - task: replacetokens@3
   inputs:
     targetFiles: |
@@ -26,11 +33,7 @@ steps:
     tokenPrefix: '#{'
     tokenSuffix: '}#'
     useLegacyPattern: false
-    variableFiles: |
-      {
-      adDesktopUrl: "$(adDesktopUrl)",
-      adMobileUrl: "$(adMobileUrl)"",
-      }
+    variableFiles: '**/variables/pso_variables.json'
     enableTelemetry: true
 - script: |
     npm install -g @angular/cli
