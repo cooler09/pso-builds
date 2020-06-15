@@ -28,8 +28,8 @@ steps:
     useLegacyPattern: false
     variableFiles: |
       {
-      adDesktopUrl: $(adDesktopUrl),
-      adMobileUrl: $(adMobileUrl),
+      adDesktopUrl: "$(adDesktopUrl)",
+      adMobileUrl: "$(adMobileUrl)"",
       }
     enableTelemetry: true
 - script: |
