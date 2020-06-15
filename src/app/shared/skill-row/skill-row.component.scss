@@ -18,3 +18,51 @@
 ::ng-deep .mat-select-arrow {
   color: white;
 }
+.vl-f {
+  border-left: 4px solid #ad8b40;
+  height: 140px;
+  position: absolute;
+  z-index: 0;
+
+  margin-top: 0px;
+  margin-left: 78px;
+}
+.vl-b {
+  border-left: 4px solid #ad8b40;
+  height: 70px;
+  position: absolute;
+  z-index: 0;
+
+  margin-top: 70px;
+  margin-left: 78px;
+}
+.vl-t {
+  border-left: 4px solid #ad8b40;
+  height: 70px;
+  position: absolute;
+  z-index: 0;
+
+  margin-top: 0px;
+  margin-left: 78px;
+}
+.hl-f {
+  border-top: 4px solid #ad8b40;
+  width: 190px;
+  position: absolute;
+  z-index: 0;
+  margin-left: -15px;
+}
+.hl-l {
+  border-top: 4px solid #ad8b40;
+  width: 97px;
+  position: absolute;
+  z-index: 0;
+  margin-left: -15px;
+}
+.hl-r {
+  border-top: 4px solid #ad8b40;
+  width: 95px;
+  position: absolute;
+  z-index: 0;
+  margin-left: 78px;
+}

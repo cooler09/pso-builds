@@ -3,6 +3,92 @@ import { Skill } from "../skill";
 import { SkillType } from "../skill-type";
 
 export default class TechterData {
+  static loadSkillLines(skillTree: SkillTree) {
+    skillTree.vlbSkillIds["0-0"] = true;
+    skillTree.vlfSkillIds["1-0"] = true;
+    skillTree.vlfSkillIds["2-0"] = true;
+    skillTree.vlbSkillIds["2-5"] = true;
+    skillTree.vltSkillIds["3-5"] = true;
+    skillTree.hlrSkillIds["3-0"] = true;
+    skillTree.vlfSkillIds["3-0"] = true;
+    skillTree.hllSkillIds["3-1"] = true;
+    skillTree.vltSkillIds["3-1"] = true;
+    skillTree.vlfSkillIds["4-0"] = true;
+    skillTree.hlrSkillIds["4-0"] = true;
+    skillTree.hllSkillIds["4-1"] = true;
+    skillTree.vltSkillIds["4-1"] = true;
+    skillTree.vlfSkillIds["5-0"] = true;
+    skillTree.hlrSkillIds["5-0"] = true;
+    skillTree.hllSkillIds["5-1"] = true;
+    skillTree.vltSkillIds["5-1"] = true;
+    skillTree.vlfSkillIds["6-0"] = true;
+    skillTree.hlrSkillIds["6-0"] = true;
+    skillTree.vltSkillIds["6-1"] = true;
+    skillTree.hlfSkillIds["6-1"] = true;
+    skillTree.vlfSkillIds["6-2"] = true;
+    skillTree.hlfSkillIds["6-2"] = true;
+    skillTree.vltSkillIds["6-3"] = true;
+    skillTree.hlfSkillIds["6-3"] = true;
+    skillTree.vlfSkillIds["6-4"] = true;
+    skillTree.hlfSkillIds["6-4"] = true;
+    skillTree.vltSkillIds["6-5"] = true;
+    skillTree.hllSkillIds["6-5"] = true;
+    skillTree.vlfSkillIds["7-0"] = true;
+    skillTree.vltSkillIds["7-2"] = true;
+    skillTree.hlrSkillIds["7-2"] = true;
+    skillTree.hllSkillIds["7-3"] = true;
+    skillTree.vltSkillIds["7-3"] = true;
+    skillTree.vltSkillIds["7-4"] = true;
+    skillTree.hlrSkillIds["7-4"] = true;
+    skillTree.hllSkillIds["7-5"] = true;
+    skillTree.vltSkillIds["7-5"] = true;
+    skillTree.vlfSkillIds["8-0"] = true;
+    skillTree.hlrSkillIds["8-0"] = true;
+    skillTree.hlfSkillIds["8-1"] = true;
+    skillTree.vlfSkillIds["8-1"] = true;
+    skillTree.hlfSkillIds["8-2"] = true;
+    skillTree.vltSkillIds["8-2"] = true;
+    skillTree.hlfSkillIds["8-3"] = true;
+    skillTree.vlfSkillIds["8-3"] = true;
+    skillTree.hlfSkillIds["8-4"] = true;
+    skillTree.vltSkillIds["8-4"] = true;
+    skillTree.hllSkillIds["8-5"] = true;
+    skillTree.vltSkillIds["8-5"] = true;
+    skillTree.vltSkillIds["8-6"] = true;
+    skillTree.vlfSkillIds["9-0"] = true;
+    skillTree.vltSkillIds["9-1"] = true;
+    skillTree.hlrSkillIds["9-1"] = true;
+    skillTree.hllSkillIds["9-2"] = true;
+    skillTree.vltSkillIds["9-2"] = true;
+    skillTree.vltSkillIds["9-3"] = true;
+    skillTree.vlfSkillIds["10-0"] = true;
+    skillTree.vlfSkillIds["11-0"] = true;
+    skillTree.hlrSkillIds["11-0"] = true;
+    skillTree.hlfSkillIds["11-1"] = true;
+    skillTree.hlfSkillIds["11-2"] = true;
+    skillTree.vlfSkillIds["11-2"] = true;
+    skillTree.hlfSkillIds["11-3"] = true;
+    skillTree.hlfSkillIds["11-4"] = true;
+    skillTree.vlfSkillIds["11-4"] = true;
+    skillTree.vltSkillIds["11-5"] = true;
+    skillTree.hllSkillIds["11-5"] = true;
+    skillTree.vltSkillIds["12-0"] = true;
+    skillTree.hlrSkillIds["12-0"] = true;
+    skillTree.hllSkillIds["12-1"] = true;
+    skillTree.vltSkillIds["12-1"] = true;
+    skillTree.hlrSkillIds["12-2"] = true;
+    skillTree.vltSkillIds["12-2"] = true;
+    skillTree.hllSkillIds["12-3"] = true;
+    skillTree.vltSkillIds["12-3"] = true;
+    skillTree.hlrSkillIds["12-4"] = true;
+    skillTree.vlfSkillIds["12-4"] = true;
+    skillTree.vltSkillIds["12-5"] = true;
+    skillTree.hllSkillIds["12-5"] = true;
+    skillTree.vltSkillIds["13-4"] = true;
+    skillTree.hlrSkillIds["13-4"] = true;
+    skillTree.hllSkillIds["13-5"] = true;
+    skillTree.vltSkillIds["13-5"] = true;
+  }
   static setDependencies(skillTree: SkillTree) {
     skillTree.setDependency("1", "13", 3);
     skillTree.setDependency("1", "17", 1);
@@ -38,6 +124,7 @@ export default class TechterData {
   }
   static getSkillTree(): SkillTree {
     let skillTree = new SkillTree(14);
+    this.loadSkillLines(skillTree);
     skillTree = this.loadRowOne(skillTree);
     skillTree = this.loadRowTwo(skillTree);
     skillTree = this.loadRowThree(skillTree);
@@ -149,7 +236,7 @@ export default class TechterData {
       )
       .setSkill(
         11,
-        3,
+        2,
         new Skill(
           "40",
           "Light Mastery 1",

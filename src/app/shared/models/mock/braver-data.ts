@@ -3,6 +3,78 @@ import { Skill } from "../skill";
 import { SkillType } from "../skill-type";
 
 export default class BraverData {
+  static loadSkillLines(skillTree: SkillTree) {
+    skillTree.vlbSkillIds["0-0"] = true;
+    skillTree.vlfSkillIds["1-0"] = true;
+    skillTree.vlfSkillIds["2-0"] = true;
+    skillTree.vlbSkillIds["2-5"] = true;
+    skillTree.hlrSkillIds["3-0"] = true;
+    skillTree.vlfSkillIds["3-0"] = true;
+    skillTree.hllSkillIds["3-1"] = true;
+    skillTree.vltSkillIds["3-1"] = true;
+    skillTree.hlrSkillIds["3-4"] = true;
+    skillTree.vltSkillIds["3-4"] = true;
+    skillTree.hllSkillIds["3-5"] = true;
+    skillTree.vltSkillIds["3-5"] = true;
+    skillTree.vlfSkillIds["4-0"] = true;
+    skillTree.hlrSkillIds["4-0"] = true;
+    skillTree.hlfSkillIds["4-1"] = true;
+    skillTree.vltSkillIds["4-1"] = true;
+    skillTree.hllSkillIds["4-2"] = true;
+    skillTree.vltSkillIds["4-2"] = true;
+    skillTree.vlbSkillIds["4-4"] = true;
+    skillTree.vlfSkillIds["5-0"] = true;
+    skillTree.hlrSkillIds["5-0"] = true;
+    skillTree.hlfSkillIds["5-1"] = true;
+    skillTree.vlfSkillIds["5-1"] = true;
+    skillTree.hlfSkillIds["5-2"] = true;
+    skillTree.vltSkillIds["5-2"] = true;
+    skillTree.hllSkillIds["5-3"] = true;
+    skillTree.vltSkillIds["5-3"] = true;
+    skillTree.vltSkillIds["5-4"] = true;
+    skillTree.vlfSkillIds["6-0"] = true;
+    skillTree.vlfSkillIds["6-1"] = true;
+    skillTree.hlrSkillIds["6-1"] = true;
+    skillTree.vltSkillIds["6-2"] = true;
+    skillTree.hllSkillIds["6-2"] = true;
+    skillTree.vlfSkillIds["7-0"] = true;
+    skillTree.vltSkillIds["7-1"] = true;
+    skillTree.vlfSkillIds["8-0"] = true;
+    skillTree.hlrSkillIds["8-0"] = true;
+    skillTree.hlfSkillIds["8-1"] = true;
+    skillTree.vlfSkillIds["8-1"] = true;
+    skillTree.hlfSkillIds["8-2"] = true;
+    skillTree.hlfSkillIds["8-3"] = true;
+    skillTree.vlfSkillIds["8-3"] = true;
+    skillTree.hlfSkillIds["8-4"] = true;
+    skillTree.vlfSkillIds["8-4"] = true;
+    skillTree.hllSkillIds["8-5"] = true;
+    skillTree.vlfSkillIds["8-5"] = true;
+    skillTree.vlfSkillIds["9-0"] = true;
+    skillTree.vlfSkillIds["9-1"] = true;
+    skillTree.hlrSkillIds["9-1"] = true;
+    skillTree.hllSkillIds["9-2"] = true;
+    skillTree.vltSkillIds["9-2"] = true;
+    skillTree.vlfSkillIds["9-3"] = true;
+    skillTree.vlfSkillIds["9-4"] = true;
+    skillTree.vltSkillIds["9-5"] = true;
+    skillTree.vlfSkillIds["10-0"] = true;
+    skillTree.vltSkillIds["10-1"] = true;
+    skillTree.vltSkillIds["10-2"] = true;
+    skillTree.hlrSkillIds["10-2"] = true;
+    skillTree.hllSkillIds["10-3"] = true;
+    skillTree.vltSkillIds["10-3"] = true;
+    skillTree.vlfSkillIds["10-4"] = true;
+    skillTree.hlrSkillIds["10-4"] = true;
+    skillTree.hllSkillIds["10-5"] = true;
+    skillTree.vlfSkillIds["10-5"] = true;
+    skillTree.vltSkillIds["11-0"] = true;
+    skillTree.hlrSkillIds["11-0"] = true;
+    skillTree.hllSkillIds["11-1"] = true;
+    skillTree.vltSkillIds["11-1"] = true;
+    skillTree.vltSkillIds["11-4"] = true;
+    skillTree.vltSkillIds["11-5"] = true;
+  }
   static setDependencies(skillTree: SkillTree) {
     skillTree.setDependency("1", "11", 3);
     skillTree.setDependency("1", "14", 3);
@@ -35,6 +107,7 @@ export default class BraverData {
   }
   static getSkillTree(): SkillTree {
     let skillTree = new SkillTree(12);
+    this.loadSkillLines(skillTree);
     skillTree = this.loadRowOne(skillTree);
     skillTree = this.loadRowTwo(skillTree);
     skillTree = this.loadRowThree(skillTree);

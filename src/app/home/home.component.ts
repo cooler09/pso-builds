@@ -93,7 +93,10 @@ export class HomeComponent implements OnInit {
     this.displayedSkill = skill;
   }
   generateUrl() {
-    let characters = (Object.values(this.characters) as Character[])
+    let characters = [
+      this.characters[this.selectedPrimaryClass],
+      this.characters[this.selectedSecondaryClass],
+    ]
       .filter((_) => {
         return _.availableSkills < _.selectedCoSP + _.selectedLevel;
       })
