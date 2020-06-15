@@ -1,17 +1,4 @@
 # Node.js with Angular
-- task: replacetokens@3
-  inputs:
-    targetFiles: |
-      **/environment.ts
-      **/environment.prod.ts
-    encoding: 'auto'
-    writeBOM: true
-    actionOnMissing: 'warn'
-    keepToken: false
-    tokenPrefix: '#{'
-    tokenSuffix: '}#'
-    useLegacyPattern: false
-    enableTelemetry: true
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -27,7 +14,19 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-
+- task: replacetokens@3
+  inputs:
+    targetFiles: |
+      **/environment.ts
+      **/environment.prod.ts
+    encoding: 'auto'
+    writeBOM: true
+    actionOnMissing: 'warn'
+    keepToken: false
+    tokenPrefix: '#{'
+    tokenSuffix: '}#'
+    useLegacyPattern: false
+    enableTelemetry: true
 - script: |
     npm install -g @angular/cli
     npm install
