@@ -26,6 +26,11 @@ steps:
     tokenPrefix: '#{'
     tokenSuffix: '}#'
     useLegacyPattern: false
+    variableFiles: |
+      {
+      adDesktopUrl: $(adDesktopUrl),
+      adMobileUrl: $(adMobileUrl),
+      }
     enableTelemetry: true
 - script: |
     npm install -g @angular/cli
