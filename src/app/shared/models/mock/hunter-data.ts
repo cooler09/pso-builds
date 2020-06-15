@@ -3,9 +3,7 @@ import { Skill } from "../skill";
 import { SkillType } from "../skill-type";
 
 export default class HunterData {
-  static getSkillTree(): SkillTree {
-    let skillTree = new SkillTree(13);
-
+  static loadSkillLines(skillTree: SkillTree) {
     skillTree.vlbSkillIds["0-0"] = true;
     skillTree.vlfSkillIds["1-0"] = true;
     skillTree.vlfSkillIds["2-0"] = true;
@@ -86,6 +84,10 @@ export default class HunterData {
     skillTree.hlrSkillIds["12-0"] = true;
     skillTree.hllSkillIds["12-1"] = true;
     skillTree.vltSkillIds["12-1"] = true;
+  }
+  static getSkillTree(): SkillTree {
+    let skillTree = new SkillTree(13);
+    this.loadSkillLines(skillTree);
     skillTree = this.loadRowOne(skillTree);
     skillTree = this.loadRowTwo(skillTree);
     skillTree = this.loadRowThree(skillTree);
