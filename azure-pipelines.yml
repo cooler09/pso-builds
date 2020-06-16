@@ -20,6 +20,7 @@ steps:
       targetFiles: |
         **/environment.ts
         **/environment.prod.ts
+        **/index.html
       encoding: "auto"
       writeBOM: true
       actionOnMissing: "warn"
