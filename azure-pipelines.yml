@@ -15,6 +15,12 @@ steps:
     inputs:
       versionSpec: "10.x"
     displayName: "Install Node.js"
+  - task: DownloadGitHubRelease@0
+    inputs:
+      connection: 'github.com_cooler09'
+      userRepository: 'cooler09/variables'
+      defaultVersionType: 'latest'
+      downloadPath: '$(System.ArtifactsDirectory)'
   - task: replacetokens@3
     inputs:
       targetFiles: |
